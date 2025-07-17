@@ -1,0 +1,104 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "mcp-busca-municipio-validador"
+version = "1.0.0"
+description = "MCP Server para busca e classificação de validadores de municípios brasileiros"
+readme = "README.md"
+license = "MIT"
+authors = [
+    {name = "Marcelo Pessanha", email = "marcelo.pessanha@thomsonreuters.com"}
+]
+keywords = ["mcp", "municipio", "validador", "brasil", "nfse"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+requires-python = ">=3.8"
+dependencies = [
+    "mcp>=0.9.0",
+    "asyncio",
+    "typing-extensions>=4.0.0"
+]
+
+[project.urls]
+Homepage = "https://github.com/MarceloPessanhaTR/mcp-busca-municipio-validador"
+Repository = "https://github.com/MarceloPessanhaTR/mcp-busca-municipio-validador"
+Documentation = "https://github.com/MarceloPessanhaTR/mcp-busca-municipio-validador#readme"
+Issues = "https://github.com/MarceloPessanhaTR/mcp-busca-municipio-validador/issues"
+
+[project.scripts]
+mcp-busca-municipio-validador = "src.mcp_server:main"
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src", "PresetFiles"]
+include = [
+    "src/**/*.py",
+    "PresetFiles/*.txt",
+    "PresetFiles/*.TXT",
+    "PresetFiles/*.xml",
+    "*.py"
+]
+
+[tool.hatch.build.targets.sdist]
+include = [
+    "src/**/*.py",
+    "PresetFiles/*.txt",
+    "PresetFiles/*.TXT", 
+    "PresetFiles/*.xml",
+    "*.py",
+    "pyproject.toml",
+    "README.md",
+    "LICENSE",
+    "requirements.txt"
+]
+
+# Configuração para uvx
+[tool.uvx]
+entry-point = "src.mcp_server:main"
+python = ">=3.8"
+
+# Configuração para publicação no JFrog
+[tool.hatch.publish.index.repos.jfrog]
+url = "https://tr1.jfrog.io/artifactory/generic-local/taxone/mcp/mcp-busca-municipio-validador"
+username = "0146480"
+password = ""
+
+# Configuração alternativa para twine (se preferir)
+[project.optional-dependencies]
+publish = [
+    "twine>=4.0.0",
+    "build>=0.10.0"
+]
+
+# Metadados adicionais para o MCP
+[tool.mcp]
+name = "busca-municipio-validador"
+description = "Busca e classifica validadores de municípios brasileiros"
+version = "1.0.0"
+tools = [
+    {
+        name = "buscar_municipio",
+        description = "Busca validadores de um município brasileiro"
+    },
+    {
+        name = "classificar_validador", 
+        description = "Classifica a implementação de um validador para um município"
+    },
+    {
+        name = "listar_validadores",
+        description = "Lista todos os validadores cadastrados no sistema"
+    }
+] 

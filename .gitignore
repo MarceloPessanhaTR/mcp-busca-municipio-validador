@@ -27,40 +27,58 @@ share/python-wheels/
 *.egg
 MANIFEST
 
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
 # Virtual environments
 venv/
 ENV/
 env/
 .venv
 
-# PyCharm
-.idea/
-
-# VS Code
+# IDEs
 .vscode/
+.idea/
+*.swp
+*.swo
+*~
 
-# Jupyter Notebook
-.ipynb_checkpoints
-
-# pyenv
-.python-version
-
-# Environments
-.env
-
-# mypy
-.mypy_cache/
-.dmypy.json
-dmypy.json
-
-# Pyre type checker
-.pyre/
-
-# Arquivos de saída do projeto
-municipios_validadores_*.txt
-*.log
-
-# Sistema
+# OS files
 .DS_Store
 Thumbs.db
-desktop.ini 
+
+# Project specific
+municipios_validadores_*.txt
+.pypirc
+.pypirc.tmp
+
+# Credentials
+*.token
+*.key
+*.pem
+.env
+.env.local
+
+# Temporary files
+*.tmp
+*.bak
+*.log 
