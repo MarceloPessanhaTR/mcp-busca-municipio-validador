@@ -1,0 +1,13 @@
+# Dependências do projeto MCP-busca-municipio-validador
+
+# Este projeto utiliza apenas módulos padrão do Python 3
+# Não há dependências externas a serem instaladas
+
+# Módulos padrão utilizados:
+# - os
+# - sys  
+# - collections (defaultdict)
+# - datetime
+# - unicodedata
+
+# Python 3.8+ recomendado 

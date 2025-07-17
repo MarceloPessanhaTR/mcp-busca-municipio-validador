@@ -1,0 +1,776 @@
+AC	401  	NFSE ABACO          	NFSE ABACO                                                       	20170401	510	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+AL	300  	EISSXML             	EISSXML                                                          	20150401	530	N	N	N	N	N	N	N	N	N	N	N	S	20201207	N	N	N	N	N	N	N	N	N	N	N
+AL	300  	NFSE ABACO          	NFSE ABACO                                                       	20201208	530	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+AL	2108 	ISSIntel            	ISSIntel                                                         	19000101	208	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+AL	6703 	ISSIntel            	ISSIntel                                                         	19000101	223	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+AL	8600 	EISSXML             	EISSXML                                                          	20120322	521	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+AM	2603 	NFSE ABACO          	NFSE ABACO                                                       	20180101	073	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+BA	5701 	ISS WEB CAMACARI    	ISS WEB CAMACARI                                                 	19000101	415	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+BA	7509 	SAATRI NFSE         	SAATRI NFSE                                                      	20150601	533	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+BA	10727	SAATRI NFSE         	SAATRI NFSE                                                      	20111212	534	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+BA	13200	SAATRI NFSE         	SAATRI NFSE                                                      	20160607	539	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+BA	14703	SAATRI NFSE         	SAATRI NFSE                                                      	20121231	536	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+BA	17003	SAATRI NFSE         	SAATRI NFSE                                                      	20110415	540	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+BA	17508	SAATRI NFSE         	SAATRI NFSE                                                      	20111130	538	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+BA	19207 	NFTS ONLINE         	NFTS ONLINE                                                      	20160617	527	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+BA	22003	SAATRI NFSE         	SAATRI NFSE                                                      	20111130	537	N	N	N	N	N	N	N	N	N	N	N	S	20190423	N	N	N	N	N	N	N	N	N	N	N
+BA	22003	BETHA               	BETHA                                                            	20190424	537	S	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	S	N	N	N
+BA	29206	SAATRI NFSE         	SAATRI NFSE                                                      	20160404	535	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+BA	25303	ISSIntel            	ISSIntel                                                         	19000101	203	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+BA	27408	DMS                 	DMS - Declaracao Mensal de Servicos                              	19000101	   	N	N	N	N	N	N	N	N	N	N	N	N		N	N	N	N	N	N	N	N	N	N	N
+BA	30709	DMS SIMOES FILHO    	DMS SIMOES FILHO                                                 	19000101	444	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+BA	31350	GOV DIGITAL         	GOV DIGITAL                                                      	19000101	455	N	N	N	N	N	N	S	N	N	N	N	S	20180331	N	N	N	N	N	N	N	N	N	N	N
+BA	31350	DMS ANCHIETA        	DMS EL                                                           	20180401	455	N	N	N	N	N	N	N	N	N	N	N	N		N	N	N	N	N	N	N	N	N	N	N
+BA	33208 	ISS WEB LAR PAULI   	ISS WEB XML                                                      	19000101	561	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+BA	10057 	SAATRI NFSE         	SAATRI NFSE                                                      	19000101	562	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+BA	15601 	DMS ANCHIETA         	DMS EL                                                          	19000101	563	N	N	N	N	N	N	N	N	N	N	N	N		N	N	N	N	N	N	N	N	N	N	N
+BA	3201 	SAATRI NFSE         	SAATRI NFSE                                                      	19000101	564	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+BA	5909 	SAATRI NFSE         	SAATRI NFSE                                                      	20250501	652	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+CE	1109 	SPEED GOV           	SPEED GOV                                                        	20160601	541	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+CE	3709 	DMISS CAUCAIA       	DMISS CAUCAIA                                                    	19000101	450	N	N	N	N	N	N	N	N	N	N	N	N	20190829	N	N	N	N	N	N	N	N	N	N	N
+CE	3709	SPEED GOV           	SPEED GOV                                                        	20190830	450	N	N	N	N	N	N	N	S	S	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+CE	4103 	ISSIntel            	ISSIntel                                                         	19000101	207	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+CE	4400 	EF-e                	EF-e                                                             	20140724	459	N	N	N	N	N	N	N	N	N	N	N	N		N	N	N	N	N	N	N	N	S	N	N
+CE	5407 	ISSIntel            	ISSIntel                                                         	19000101	214	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+CE	5506 	ISSIntel            	ISSIntel                                                         	19000101	213	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+CE	7304 	ISSIntel            	ISSIntel                                                         	19000101	216	N	N	N	N	N	N	N	N	N	N	N	S	20190311	N	N	N	N	N	N	N	N	N	N	N
+CE	7304	SPEED GOV           	SPEED GOV                                                        	20190312	216	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+CE	7650 	SPEED GOV           	SPEED GOV                                                        	20131217	507	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+CE	9607 	ISSIntel            	ISSIntel                                                         	19000101	227	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+CE	11306	ISSIntel            	ISSIntel                                                         	19000101	228	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+CE	13302	ISSIntel            	ISSIntel                                                         	19000101	232	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+DF	108  	ISS.NET                	ISS.NET                                                          	20230101	622	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+ES	102  	ISSIntel            	ISSIntel                                                         	19000101	204	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+ES	409  	ISS WEB             	ISS WEB                                                          	20121210	403	N	N	N	N	N	N	N	N	N	N	N	S	20150530	N	N	N	N	N	N	N	N	N	N	N
+ES	409  	DMS ANCHIETA        	DMS EL                                                           	20150601	484	N	N	N	N	N	N	N	N	N	N	N	N		N	N	N	N	N	N	N	N	N	N	N
+ES	607  	ATENDENET           	ATENDENET                                                        	19000101	294	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+ES	2405 	DEISS               	DEISS                                                            	19000101	271	S	S	N	S	N	N	N	N	N	N	N	S	20170430	N	N	N	N	N	N	N	N	N	N	N
+ES	2405 	ISS WEB             	ISS WEB                                                          	20170501	271	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+ES	4708 	ISSIntel            	ISSIntel                                                         	19000101	231	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+ES	5002 	ISS WEB             	ISS WEB                                                          	19000101	380	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+ES	5200	ISS ONLINE          	ISS Online Assessor Publico                                      	20061227	410	N	N	N	N	N	N	N	N	N	N	N	S	20061231	N	N	N	N	N	N	N	N	N	N	N
+ES	5200	VVISS               	VVISS - Declaracao Eletronica de Servicos                        	20070101	410	N	N	N	N	N	N	N	N	N	N	N	N	20210121	N	N	N	N	N	N	N	N	N	N	N
+ES	5200	ISS WEB             	ISS WEB                                                          	20210122	410	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+ES	5309 	SUBTI/PMV           	ISISS - Internet Sistema de Imposto sobre Servico                	19000101	071	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+ES	1209 	DMS ANCHIETA        	DMS EL                                                           	20180301	550	N	N	N	N	N	N	N	N	N	N	N	N		N	N	N	N	N	N	N	N	N	N	N
+ES	1308	ISS WEB             	ISS WEB                                                          	20081106	632	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+GO	1108 	ISS.NET             	ISS.NET                                                          	19000101	103	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+GO	1405 	ISS.NET             	ISS.NET                                                          	19000101	104	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+GO	8707 	DMS                 	DMS - Declaracao Mensal de Servicos                              	19000101	064	N	N	N	N	N	N	N	N	N	N	N	N		N	N	N	N	N	N	N	N	N	N	N
+GO	8707 	REST                	REST - Relacao de Servicos de Terceiros                          	19000101	076	N	N	N	N	N	N	N	N	N	N	N	N		N	N	N	N	N	N	N	N	N	N	N
+GO	10109	SIGISS              	SIGISS                                                           	19000101	422	S	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+GO	11503	NFSE CENTI          	NFSE CENTI                                                       	20210617	599	S	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	S	N	N	N
+GO	13103	ISSIntel            	ISSIntel                                                         	19000101	218	N	N	N	N	N	N	N	N	N	N	N	S	20191217	N	N	N	N	N	N	N	N	N	N	N
+GO	14507	SIGEP               	SIGEP                                                            	20200101	640	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+GO	18508	QUIRINOPOLIS        	QUIRINOPOLIS                                                     	19000101	   	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+GO	18805	BETHA               	BETHA                                                            	20170101	531	S	N	N	N	N	N	N	N	N	N	N	S	20190131	N	N	N	N	N	N	N	S	N	N	N
+GO	18805	NFSE CENTI          	NFSE CENTI                                                       	20190201	531	S	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	S	N	N	N
+GO	21403	ATENDENET           	ATENDENET                                                        	19000101	308	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+MA	5302	DS IMPERATRIZ       	DS IMPERATRIZ                                                    	19000101	477	N	N	N	N	N	N	N	N	N	N	N	N		N	N	N	N	N	N	N	N	N	N	N
+MA	11300	ISS DIGITAL         	ISS DIGITAL                                                      	19000101	133	S	S	N	N	N	S	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+MA	12209	ISSIntel            	ISSIntel                                                         	19000101	233	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+MG	1607 	BETHA               	BETHA                                                            	19000101	457	S	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	S	N	N	N
+MG	6200 	ISS DIGITAL BH      	ISS DIGITAL BH                                                   	19000101	061	N	S	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+MG	7109 	ISSIntel            	ISSIntel                                                         	19000101	206	N	N	N	N	N	N	N	N	N	N	N	S	20131202	N	N	N	N	N	N	N	N	N	N	N
+MG	7109 	DEISS               	DEISS                                                            	20131203	206	S	S	N	S	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+MG	7406 	ATENDENET           	ATENDENET                                                        	20220215	610	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+MG	9006 	SIGISS              	SIGISS                                                           	19000101	402	S	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+MG	10004	DEISS               	DEISS                                                            	19000101	268	S	S	N	S	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+MG	11408 	ISS WEB             	ISS WEB                                                          	20171002	617	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+MG	13404	DEISS               	DEISS                                                            	19000101	269	S	S	N	S	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+MG	14402	ISSIntel            	ISSIntel                                                         	19000101	209	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+MG	14550	GOV DIGITAL         	NFE-CIDADES                                                      	19000101	165	N	N	N	N	N	N	S	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+MG	16605	ISSIntel            	ISSIntel                                                         	19000101	210	N	N	N	N	N	N	N	N	N	N	N	S	20160905	N	N	N	N	N	N	N	N	N	N	N
+MG	16605	BETHA               	BETHA                                                            	20160906	210	S	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	S	N	N	N
+MG	18007	BETHA               	BETHA                                                            	19000101	370	S	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	S	N	N	N
+MG	18601	DEISS               	DEISS                                                            	19000101	185	S	S	N	S	N	N	N	N	N	N	N	S	20180531	N	N	N	N	N	N	N	N	N	N	N
+MG	22306	GOV DIGITAL         	NFE-CIDADES                                                      	19000101	166	N	N	N	N	N	N	S	N	N	N	N	S	20231130	N	N	N	N	N	N	N	N	N	N	N
+MG	22306	BETHA               	BETHA                                                            	20231201	166	S	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	S	N	N	N
+MG	27701	ISS ONLINE 4R       	ISS Online 4R Sistemas                                           	19000101	406	N	N	N	N	N	N	N	N	N	N	N	S	20180331	N	N	N	N	N	N	N	N	N	N	N
+MG	27701	SIGISS              	SIGISS                                                           	20180401	406	S	N	N	N	N	N	N	N	N	N	N	S	 	N	N	N	N	N	N	N	N	N	N	N
+MG	28105	ISSIntel            	ISSIntel                                                         	19000101	211	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+MG	28709	GOV DIGITAL         	NFE-CIDADES                                                      	19000101	167	N	N	N	N	N	N	S	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+MG	29806	DMS ANCHIETA        	DMS EL                                                           	20180401	553	N	N	N	N	N	N	N	N	N	N	N	N	20250228	N	N	N	N	N	N	N	N	N	N	N
+MG	29806	SIAP.NET            	SIAP.NET                                                         	20250301	553	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+MG	31307	ISSINTEL            	ISSINTEL                                                         	20120301	   	N	N	N	N	N	N	N	N	N	N	N	S	20131006	N	N	N	N	N	N	N	N	N	N	N
+MG	31307	NFSE NACIONAL       	NFSE NACIONAL                                                    	20131007	518	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+MG	31703	DEISS               	DEISS                                                            	19000101	187	S	S	N	S	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+MG	32404	GOV DIGITAL         	NFE-CIDADES                                                      	19000101	168	N	N	N	N	N	N	S	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+MG	34202	ISS WEB             	ISS WEB                                                          	19000101	384	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+MG	36207	SIMPLISS            	SIMPLISS                                                         	20131001	532	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+MG	36702	DIFJF               	Declaracoes de Informacoes Fiscais                               	19000101	283	N	N	N	N	N	N	N	N	N	N	N	N	20201031	N	N	N	N	N	N	N	N	N	N	N
+MG	36702	FINTELISS           	FINTELISS                                                        	20201101	283	S	N	N	N	N	N	N	N	N	N	N	S		S	N	N	N	N	N	N	N	N	N	N
+MG	37601	GOV DIGITAL         	NFE-CIDADES                                                      	20211025	606	N	N	N	N	N	N	S	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+MG	38203	GOV DIGITAL         	NFE-CIDADES                                                      	19000101	169	N	N	N	N	N	N	S	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+MG	39607	ISS.NET             	ISS.NET                                                          	19000101	106	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+MG	43302	DEISS               	DEISS                                                            	19000101	188	S	S	N	S	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+MG	44805	SUPERNOVA           	SUPERNOVA                                                        	20091230	630	N	N	N	N	N	N	N	N	N	N	N	S	20210329	N	N	N	N	N	N	N	N	S	N	N
+MG	44805	NFSE ABACO          	NFSE ABACO                                                       	20210330	630	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+MG	47907	ISSIntel            	ISSIntel                                                         	19000101	221	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+MG	48004	ISSIntel            	ISSIntel                                                         	19000101	222	N	N	N	N	N	N	N	N	N	N	N	S	20141126	N	N	N	N	N	N	N	N	N	N	N
+MG	48004	ISS WEB             	ISS WEB                                                          	20201112	222	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+MG	49309	GOV DIGITAL         	NFE-CIDADES                                                      	19000101	170	N	N	N	N	N	N	S	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+MG	51800	GOV DIGITAL         	NFE-CIDADES                                                      	19000101	171	N	N	N	N	N	N	S	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+MG	52501	GOV DIGITAL         	GOV DIGITAL                                                      	19000101	172	N	N	N	N	N	N	S	N	N	N	N	S	20200531	N	N	N	N	N	N	N	N	N	N	N
+MG	52501	SIGCORP             	SIGCORP                                                          	20200601	172	N	N	N	N	N	N	N	N	N	N	N	S	20220228	N	N	N	N	N	N	N	N	N	N	N
+MG	52501	SIGISS              	SIGISS                                                          	20220301	172	S	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+MG	52600	ISSIntel            	ISSIntel                                                         	19000101	226	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+MG	52808	GOV DIGITAL         	NFE-CIDADES                                                      	19000101	173	N	N	N	N	N	N	S	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+MG	54606	E-RECEITA           	E-RECEITA                                                        	19000101	490	N	N	N	N	N	N	N	N	N	N	N	S	20190102	N	N	N	N	N	N	N	N	N	N	N
+MG	54606	SUPERNOVA           	SUPERNOVA                                                        	20190103	490	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	S	N	N
+MG	56700	ISS ONLINE          	ISS Online Assessor Publico                                      	19000101	417	N	N	N	N	N	N	N	N	N	N	N	S	20091130	N	N	N	N	N	N	N	N		N	N
+MG	56700	SUPERNOVA           	SUPERNOVA                                                        	20091201	417	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	S	N	N
+MG	56908	BETHA               	BETHA                                                            	20150101	615	S	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	S	N	N	N
+MG	57807	ISSIntel            	ISSIntel                                                         	19000101	202	N	N	N	N	N	N	N	N	N	N	N	S	20140917	N	N	N	N	N	N	N	N	N	N	N
+MG	57807	SUPERNOVA           	SUPERNOVA                                                        	20140918	483	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	S	N	N
+MG	59803	GOV DIGITAL         	NFE-CIDADES                                                      	19000101	174	N	N	N	N	N	N	S	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+MG	68606	GOV DIGITAL         	NFE-CIDADES                                                      	19000101	175	N	N	N	N	N	N	S	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+MG	69307	ISS.NET             	ISS.NET                                                          	19000101	255	N	N	N	N	N	N	N	N	N	N	N	S	20180304	N	N	N	N	N	N	N	N	N	N	N
+MG	69307	DMS ANCHIETA        	DMS EL                                                           	20180305	255	N	N	N	N	N	N	N	N	N	N	N	N		N	N	N	N	N	N	N	N	N	N	N
+MG	70107	WEBISS              	WEBISS                                                           	19000101	   	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+MG	70206	DIFUB               	DIF - Declaracao de Informacoes Fiscais                          	19000101	079	N	N	N	N	N	N	N	N	N	N	N	N	20120112	N	N	N	N	N	N	N	N	N	N	N
+MG	70206	ISS DIGITAL         	ISS DIGITAL                                                      	20120113	079	S	S	N	N	N	S	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+MG	70404	GOV DIGITAL         	NFE-CIDADES                                                      	19000101	176	N	N	N	N	N	N	S	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+MG	70438	GOV DIGITAL         	NFE-CIDADES                                                      	19000101	177	N	N	N	N	N	N	S	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+MG	70800	ISSIntel            	ISSIntel                                                         	19000101	234	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+MG	18304	SUPERNOVA           	SUPERNOVA                                                        	20180201	551	N	N	N	N	N	N	N	N	N	N	N	S	20220213	N	N	N	N	N	N	N	N	S	N	N
+MG	18304	BETHA               	BETHA                                                            	20220214	551	S	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	S	N	N	N
+MG	31901	SUPERNOVA           	SUPERNOVA                                                        	20131015	552	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	S	N	N
+MG	4007 	ISS WEB             	ISS WEB                                                          	20150801	633	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+MG	4106 	SIMPLISS            	SIMPLISS                                                         	20230707	634	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+MS	2704 	ISS DIGITAL         	ISS DIGITAL                                                      	19000101	058	S	S	N	N	N	S	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+MS	3207 	ISS DIGITAL         	ISS DIGITAL                                                      	19000101	132	S	S	N	N	N	S	N	N	N	N	N	S	20181219	N	N	N	N	N	N	N	N	N	N	N
+MS	3207	ISS WEB LAR PAULI   	ISS WEB XML                                                      	20181220	132	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+MS	3702 	ISS.NET             	ISS.NET                                                          	19000101	316	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+MS	5004 	ISSIntel            	ISSIntel                                                         	19000101	215	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+MS	5707 	ISS.NET             	ISS.NET                                                          	19000101	107	N	N	N	N	N	N	N	N	N	N	N	S	20161031	N	N	N	N	N	N	N	N	N	N	N
+MS	5707 	DEISS               	DEISS                                                            	20161101	107	S	S	N	S	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+MS	6002 	ISS.NET             	ISS.NET                                                          	19000101	318	N	N	N	N	N	N	N	N	N	N	N	S	20180930	N	N	N	N	N	N	N	N	N	N	N
+MS	6002 	ISS WEB LAR PAULI   	ISS WEB XML                                                      	20181001	318	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+MS	6200 	BETHA               	BETHA                                                            	19000101	371	S	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	S	N	N	N
+MS	7208 	ISS.NET             	ISS.NET                                                          	19000101	317	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+MS	4601 	BETHA               	BETHA                                                            	20250101	649	S	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	S	N	N	N
+MT	201  	BETHA               	BETHA                                                            	20120419	509	S	N	N	N	N	N	N	N	N	N	N	S	20191030	N	N	N	N	N	N	N	S	N	N	N
+MT	201  	NFSE NACIONAL       	NFSE NACIONAL                                                    	20191031	509	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+MT	250  	ISS.NET             	ISS.NET                                                          	19000101	102	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+MT	1001 	ISS.NET             	ISS.NET                                                          	19000101	377	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+MT	2504 	FISS LEX            	FISS LEX                                                         	19000101	428	N	N	N	N	N	N	N	N	N	N	N	N		N	N	N	N	N	N	N	N	N	N	N
+MT	3403 	ISS.NET             	ISS.NET                                                          	19000101	090	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+MT	6505 	ISSIntel            	ISSIntel                                                         	19000101	224	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+MT	6778 	ISSIntel            	ISSIntel                                                         	19000101	225	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+MT	7107 	ISSIntel            	ISSIntel                                                         	19000101	230	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+MT	7602 	ISSIntel            	ISSIntel                                                         	19000101	229	N	N	N	N	N	N	N	N	N	N	N	S	20120612	N	N	N	N	N	N	N	N	N	N	N
+MT	7602 	NFSE ABACO          	NFSE ABACO                                                       	20120613	229	N	N	N	N	N	N	N	N	N	N	N	S	20230831	N	N	N	N	N	N	N	N	N	N	N
+MT	7602 	AGILIBlue           	AGILIBlue                                                        	20230901	229	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+MT	7925 	ISS.NET             	ISS.NET                                                          	19000101	093	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+MT	7958 	ISS.NET             	ISS.NET                                                          	19000101	109	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+MT	8402 	ISS.NET             	ISS.NET                                                          	19000101	110	N	N	N	N	N	N	N	N	N	N	N	S	20151031	N	N	N	N	N	N	N	N	N	N	N
+MT	8402 	BETHA               	BETHA                                                            	20151101	110	S	N	N	N	N	N	N	N	N	N	N	S	20170716	N	N	N	N	N	N	N	S	N	N	N
+MT	8402 	NFSE ABACO          	NFSE ABACO                                                       	20170717	110	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+PA	602  	MEUISS              	MEUISS                                                           	20140102	542	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+PA	1402 	ISS DIGITAL         	ISS DIGITAL                                                      	19000101	130	S	S	N	N	N	S	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+PA	4208 	DS MARABA           	DS MARABA                                                        	19000101	458	N	N	N	N	N	N	N	N	N	N	N	N		N	N	N	N	N	N	N	N	N	N	N
+PA	4422 	ISSIntel            	ISSIntel                                                         	19000101	217	N	N	N	N	N	N	N	N	N	N	N	S	20130131	N	N	N	N	N	N	N	N	N	N	N
+PA	4422 	MEUISS              	MEUISS                                                           	20130201	217	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+PA	5536 	DEST                	DEST                                                             	19000101	547	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+PB	3209 	REMESSAXML          	REMESSAXML                                                       	19000101	445	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	S	S	N	N	N	N	N	N
+PB	4009 	ISSINTEL            	ISSINTEL                                                         	20130930	420	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+PE	2902 	REMESSAXML          	REMESSAXML                                                       	19000101	320	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	S	S	N	N	N	N	N	N
+PE	3454 	REMESSA             	REMESSA                                                          	19000101	369	N	N	N	N	N	N	N	N	N	N	N	S	20140313	N	N	S	S	S	N	N	N	N	N	N
+PE	3454 	REMESSAXML          	REMESSAXML                                                       	20140314	369	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	S	S	N	N	N	N	N	N
+PE	7208 	ISS ONLINE          	ISS Online Assessor Publico                                      	19000101	264	N	N	N	N	N	N	N	N	N	N	N	S	20200731	N	N	N	N	N	N	N	N	N	N	N
+PE	7208 	REMESSAXML          	REMESSAXML                                                       	20200801	264	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	S	S	N	N	N	N	N	N
+PE	7901 	REMESSA             	REMESSA                                                          	19000101	353	N	N	N	N	N	N	N	N	N	N	N	S	20130812	N	N	S	S	S	N	N	N	N	N	N
+PE	7901 	REMESSAXML          	REMESSAXML                                                       	20130813	353	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	S	S	N	N	N	N	N	N
+PE	9600 	OLINDA              	OLINDA                                                           	19000101	362	N	N	N	N	N	N	N	N	N	N	N	N	20160630	N	N	N	N	N	N	N	N	N	N	N
+PE	9600 	REMESSAXML          	REMESSAXML                                                       	20160701	362	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	S	S	N	N	N	N	N	N
+PE	11606	DSRe                	DSRe                                                             	20141001	446	N	N	N	N	N	N	N	N	N	N	N	N		N	N	N	N	N	N	N	N	N	N	N
+PE	16407	REMESSAXML          	REMESSAXML                                                       	20130716	498	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	S	S	N	N	N	N	N	N
+PI	7009 	ISSIntel            	ISSIntel                                                         	19000101	219	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+PI	8007 	ISSIntel            	ISSIntel                                                         	19000101	220	N	N	N	N	N	N	N	N	N	N	N	S	20151231	N	N	N	N	N	N	N	N	N	N	N
+PI	8007 	ISS WEB             	ISS WEB                                                          	20160101	220	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+PI	11001	ISS DIGITAL         	ISS DIGITAL                                                      	19000101	068	S	S	N	N	N	S	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+PR	400  	BETHA               	BETHA                                                            	19000101	364	S	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	S	N	N	N
+PR	1408 	ISS ONLINE          	ISS Online Assessor Publico                                      	19000101	263	N	N	N	N	N	N	N	N	N	N	N	S	20150930	N	N	N	N	N	N	N	N	N	N	N
+PR	1408 	DEISS               	DEISS                                                            	20131001	263	S	S	N	S	N	N	N	N	N	N	N	S	20240704	N	N	N	N	N	N	N	N	N	N	N
+PR	1408 	ATENDENET           	ATENDENET                                                         	20240705	263	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+PR	1507 	DEISS               	DEISS                                                            	19000101	451	S	S	N	S	N	N	N	N	N	N	N	S	20150131	N	N	N	N	N	N	N	N	N	N	N
+PR	1507	ATENDENET           	ATENDENET                                                        	20150201	451	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+PR	1606 	SIGISS              	SIGISS                                                           	19000101	236	S	N	N	N	N	N	N	N	N	N	N	S	20241215	N	N	N	N	N	N	N	N	N	N	N
+PR	1606	ATENDENET           	ATENDENET                                                        	20241216	236	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+PR	1804	ATENDENET           	ATENDENET                                                        	20190102	072	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+PR	2307 	SIGISS              	SIGISS                                                           	19000101	238	S	N	N	N	N	N	N	N	N	N	N	S	20230530	N	N	N	N	N	N	N	N	N	N	N
+PR	2307 	FINTELISS           	FINTELISS                                                        	20230601	238	S	N	N	N	N	N	N	N	N	N	N	S		S	N	N	N	N	N	N	N	N	N	N
+PR	4006 	SIGISS              	SIGISS                                                           	19000101	486	S	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+PR	4204 	ATENDENET           	ATENDENET                                                        	19000101	296	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+PR	4303 	ATENDENET           	ATENDENET                                                        	19000101	297	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+PR	4808 	ISS.NET             	ISS.NET                                                          	19000101	253	N	N	N	N	N	N	N	N	N	N	N	S	20200802	N	N	N	N	N	N	N	N	N	N	N
+PR	4808 	ATENDENET           	ATENDENET                                                        	20200803	253	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+PR	4907 	ATENDENET           	ATENDENET                                                        	19000101	298	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+PR	5508 	SIGISS              	SIGISS                                                           	19000101	136	S	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+PR	5805 	SIGISS              	SIGISS                                                           	19000101	447	S	N	N	N	N	N	N	N	N	N	N	S	20141130	N	N	N	N	N	N	N	N	N	N	N
+PR	5805 	ATENDENET           	ATENDENET                                                        	20141201	447	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+PR	6407 	BETHA               	BETHA                                                            	19000101	141	S	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	S	N	N	N
+PR	6902 	ISS                 	ISS - Imposto sobre Servicos                                     	19000101	   	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+PR	7652 	BETHA               	BETHA                                                            	19000101	151	S	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	S	N	N	N
+PR	8601 	BETHA               	BETHA                                                            	19000101	158	S	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	S	N	N	N
+PR	9401 	DEISS               	DEISS                                                            	19000101	487	S	S	N	S	N	N	N	N	N	N	N	S	20210831	N	N	N	N	N	N	N	N	N	N	N
+PR	9401 	ATENDENET           	ATENDENET                                                        	20210901	487	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+PR	9609 	ISSIntel            	ISSIntel                                                         	19000101	212	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+PR	10607	DEISS               	DEISS                                                            	20130202	437	S	S	N	S	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+PR	10706	ATENDENET           	ATENDENET                                                        	19000101	301	N	N	N	N	N	N	N	N	N	N	N	S	20140630	N	N	N	N	N	N	N	N	N	N	N
+PR	10706	FINTELISS           	FINTELISS                                                        	20140701	301	S	N	N	N	N	N	N	N	N	N	N	S	 	S	N	N	N	N	N	N	N	N	N	N
+PR	11506	SIGISS              	SIGISS                                                           	19000101	423	S	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+PR	11803	SIGISS              	SIGISS                                                           	19000101	244	S	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+PR	13205	BETHA               	BETHA                                                            	19000101	143	S	N	N	N	N	N	N	N	N	N	N	S	20120331	N	N	N	N	N	N	N	S	N	N	N
+PR	13205	ISS WEB             	ISS WEB                                                          	20120401	143	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+PR	13700	SIGISS              	SIGISS                                                           	19000101	137	S	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+PR	15200	ISS FACIL           	ISS FACIL                                                        	19000101	258	N	N	N	N	N	N	N	N	N	N	N	N	20120805	N	N	N	N	N	N	N	N	N	N	N
+PR	15200	DMSe                	DMSe                                                             	20120806	258	N	N	N	N	N	N	N	N	N	N	N	N	 	N	N	N	N	N	N	N	N	N	N	N
+PR	15408	DEISS               	DEISS                                                            	20120514	439	S	S	N	S	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+PR	17305	SIGISS              	SIGISS                                                           	19000101	248	S	N	N	N	N	N	N	N	N	N	N	S	20111222	N	N	N	N	N	N	N	N	N	N	N
+PR	17305	BETHA               	BETHA                                                            	20111223	248	S	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	S	N	N	N
+PR	17701	SIGISS              	SIGISS                                                           	19000101	249	S	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+PR	18204	ATENDENET           	ATENDENET                                                        	20151201	462	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+PR	18402	BETHA               	BETHA                                                            	19000101	160	S	N	N	N	N	N	N	N	N	N	N	S	20221031	N	N	N	N	N	N	N	S	N	N	N
+PR	18402	ATENDENET           	ATENDENET                                                        	20221101	160	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+PR	18501	DEISS               	DEISS                                                            	19000101	275	S	S	N	S	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+PR	18709	BETHA               	BETHA                                                            	20230726	635	S	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	S	N	N	N
+PR	19152	ATENDENET           	ATENDENET                                                        	19000101	303	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+PR	19509	DEISS               	DEISS                                                            	19000101	276	S	S	N	S	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+PR	19905	FINTELISS           	FINTELISS                                                        	20110201	196	S	N	N	N	N	N	N	N	N	N	N	S		S	N	N	N	N	N	N	N	N	N	N
+PR	20804	SIGISS              	SIGISS                                                           	19000101	252	S	N	N	N	N	N	N	N	N	N	N	S	20170726	N	N	N	N	N	N	N	N	N	N	N
+PR	20804	BETHA               	BETHA                                                            	20170727	252	S	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+PR	22305	DEISS               	DEISS                                                            	19000101	189	S	S	N	S	N	N	N	N	N	N	N	S	20240930	N	N	N	N	N	N	N	N	N	N	N
+PR	22305	ATENDENET           	ATENDENET                                                        	20241001	189	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+PR	22404	DEISS               	DEISS                                                            	19000101	278	S	S	N	S	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+PR	24103	DEISS               	DEISS                                                            	20110916	438	S	S	N	S	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+PR	25506	REMESSA PMSJP       	REMESSA PMSJP                                                    	19000101	485	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+PR	25605	BETHA               	BETHA                                                            	19000101	163	S	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	S	N	N	N
+PR	27106	ATENDENET           	ATENDENET                                                        	20160501	145	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+PR	27106	BETHA               	BETHA                                                            	19000101	145	S	N	N	N	N	N	N	N	N	N	N	S	20160430	N	N	N	N	N	N	N	S	N	N	N
+PR	27502	ATENDENET           	ATENDENET                                                        	19000101	305	N	N	N	N	N	N	N	N	N	N	N	S	20221031	N	N	N	N	N	N	N	N	N	N	N
+PR	27502	FINTELISS           	FINTELISS                                                        	20221101	305	S	N	N	N	N	N	N	N	N	N	N	S		S	N	N	N	N	N	N	N	N	N	N
+PR	27957	DEISS               	DEISS                                                            	20120831	434	S	S	N	S	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+PR	28203	BETHA               	BETHA                                                            	19000101	456	S	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	S	N	N	N
+PR	1101	NFSE NACIONAL       	NFSE NACIONAL                                                    	20160303	582	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+RJ	100  	SPE                 	SPE                                                              	19000101	345	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+RJ	407  	SPE                 	SPE                                                              	19000101	346	N	N	N	N	N	N	N	N	N	N	N	S	20170130	N	N	N	N	N	N	N	N	N	N	N
+RJ	407  	ISS ONLINE          	ISS Online Assessor Publico                                      	20170131	346	N	N	N	N	N	N	N	N	N	N	N	S	20180831	N	N	N	N	N	N	N	N	N	N	N
+RJ	407  	ISS.NET             	ISS.NET                                                          	20180901	346	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+RJ	704  	ISS DIGITAL CF      	ISS DIGITAL CF                                                   	19000101	393	N	N	N	N	N	N	N	N	N	N	N	N	20171130	N	N	N	N	N	N	N	N	N	N	N
+RJ	704  	SUPERNOVA           	SUPERNOVA                                                        	20171201	393	N	N	N	N	N	N	N	N	N	N	N	S	20200930	N	N	N	N	N	N	N	N	S	N	N
+RJ	704  	SIGCORP             	SIGCORP                                                         	20200101	393	N	N	N	N	N	N	N	N	N	N	N	N	20201025	N	N	N	N	N	N	N	N	N	N	N
+RJ	704  	SIGISS              	SIGISS                                                           	20201026	393	S	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+RJ	1876 	ISS DIGITAL CF      	ISS DIGITAL CF                                                   	20130601	623	N	N	N	N	N	N	N	N	N	N	N	N		N	N	N	N	N	N	N	N	N	N	N
+RJ	2007 	SPE                 	SPE                                                              	19000101	347	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+RJ	2056 	DEISS               	DEISS                                                            	20150901	545	S	S	N	S	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+RJ	2205 	ISSINTEL            	ISSINTEL                                                         	19000101	501	N	N	N	N	N	N	N	N	N	N	N	S	20150727	N	N	N	N	N	N	N	N	N	N	N
+RJ	2205 	DEISS               	DEISS                                                           	20150728	501	S	S	N	S	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+RJ	2254 	BETHA               	BETHA                                                            	19000101	153	S	N	N	N	N	N	N	N	N	N	N	S	20180930	N	N	N	N	N	N	N	S	N	N	N
+RJ	2254 	ISS.NET             	ISS.NET                                                          	20181001	153	N	N	N	N	N	N	N	N	N	N	N	S	20250119	N	N	N	N	N	N	N	N	N	N	N
+RJ	2254 	BETHA               	BETHA                                                            	20250120	153	S	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	S	N	N	N
+RJ	2403 	SPE                 	SPE                                                              	19000101	349	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+RJ	2601 	SPE                 	SPE                                                              	19000101	350	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+RJ	3302 	SPE                 	SPE                                                              	20180504	554	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+RJ	3401 	WEBISS              	WEBISS                                                           	19000101	   	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+RJ	3500 	ISS DIGITAL         	ISS DIGITAL                                                      	19000101	257	S	S	N	N	N	S	N	N	N	N	N	S	20160331	N	N	N	N	N	N	N	N	N	N	N
+RJ	3906 	PETROPOLIS          	PETROPOLIS                                                       	19000101	282	N	S	N	N	N	N	N	N	N	N	N	S	20130430	N	N	N	N	N	N	N	N	N	N	N
+RJ	3906 	DES XML             	DES XML                                                          	20130501	282	N	S	N	N	N	N	N	N	N	N	N	N	20180531	N	N	N	N	N	N	N	N	N	N	N
+RJ	3906 	SIGISS              	SIGISS                                                           	20180601	282	S	N	N	N	N	N	N	N	N	N	N	S	20230331	N	N	N	N	N	N	N	N	N
+RJ	3906 	MEUISS              	MEUISS                                                           	20230401	282	S	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N
+RJ	4201 	SPE                 	SPE                                                              	19000101	348	N	N	N	N	N	N	N	N	N	N	N	S	20180202	N	N	N	N	N	N	N	N	N	N	N
+RJ	4201 	BETHA               	BETHA                                                            	20180203	348	S	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	S	N	N	N
+RJ	4300 	BETHA               	BETHA                                                            	19000101	480	S	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	S	N	N	N
+RJ	4508 	BETHA               	BETHA                                                            	19000101	367	S	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	S	N	N	N
+RJ	4524 	SPE                 	SPE                                                              	19000101	351	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+RJ	4557 	DIEF                	DIEF - Declaracao de Informacoes Economico-Fiscais               	19000101	   	N	N	N	N	N	N	N	N	N	N	N	N		N	N	N	N	N	N	N	N	N	N	N
+RJ	4557 	NOTA CARIOCA        	Nota Carioca - Envio de RPS e Declaracao de Nota Recebida em lote	19000101	075	N	N	N	N	N	N	N	N	N	N	N	N		N	N	N	N	N	N	N	N	N	N	N
+RJ	4706 	DEISS               	DEISS                                                            	20111214	544	S	S	N	S	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+RJ	4904 	SIGISS              	SIGISS                                                           	19000101	358	S	N	N	N	N	N	N	N	N	N	N	S	20200914	N	N	N	N	N	N	N	N	N	N	N
+RJ	5109 	SIGISS              	SIGISS                                                           	19000101	200	S	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+RJ	5802 	WEBISS              	WEBISS                                                           	19000101	   	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+RJ	6008 	FGMAISS             	FGMAISS                                                          	19000101	329	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+RJ	6305 	SIMPLISS            	SIMPLISS                                                         	19000101	560	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+RJ	1306 	ISS.NET             	ISS.NET                                                          	20190328	572	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+RN	2006	REMESSAXML          	REMESSAXML                                                       	20210101	607	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	S	S	N	N	N	N	N	N
+RN	3251	DMS                 	DMS Parnamirim                                                   	19000101	405	N	N	N	N	N	N	N	N	N	N	N	N	20210615	N	N	N	N	N	N	S	N	N	N	N
+RN	3251	REMESSAXML          	REMESSAXML                                                       	20210616	405	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	S	S	N	N	N	N	N	N
+RN	8003 	REMESSA             	REMESSA                                                          	19000101	368	N	N	N	N	N	N	N	N	N	N	N	S	20190320	N	N	S	S	S	N	N	N	N	N	N
+RN	8003	REMESSAXML          	REMESSAXML                                                       	20190321	368	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	S	S	N	N	N	N	N	N
+RN	8102 	REMESSA (SEMUT)     	DDS - Declaracao Digital de Servicos                             	19000101	   	N	N	N	N	N	N	N	N	N	N	N	N		N	N	N	N	N	N	N	N	N	N	N
+RN	9407	REMESSAXML          	REMESSAXML                                                       	20180101	608	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	S	S	N	N	N	N	N	N
+RO	64   	DEISS               	DEISS                                                            	20120611	435	S	S	N	S	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+RO	205  	GIM ONLINE          	PORTO VELHO - GIM ONLINE                                         	19000101	460	N	N	N	N	N	N	N	N	N	N	N	N		N	N	N	N	N	N	N	N	N	N	N
+RO	304  	ISS.NET             	ISS.NET                                                          	19000101	094	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+RR	100  	SEMFI               	DMS - Declaracao Mensal de Servicos                              	19000101	   	N	N	N	N	N	N	N	N	N	N	N	N	20190603	N	N	N	N	N	N	N	N	N	N	N
+RR	100  	SAATRI NFSE         	SAATRI NFSE                                                      	20190604	574	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+RS	406  	ISSIntel            	ISSIntel                                                         	19000101	205	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+RS	604  	ATENDENET           	ATENDENET                                                        	20180201	555	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+RS	2105 	BETHA               	BETHA                                                            	19000101	284	S	N	N	N	N	N	N	N	N	N	N	S	20190131	N	N	N	N	N	N	N	S	N	N	N
+RS	2105 	ATENDENET           	ATENDENET                                                        	20190201	284	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+RS	3103 	DES ONLINE          	DES ONLINE                                                       	20091001	525	N	N	N	N	N	N	N	N	N	N	N	S	20200430	N	N	N	N	N	N	N	N	N	N	N
+RS	3509 	SIGISS              	SIGISS                                                           	19000101	421	S	N	N	N	N	N	N	N	N	N	N	S	20150331	N	N	N	N	N	N	N	N	N	N	N
+RS	3509	DEISS               	DEISS                                                            	20150401	421	S	S	N	S	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+RS	3905	DMSe CAMPO BOM      	DMSe CAMPO BOM                                                   	19000101	441	N	N	N	N	N	N	N	N	N	N	N	N	20210817	N	N	N	N	N	N	N	N	N	N	N
+RS	3905	DMSTE Caxias        	DMSTE                                                              	20210818	441	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+RS	4606 	CANOAS              	CANOAS                                                           	19000101	319	N	N	N	N	N	N	N	N	N	N	N	S	20110613	N	S	N	N	N	N	N	N	N	N	N
+RS	4606	NFSE ABACO          	NFSE ABACO                                                       	20110614	319	N	N	N	N	N	N	N	N	N	N	N	S	20240310	N	N	N	N	N	N	N	N	N	N	N
+RS	4606	DMSTE Caxias        	DMSTE                                                           	20240311	319	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+RS	4630 	SIGISS              	SIGISS                                                           	19000101	241	S	N	N	N	N	N	N	N	N	N	N	S	20150228	N	N	N	N	N	N	N	N	N	N	N
+RS	4630	BETHA               	BETHA                                                            	20150301	241	S	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	S	N	N	N
+RS	5108	SIGAMWEB            	SIGAMWEB                                                         	19000101	191	N	N	S	N	N	N	N	N	N	N	N	S	20150531	N	N	N	N	N	N	N	N	N	N	N
+RS	5108	DMSTE Caxias        	DMSTE                                                           	20150601	191	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+RS	6106 	ISS.NET             	ISS.NET                                                          	19000101	105	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+RS	7708 	EGOVERNO            	EGOVERNO                                                         	19000101	311	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+RS	9100 	BETHA               	BETHA                                                            	19000101	152	S	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	S	N	N	N
+RS	9209 	DEISS               	DEISS                                                            	19000101	270	S	S	N	S	N	N	N	N	N	N	N	S	20080629	N	N	N	N	N	N	N	N	N	N	N
+RS	9209	ATENDENET           	ATENDENET                                                        	20080630	270	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+RS	9407 	DEISS               	DEISS                                                            	20091203	431	S	S	N	S	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+RS	9605 	DEISS               	DEISS                                                            	19000101	413	S	S	N	S	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+RS	10108	ATENDENET           	ATENDENET                                                        	20151229	558	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+RS	10207	DEISS               	DEISS                                                            	19000101	272	S	S	N	S	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+RS	11403	EGOVERNO            	EGOVERNO                                                         	19000101	312	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+RS	11809	DEISS               	DEISS                                                            	19000101	274	S	S	N	S	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+RS	12401	MONTENEGRO          	MONTENEGRO                                                       	19000101	414	N	N	N	N	N	N	N	N	N	N	N	N		N	N	N	N	N	N	N	N	N	N	N
+RS	12658	DES GASPAR          	DES - THEMA                                                      	19000101	589	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+RS	13375	DEISS               	DEISS                                                            	19000101	372	S	S	N	S	N	N	N	N	N	N	N	S	20210325	N	N	N	N	N	N	N	N	N	N	N
+RS	13375	ATENDENET           	ATENDENET                                                        	20210326	372	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+RS	13409	SIGAMWEB            	SIGAMWEB                                                         	19000101	192	N	N	S	N	N	N	N	N	N	N	N	S	20171231	N	N	N	N	N	N	N	N	N	N	N
+RS	13409	ISS.NET             	ISS.NET                                                          	20180101	192	N	N	N	N	N	N	N	N	N	N	N	S	20240930	N	N	N	N	N	N	N	N	N	N	N
+RS	13409	ATENDENET           	ATENDENET                                                         	20241001	192	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+RS	14050	SIGISS              	SIGISS                                                           	19000101	250	S	N	N	N	N	N	N	N	N	N	N	S	20140731	N	N	N	N	N	N	N	N	N	N	N
+RS	14050	DMSe Parobe         	DMSe Parobe                                                      	20140801	250	N	N	N	N	N	N	N	N	N	N	N	N		N	N	N	N	N	N	N	N	N	N	N
+RS	14100	GOV DIGITAL         	GOV DIGITAL                                                      	19000101	   	N	N	N	N	N	N	S	N	N	N	N	S	20130630	N	N	N	N	N	N	N	N	N	N	N
+RS	14100	EGOVERNO            	EGOVERNO                                                         	20130701	411	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+RS	14407	GOV DIGITAL         	NFE-CIDADES                                                      	20170327	511	N	N	N	N	N	N	S	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+RS	14902	ISSQNDEC            	ISSQN - Imposto sobre Servicos de Qualquer Natureza              	19000101	065	N	N	N	N	N	N	N	N	N	N	N	N		N	N	N	N	N	N	N	N	N	N	N
+RS	15602	SIGISS              	SIGISS                                                           	19000101	293	S	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+RS	16808	DES GASPAR          	DES - THEMA                                                      	19000101	546	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+RS	16907	ISS.NET             	ISS.NET                                                          	19000101	092	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+RS	17103	SIGISS              	SIGISS                                                           	19000101	424	S	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+RS	17202	DEISS               	DEISS                                                            	19000101	279	S	S	N	S	N	N	N	N	N	N	N	S	20090116	N	N	N	N	N	N	N	N	N	N	N
+RS	17202	ATENDENET           	ATENDENET                                                        	20090117	279	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+RS	17509	SANTO ANGELO        	SANTO ANGELO                                                     	19000101	429	N	N	N	N	N	N	N	N	N	N	N	N		N	N	N	N	N	N	N	N	N	N	N
+RS	17608	EGOVERNO            	EGOVERNO                                                         	19000101	313	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+RS	18002	BETHA               	BETHA                                                            	19000101	156	S	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	S	N	N	N
+RS	18309	DEISS               	DEISS                                                            	19000101	416	S	S	N	S	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+RS	18705	EGOVERNO            	EGOVERNO                                                         	19000101	314	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+RS	19901	SIGISS              	SIGISS                                                           	19000101	138	S	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+RS	20800	DEISS               	DEISS                                                            	20130503	432	S	S	N	S	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+RS	21204	EGOVERNO            	EGOVERNO                                                         	19000101	363	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+RS	22004	DEISS               	DEISS                                                            	19000101	190	S	S	N	S	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+RS	22400	DEISS               	DEISS                                                            	19000101	315	S	S	N	S	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+RS	22509	DEISS               	DEISS                                                            	19000101	281	S	S	N	S	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+RS	22707 	DEISS               	DEISS                                                            	20171101	543	S	S	N	S	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+RS	23002	VIAMAO              	VIAMAO                                                           	19000101	394	N	N	N	N	N	N	N	N	N	N	N	N	20161201	N	N	N	N	N	N	N	N	N	N	N
+RS	23002	DEISS               	DEISS                                                            	20161202	394	S	S	N	S	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SC	1307 	DEISS               	DEISS                                                            	19000101	427	S	S	N	S	N	N	N	N	N	N	N	S	20150831	N	N	N	N	N	N	N	N	N	N	N
+SC	1307 	ATENDENET           	ATENDENET                                                        	20150901	427	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SC	1406 	MEUISS              	MEUISS                                                           	20101101	430	N	N	N	N	N	N	N	N	N	N	N	S	20220731	N	N	N	N	N	N	N	N	N	N	N
+SC	1406 	ATENDENET           	ATENDENET                                                        	20220801	430	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SC	1950 	MEUISS              	MEUISS                                                           	19000101	330	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SC	2008 	SIGAMWEB            	SIGAMWEB                                                         	19000101	373	N	N	S	N	N	N	N	N	N	N	N	S	20131231	N	N	N	N	N	N	N	N	N	N	N
+SC	2008	SIMPLISS            	SIMPLISS                                                         	20140101	373	N	N	N	N	N	N	N	N	N	N	N	S	20220228	N	N	N	N	N	N	N	N	N	N	N
+SC	2008 	DECLARAR DIR        	DECLARAR DIR                                                     	20220301	373	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SC	2305 	BETHA               	BETHA                                                            	19000101	365	S	N	N	N	N	N	N	N	N	N	N	S	20241113	N	N	N	N	N	N	N	S	N	N	N
+SC	2305 	ATENDENET           	ATENDENET                                                        	20241114	365	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SC	2453 	BETHA               	BETHA                                                            	19000101	146	S	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	S	N	N	N
+SC	2909 	ATENDENET           	ATENDENET                                                        	19000101	295	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SC	3006 	BETHA               	BETHA                                                            	19000101	154	S	N	N	N	N	N	N	N	N	N	N	S	20160327	N	N	N	N	N	N	N	S	N	N	N
+SC	3006	DECLARAR DIR        	DECLARAR DIR                                                     	20160328	154	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SC	3808 	BETHA               	BETHA                                                            	19000101	157	S	N	N	N	N	N	N	N	N	N	N	S	20190519	N	N	N	N	N	N	N	S	N	N	N
+SC	3808 	DECLARAR DIR        	DECLARAR DIR                                                     	20190520	157	N	N	N	N	N	N	N	N	N	N	N	S	20241203	N	N	N	N	N	N	N	N	N	N	N
+SC	3808 	ATENDENET           	ATENDENET                                                        	20241204	157	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SC	3956 	MEUISS              	MEUISS                                                           	19000101	331	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SC	4202 	BETHA               	BETHA                                                            	19000101	161	S	N	N	N	N	N	N	N	N	N	N	S	20181231	N	N	N	N	N	N	N	S	N	N	N
+SC	4202 	DECLARAR DIR        	DECLARAR DIR                                                    	20190101	161	N	N	N	N	N	N	N	N	N	N	N	S	20230101	N	N	N	N	N	N	N	N	N	N	N
+SC	4202 	SIGISS               	SIGISS                                                            	20230102	161	S	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SC	4301 	ATENDENET           	ATENDENET                                                        	19000101	299	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SC	4608 	BETHA               	BETHA                                                            	19000101	148	S	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	S	N	N	N
+SC	4806 	BETHA               	BETHA                                                            	19000101	366	S	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	S	N	N	N
+SC	5407 	SEFINNET            	DES - Declaracao Eletronica de Servicos                          	19000101	   	N	N	N	N	N	N	N	N	N	N	N	N		N	N	N	N	N	N	N	N	N	N	N
+SC	5407 	GIFST               	GIFST - Guia de Informacao Fiscal - Substituto Tributario          	20221001	636	N	N	N	N	N	N	N	N	N	N	N	N		N	N	N	N	N	N	N	N	N	N	N
+SC	5456 	MEUISS              	MEUISS                                                           	19000101	332	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SC	5506 	BETHA               	BETHA                                                            	19000101	144	S	N	N	N	N	N	N	N	N	N	N	S	20220418	N	N	N	N	N	N	N	S	N	N	N
+SC	5902 	DEISS               	DEISS                                                            	19000101	186	S	S	N	S	N	N	N	N	N	N	N	S	20131231	N	N	N	N	N	N	N	N	N	N	N
+SC	5902 	DES GASPAR          	DES - THEMA                                                      	20140101	186	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SC	6009 	MEUISS              	MEUISS                                                           	19000101	333	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SC	6504	ATENDENET           	ATENDENET                                                        	19000101	443	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SC	7007 	MEUISS              	MEUISS                                                           	19000101	334	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SC	7304 	BETHA               	BETHA                                                            	19000101	139	S	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	S	N	N	N
+SC	7502 	ATENDENET           	ATENDENET                                                        	19000101	300	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SC	8203 	ITAJAI              	ITAJAI                                                           	19000101	   	N	N	N	N	N	N	N	S	S	N	N	S	20160930	N	N	N	N	N	N	N	N	N	N	N
+SC	8203 	ITAJAI              	ITAJAI                                                           	20190717	   	N	N	N	N	N	N	N	S	S	N	N	S	20191112	N	N	N	N	N	N	N	N	N	N	N
+SC	8203 	DECLARAR DIR        	DECLARAR DIR                                                     	20161001	497	N	N	N	N	N	N	N	N	N	N	N	S	20190716	N	N	N	N	N	N	N	N	N	N	N
+SC	8203 	DECLARAR DIR        	DECLARAR DIR                                                     	20191113	497	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SC	8302 	BETHA               	BETHA                                                            	19000101	142	S	N	N	N	N	N	N	N	N	N	N	S	20161130	N	N	N	N	N	N	N	S	N	N	N
+SC	8302 	MEUISS               	MEUISS                                                           	20161201	142	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SC	8807 	MEUISS              	MEUISS                                                           	19000101	335	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SC	8906 	BETHA               	BETHA                                                            	20161219	508	S	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	S	N	N	N
+SC	9003 	BETHA               	BETHA                                                            	19000101	149	S	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	S	N	N	N
+SC	9102 	JOINVILLE           	JOINVILLE                                                        	19000101	   	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SC	9300 	BETHA               	BETHA                                                            	19000101	086	S	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	S	N	N	N
+SC	9607 	MEUISS              	MEUISS                                                           	19000101	336	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SC	10100	DEISS               	DEISS                                                            	19000101	273	S	S	N	S	N	N	N	N	N	N	N	S	20170721	N	N	N	N	N	N	N	N	N	N	N
+SC	10100 	DECLARAR DIR        	DECLARAR DIR                                                     	20170722	273	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SC	10605	ATENDENET           	ATENDENET                                                        	19000101	302	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SC	10803	MEUISS              	MEUISS                                                           	19000101	337	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SC 	11306	BETHA               	BETHA                                                            	19000101	147	S	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	S	N	N	N
+SC	11504	BETHA               	BETHA                                                            	20061212	495	S	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	S	N	N	N
+SC	11751	ATENDENET           	ATENDENET                                                        	19000101	442	N	N	N	N	N	N	N	N	N	N	N	S	20081120	N	N	N	N	N	N	N	N	N	N	N
+SC	11751	BETHA               	BETHA                                                            	20081121	442	S	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	S	N	N	N
+SC	11900	BETHA               	BETHA                                                            	19000101	159	S	N	N	N	N	N	N	N	N	N	N	S	20140630	N	N	N	N	N	N	N	S	N	N	N
+SC	11900	ATENDENET           	ATENDENET                                                        	20140701	159	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SC	13708	BETHA               	BETHA                                                            	20060712	494	S	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	S	N	N	N
+SC	14805	BETHA               	BETHA                                                            	19000101	150	S	N	N	N	N	N	N	N	N	N	N	S	20131130	N	N	N	N	N	N	N	S	N	N	N
+SC	14805	ATENDENET           	ATENDENET                                                        	20131201	150	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SC	15000	BETHA               	BETHA                                                            	19000101	162	S	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	S	N	N	N
+SC	15802	ATENDENET           	ATENDENET                                                        	20171201	155	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SC	15802	BETHA               	BETHA                                                            	19000101	155	S	N	N	N	N	N	N	N	N	N	N	S	20171130	N	N	N	N	N	N	N	S	N	N	N
+SC	16206	ATENDENET           	ATENDENET                                                        	19000101	304	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SC	16602	BETHA               	BETHA                                                            	19000101	164	S	N	N	N	N	N	N	N	N	N	N	S	20220926	N	N	N	N	N	N	N	S	N	N	N
+SC	16602	ATENDENET           	ATENDENET                                                        	20220927	164	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SC	17105	BETHA               	BETHA                                                            	20150615	504	S	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	S	N	N	N
+SC	17204	BETHA               	BETHA                                                            	19000101	285	S	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	S	N	N	N
+SC	17253	MEUISS              	MEUISS                                                           	19000101	338	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SC	18202	ATENDENET           	ATENDENET                                                        	19000101	306	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SC	18301	ATENDENET           	ATENDENET                                                        	19000101	307	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SC	18707	MEUISS              	MEUISS                                                           	19000101	339	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SC	19309	ATENDENET           	ATENDENET                                                        	19000101	309	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SC	19507	BETHA               	BETHA                                                            	20110101	616	S	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	S	N	N	N
+SC	11009	BETHA               	BETHA                                                            	20250120	650	S	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	S	N	N	N
+SP	105  	ISS ONLINE 4R       	ISS Online 4R Sistemas                                           	19000101	404	N	N	N	N	N	N	N	N	N	N	N	S	 	N	N	N	N	N	N	N	N	N	N	N
+SP	709  	E.ISS               	E.ISS                                                            	19000101	111	N	N	N	N	N	N	N	N	N	N	N	S	20121209	N	N	N	N	N	N	N	N	N	N	N
+SP	709  	ISS ONLINE          	ISS Online Assessor Publico                                      	20121210	111	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SP	1004 	ISS WEB LAR PAULI   	ISS WEB XML                                                      	20121204	566	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SP	1608 	SPE                 	SPE                                                              	19000101	344	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SP	1905 	GOV DIGITAL         	GOV DIGITAL                                                      	19000101	178	N	N	N	N	N	N	S	N	N	N	N	S	20210711	N	N	N	N	N	N	N	N	N	N	N
+SP	1905	NFSE GIAP           	NFSE GIAP-PRESCON                                                	20210712	178	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SP	2101 	ISS.NET             	ISS.NET                                                          	19000101	089	N	N	N	N	N	N	N	N	N	N	N	S	20110830	N	N	N	N	N	N	N	N	N	N	N
+SP	2101 	ISS ONLINE 4R       	ISS Online 4R Sistemas                                           	20110831	089	N	N	N	N	N	N	N	N	N	N	N	S	 	N	N	N	N	N	N	N	N	N	N	N
+SP	2507 	ISS.NET             	ISS.NET                                                          	19000101	256	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SP	2804 	ISS ONLINE          	ISS Online Assessor Publico                                      	19000101	375	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SP	3208	NFSE GIAP           	NFSE GIAP-PRESCON                                                	20250601	654	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SP	3307 	SIMPLISS            	SIMPLISS                                                         	19000101	378	N	N	N	N	N	N	N	N	N	N	N	S	20191031	N	N	N	N	N	N	N	N	N	N	N
+SP	3307 	SIGIS               	SIGISS WEB                                                       	20191101	378	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	S	N	N	N	N	N
+SP	3802 	SIGIS               	SIGISS WEB                                                       	19000101	392	N	N	N	N	N	N	N	N	N	N	N	S	20140323	N	N	N	N	N	S	N	N	N	N	N
+SP	3802 	PRESCON             	PRESCON                                                          	20140324	392	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SP	3901 	ISS WEB             	ISS WEB                                                          	19000101	286	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SP	4008 	SIGISS              	SIGISS                                                           	19000101	237	S	N	N	N	N	N	N	N	N	N	N	S	20120718	N	N	N	N	N	N	N	N	N	N	N
+SP	4008 	DEISS               	DEISS                                                            	20120719	237	S	S	N	S	N	N	N	N	N	N	N	S	20160930	N	N	N	N	N	N	N	N	N	N	N
+SP	4008 	ISS WEB             	ISS WEB                                                          	20161001	237	N	N	N	N	N	N	N	N	N	N	N	S	20180630	N	N	N	N	N	N	N	N	N	N	N
+SP	4008 	ISS WEB LAR PAULI   	ISS WEB XML                                                      	20180701	237	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SP	4107	NFSE GIAP           	NFSE GIAP-PRESCON                                                	20151120	638	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SP	4206 	FGMAISS             	FGMAISS                                                          	19000101	321	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SP	4503 	FGMAISS             	FGMAISS                                                          	19000101	322	N	N	N	N	N	N	N	N	N	N	N	S	20180731	N	N	N	N	N	N	N	N	N	N	N
+SP	4503 	ISS WEB LAR PAULI   	ISS WEB XML                                                      	20180801	322	N	N	N	N	N	N	N	N	N	N	N	S	20190501	N	N	N	N	N	N	N	N	N	N	N
+SP	4503	SIGISS              	SIGISS                                                           	20190502	322	S	N	N	N	N	N	N	N	N	N	N	S	20230508	N	N	N	N	N	N	N	N	N	N	N
+SP	4503	ISS WEB LAR PAULI   	ISS WEB XML                                                        	20230509	322	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SP	50407	FGMAISS             	FGMAISS                                                          	20140207	503	N	N	N	N	N	N	N	N	N	N	N	S	20180725	N	N	N	N	N	N	N	N	N	N	N
+SP	50407	DEISS               	DEISS                                                            	20180726	503	S	S	N	S	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SP	5203 	DEISS               	DEISS                                                            	19000101	267	S	S	N	S	N	N	N	N	N	N	N	S	20130611	N	N	N	N	N	N	N	N	N	N	N
+SP	5203 	ISS WEB LAR PAULI   	ISS WEB XML                                                      	20130612	267	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SP	5302 	E.ISS               	E.ISS                                                           	19000101	112	N	N	N	N	N	N	N	N	N	N	N	S	20131215	N	N	N	N	N	N	N	N	N	N	N
+SP	5302	DES XML             	DES XML                                                         	20131216	112	N	N	N	N	N	N	N	N	N	N	N	N	20190131	N	N	N	N	N	N	N	N	N	N	N
+SP	5302	FGMAISS             	FGMAISS                                                         	20190201	112	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SP	54003	ISS ONLINE 4R       	ISS Online 4R Sistemas                                           	19000101	502	N	N	N	N	N	N	N	N	N	N	N	S	 	N	N	N	N	N	N	N	N	N	N	N
+SP	5500 	ISS ONLINE          	ISS Online Assessor Publico                                      	19000101	259	N	N	N	N	N	N	N	N	N	N	N	S	20160125	N	N	N	N	N	N	N	N	N	N	N
+SP	5500	SIGISS              	SIGISS                                                           	20160126	259	S	N	N	N	N	N	N	N	N	N	N	S	20250228	N	N	N	N	N	N	N	N	N	N	N
+SP	5500	CEISS               	CEISS                                                            	20250301	259	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SP	5708 	EISS BARUERI        	EISS BARUERI                                                     	19000101	397	N	N	N	N	N	N	N	N	N	N	N	N		N	N	N	N	N	N	N	N	N	N	N
+SP	5906 	SIGISS              	SIGISS                                                           	19000101	239	S	N	N	N	N	N	N	N	N	N	N	S	20230122	N	N	N	N	N	N	N	N	N	N	N
+SP	5906 	BETHA               	BETHA                                                            	20230123	239	S	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	S	N	N	N
+SP	6003 	BAURU               	BAURU                                                            	19000101	310	N	N	N	N	N	N	N	N	N	N	N	S	20130702	N	N	N	N	N	N	N	N	N	N	N
+SP	6003	SIGISS              	SIGISS                                                           	20130703	310	N	N	N	N	N	N	N	N	N	N	N	S	20211130	N	N	N	N	N	N	N	N	N	N	N
+SP	6003	ISS WEB              	ISS WEB                                                           	20211201	310	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SP	6102 	E.ISS               	E.ISS                                                            	19000101	113	N	N	N	N	N	N	N	N	N	N	N	S	20131231	N	N	N	N	N	N	N	N	N	N	N
+SP	6102 	DES XML             	DES XML                                                          	20140101	113	N	N	N	N	N	N	N	N	N	N	N	N		N	N	N	N	N	N	N	N	N	N	N
+SP	6508 	ISS WEB             	ISS WEB                                                          	19000101	512	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SP	7001 	GEISWEB             	GEISWEB                                                          	19000101	340	N	N	N	N	N	N	N	N	N	N	N	S	20131231	N	N	N	N	N	N	N	N	N	N	N
+SP	7001 	DES XML             	DES XML                                                          	20140101	340	N	N	N	N	N	N	N	N	N	N	N	N	20141231	N	N	N	N	N	N	N	N	N	N	N
+SP	7001 	ISS ONLINE 4R       	ISS Online 4R Sistemas                                           	20150101	340	N	N	N	N	N	N	N	N	N	N	N	S	 	N	N	N	N	N	N	N	N	N	N	N
+SP	7506 	SIGISS              	SIGISS                                                           	19000101	240	S	N	N	N	N	N	N	N	N	N	N	S	20200901	N	N	N	N	N	N	N	N	N	N	N
+SP	7506 	SIGEP               	SIGEP                                                            	20200902	240	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SP	7506	ISS WEB LAR PAULI   	ISS WEB XML                                                      	20240501	240	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SP	7605 	GOV DIGITAL         	GOV DIGITAL                                                      	19000101	179	N	N	N	N	N	N	S	N	N	N	N	S	20180817	N	N	N	N	N	N	N	N	N	N	N
+SP	7605 	NFSE GIAP           	NFSE GIAP-PRESCON                                                	20180818	179	N	N	N	N	N	N	N	N	N	N	N	S	20230630	N	N	N	N	N	N	N	N	N	N	N
+SP	7605 	DES XML             	DES XML                                                          	20230701	179	N	N	N	N	N	N	N	N	N	N	N	N		N	N	N	N	N	N	N	N	N	N	N
+SP	7902 	ISS ONLINE          	ISS Online Assessor Publico                                      	20151229	565	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SP	8405 	E.ISS               	E.ISS                                                            	19000101	114	N	N	N	N	N	N	N	N	N	N	N	S	20230430	N	N	N	N	N	N	N	N	N	N	N
+SP	8405 	DES XML             	DES XML                                                          	20230501	114	N	N	N	N	N	N	N	N	N	N	N	N		N	N	N	N	N	N	N	N	N	N	N
+SP	8504 	DES XML             	DES XML                                                          	20181008	559	N	N	N	N	N	N	N	N	N	N	N	N		N	N	N	N	N	N	N	N	N	N	N
+SP	9007 	E.ISS               	E.ISS                                                            	19000101	115	N	N	N	N	N	N	N	N	N	N	N	S	20101021	N	N	N	N	N	N	N	N	N	N	N
+SP	9007 	DES XML             	DES XML                                                          	20101022	115	N	N	N	N	N	N	N	N	N	N	N	N		N	N	N	N	N	N	N	N	N	N	N
+SP	9205 	GEISWEB             	GEISWEB                                                          	19000101	341	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SP	9304 	ISS WEB LAR PAULI   	ISS WEB XML                                                      	19000101	516	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SP	9502 	ISS DIGITAL         	ISS DIGITAL                                                      	19000101	131	S	S	N	N	N	S	N	N	N	N	N	S	20250314	N	N	N	N	N	N	N	N	N	N	N
+SP	9502 	NOTA JOSEENSE         	DFSNET                                                          	20250317	131	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SP	9700 	PRESCON             	PRESCON                                                          	20100706	557	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SP	10609	SIMPLISS            	SIMPLISS                                                         	20101001	492	N	N	N	N	N	N	N	N	N	N	N	S	20210430	N	N	N	N	N	N	N	N	N	N	N
+SP	10609	NFSE GIAP           	NFSE GIAP-PRESCON                                                	20210501	492	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SP	11102	DEISS               	DEISS                                                            	19000101	184	S	S	N	S	N	N	N	N	N	N	N	S	20220424	N	N	N	N	N	N	N	N	N	N	N
+SP	11102 	ISS WEB LAR PAULI   	ISS WEB XML                                                      	20220425	184	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SP	11300	ISS WEB LAR PAULI   	ISS WEB XML                                                      	20140101	529	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SP	12209	SIGIS               	SIGISS WEB                                                       	19000101	389	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	S	N	N	N	N	N
+SP	12803	SIGIS               	SIGISS WEB                                                       	19000101	390	N	N	N	N	N	N	N	N	N	N	N	S	20171025	N	N	N	N	N	S	N	N	N	N	N
+SP	12803	DEISS               	DEISS                                                            	20171026	390	S	S	N	S	N	N	N	N	N	N	N	S		N	N	N	N	N	S	N	N	N	N	N
+SP	13009	NFSE GIAP           	NFSE GIAP-PRESCON                                                	20171111	605	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SP	13504	ISS WEB             	ISS WEB                                                          	19000101	379	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SP	14106	SIMPLISS            	SIMPLISS                                                         	19000101	095	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SP	14601	ISS WEB             	ISS WEB                                                          	19000101	513	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SP	15004	SIMPLISS            	SIMPLISS                                                         	19000101	099	N	N	N	N	N	N	N	N	N	N	N	S	20191121	N	N	N	N	N	N	N	N	N	N	N
+SP	15004	NFSE GIAP           	NFSE GIAP-PRESCON                                                	20191122	099	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SP	11508	ISS ONLINE 4R       	ISS Online 4R Sistemas                                           	19000101	515	N	N	N	N	N	N	N	N	N	N	N	S	 	N	N	N	N	N	N	N	N	N	N	N
+SP	15103	E.ISS               	E.ISS                                                            	19000101	116	N	N	N	N	N	N	N	N	N	N	N	S	20190522	N	N	N	N	N	N	N	N	N	N	N
+SP	15152	SIGIS               	SIGISS WEB                                                       	19000101	391	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	S	N	N	N	N	N
+SP	15509	ISS WEB LAR PAULI   	ISS WEB XML                                                      	20110101	621	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SP	15707	E.ISS               	E.ISS                                                            	19000101	117	N	N	N	N	N	N	N	N	N	N	N	S	20140505	N	N	N	N	N	N	N	N	N	N	N
+SP	15707	DES XML             	DES XML                                                          	20140506	117	N	N	N	N	N	N	N	N	N	N	N	N		N	N	N	N	N	N	N	N	N	N	N
+SP	16309	GEISWEB             	GEISWEB                                                          	19000101	374	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SP	16705	SIGISS              	SIGISS                                                           	19000101	242	S	N	N	N	N	N	N	N	N	N	N	S	20180630	N	N	N	N	N	N	N	N	N	N	N
+SP	16705	ISS WEB LAR PAULI   	ISS WEB XML                                                      	20180701	242	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SP	17406	ISS WEB             	ISS WEB                                                          	19000101	528	N	N	N	N	N	N	N	N	N	N	N	S	20180228	N	N	N	N	N	N	N	N	N	N	N
+SP	17406	ISS WEB LAR PAULI   	ISS WEB XML                                                      	20180301	528	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SP	17901	FGMAISS             	FGMAISS                                                          	19000101	355	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SP	20509	INDAIATUBA          	INDAIATUBA                                                       	19000101	197	N	N	N	N	N	N	N	N	N	N	N	S	20180520	N	N	N	N	N	N	N	N	N	N	N
+SP	20509	INDAIATUBAV2        	INDAIATUBAV2                                                     	20180521	197	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SP	20905	FGMAISS             	FGMAISS                                                          	20130318	395	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SP	21408	SIMPLISS            	SIMPLISS                                                         	20150310	491	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SP	21804	DEISS               	DEISS                                                            	20200828	625	S	S	N	S	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SP	22109	ISS ONLINE 4R       	ISS Online 4R Sistemas                                           	19000101	407	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SP	22208	E.ISS               	E.ISS                                                            	19000101	118	N	N	N	N	N	N	N	N	N	N	N	S	20150630	N	N	N	N	N	N	N	N	N	N	N
+SP	22208	DES XML             	DES XML                                                          	20150701	118	N	N	N	N	N	N	N	N	N	N	N	N	20220531	N	N	N	N	N	N	N	N	N	N	N
+SP	22208	NFSE GIAP           	NFSE GIAP-PRESCON                                                	20220601	118	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SP	22307	GOV DIGITAL         	GOV DIGITAL                                                      	19000101	180	N	N	N	N	N	N	S	N	N	N	N	S	20130910	N	N	N	N	N	N	N	N	N	N	N
+SP	22307	ISS.NET             	ISS.NET                                                          	20130911	180	N	N	N	N	N	N	N	N	N	N	N	S	20160430	N	N	N	N	N	N	N	N	N	N	N
+SP	22307	ISS ONLINE 4R       	ISS Online 4R Sistemas                                           	20160501	180	N	N	N	N	N	N	N	N	N	N	N	S	 	N	N	N	N	N	N	N	N	N	N	N
+SP	22505	ISS WEB             	ISS WEB                                                          	19000101	287	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SP	22604	SIGISS              	SIGISS                                                           	19000101	243	S	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SP	23107	ISS WEB             	ISS WEB                                                          	19000101	125	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SP	23404	ISS WEB             	ISS WEB                                                          	19000101	288	N	N	N	N	N	N	N	N	N	N	N	S	20190131	N	N	N	N	N	N	N	N	N	N	N
+SP	23503	ISS ONLINE 4R       	ISS Online 4R Sistemas                                           	19000101	408	N	N	N	N	N	N	N	N	N	N	N	S	20161231	N	N	N	N	N	N	N	N	N	N	N
+SP	23503	GEISWEB             	GEISWEB                                                         	20170101	408	N	N	N	N	N	N	N	N	N	N	N	S	 	N	N	N	N	N	N	N	N	N	N	N
+SP	24105	FGMAISS             	FGMAISS                                                          	19000101	323	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SP	24303	JABOTICABAL         	JABOTICABAL                                                      	19000101	   	N	N	N	N	N	N	N	N	N	N	N	N	20061228	N	N	N	N	N	N	N	N	N	N	N
+SP	24303	EISSJABOTICABAL     	EISSJABOTICABAL                                                  	20061229	418	N	N	N	N	N	N	N	N	N	N	N	N		N	N	N	N	N	N	N	N	N	N	N
+SP	24402	ISS.NET             	ISS.NET                                                          	19000101	091	N	N	N	N	N	N	N	N	N	N	N	S	20201031	N	N	N	N	N	N	N	N	N	N	N
+SP	24402	SIAP.NET            	SIAP.NET                                                         	20201101	091	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SP	24501	ISS WEB             	ISS WEB                                                          	19000101	467	N	N	N	N	N	N	N	N	N	N	N	S	 	N	N	N	N	N	N	N	N	N	N	N
+SP	24709	ISS.NET             	ISS.NET                                                          	20120201	352	N	N	N	N	N	N	N	N	N	N	N	S	20140331	N	N	N	N	N	N	N	N	N	N	N
+SP	24709	NFE                 	NFE                                                              	20140401	352	N	N	N	N	N	N	N	N	N	N	N	N	20180630	N	N	N	N	N	N	N	N	N	N	N
+SP	24709	GOV DIGITAL         	NFE-CIDADES                                                      	20200414	352	N	N	N	N	N	N	S	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SP	25003	ISS WEB             	ISS WEB                                                          	19000101	425	N	N	N	N	N	N	N	N	N	N	N	S	 	N	N	N	N	N	N	N	N	N	N	N
+SP	25300	DES XML             	DES XML                                                         	19000101	499	N	N	N	N	N	N	N	N	N	N	N	N	20221211	N	N	N	N	N	N	N	N	N	N	N
+SP	25300	ISS WEB LAR PAULI   	ISS WEB XML                                                     	20221212	499	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SP	25706	DEISS               	DEISS                                                            	19000101	514	S	S	N	S	N	N	N	N	N	N	N	S	20200630	N	N	N	N	N	N	N	N	N	N	N
+SP	25706	ISS WEB LAR PAULI   	ISS WEB XML                                                      	20200701	514	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SP	26407	GEISWEB             	GEISWEB                                                          	19000101	342	N	N	N	N	N	N	N	N	N	N	N	S	20150930	N	N	N	N	N	N	N	N	N	N	N
+SP	26407	ISS WEB             	ISS WEB                                                          	20151001	342	N	N	N	N	N	N	N	N	N	N	N	S	20160930	N	N	N	N	N	N	N	N	N	N	N
+SP	26407	ISS WEB LAR PAULI   	ISS WEB XML                                                      	20161001	342	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SP	26704	SIGISS              	SIGISS                                                           	19000101	245	S	N	N	N	N	N	N	N	N	N	N	S	20130131	N	N	N	N	N	N	N	N	N	N	N
+SP	26704	SIGIS               	SIGISS WEB                                                       	20130201	245	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	S	N	N	N	N	N
+SP	26902	ISS LIMEIRA         	ISS LIMEIRA                                                      	19000101	193	N	N	N	N	N	N	N	N	N	N	N	S	20130731	N	N	N	N	N	N	N	N	N	N	N
+SP	26902	DES XML             	DES XML                                                          	20130801	193	N	N	N	N	N	N	N	N	N	N	N	N		N	N	N	N	N	N	N	N	N	N	N
+SP	27108	ISS ONLINE          	ISS Online Assessor Publico                                      	19000101	262	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SP	27207	ISS.NET             	ISS.NET                                                          	19000101	266	N	N	N	N	N	N	N	N	N	N	N	S	20061128	N	N	N	N	N	N	N	N	N	N	N
+SP	27207	ISS WEB LORENA      	ISS WEB LORENA                                                   	20061129	266	N	N	N	N	N	N	N	N	N	N	N	N	20180831	N	N	N	N	N	N	N	N	N	N	N
+SP	27207	SIAP.NET            	SIAP.NET                                                         	20180901	266	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SP	27306	EISS LOUVEIRA       	EISS                                                             	20150801	181	N	N	N	N	N	N	N	N	N	N	N	S	20231130	N	N	N	N	N	N	N	N	N	N	N
+SP	27306	GOV DIGITAL         	GOV DIGITAL                                                      	19000101	181	N	N	N	N	N	N	S	N	N	N	N	S	20150731	N	N	N	N	N	N	N	N	N	N	N
+SP	27306	GOV DIGITAL         	NFE-CIDADE                                                       	20231201	181	N	N	N	N	N	N	S	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SP	27603	FGMAISS             	FGMAISS                                                          	19000101	324	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SP	28007	FGMAISS             	FGMAISS                                                          	19000101	325	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SP	28403	ISS WEB             	ISS WEB                                                          	19000101	465	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SP	28502	E.ISS               	E.ISS                                                            	19000101	119	N	N	N	N	N	N	N	N	N	N	N	S	20150503	N	N	N	N	N	N	N	N	N	N	N
+SP	28502	DES XML             	DES XML                                                          	20150504	119	N	N	N	N	N	N	N	N	N	N	N	N		N	N	N	N	N	N	N	N	N	N	N
+SP	28809	SIMPLISS            	SIMPLISS                                                         	19000101	096	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SP	29005	SIGISS              	SIGISS                                                           	19000101	135	S	N	N	N	N	N	N	N	N	N	N	S	20160517	N	N	N	N	N	N	N	N	N	N	N
+SP	29005	SIGCORP             	SIGCORP                                                          	20160518	135	N	N	N	N	N	N	N	N	N	N	N	N	20160519	N	N	N	N	N	N	N	N	N	N	N
+SP	29005	SIGISS              	SIGISS                                                           	20160520	135	S	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SP	29203	SIMPLISS            	SIMPLISS                                                         	19000101	376	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SP	29302	ISS WEB             	ISS WEB                                                          	19000101	126	N	N	N	N	N	N	N	N	N	N	N	S	20180331	N	N	N	N	N	N	N	N	N	N	N
+SP	29302	SIGISS              	SIGISS                                                           	20180401	126	S	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SP	29807	SIMPLISS            	SIMPLISS                                                         	19000101	097	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SP	30300	DEISS               	DEISS                                                            	20121105	419	S	S	N	S	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SP	30508	BETHA               	BETHA                                                            	19000101	479	S	N	N	N	N	N	N	N	N	N	N	S	20221231	N	N	N	N	N	S	N	N	N	N	N
+SP	30508	DES XML             	DES XML                                                          	20230101	479	N	N	N	N	N	N	N	N	N	N	N	N		N	N	N	N	N	N	N	N	N	N	N
+SP	30607	ISS WEB             	ISS WEB                                                         	19000101	127	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SP	30706	SIGISS              	SIGISS                                                           	19000101	246	S	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SP	30805	SIGISS              	SIGISS                                                           	19000101	134	S	N	N	N	N	N	N	N	N	N	N	S	20140115	N	N	N	N	N	N	N	N	N	N	N
+SP	30805	GEISWEB             	GEISWEB                                                          	20140116	134	N	N	N	N	N	N	N	N	N	N	N	S	20171231	N	N	N	N	N	N	N	N	N	N	N
+SP	30805	FISS LEX            	FISS LEX                                                         	20180101	134	N	N	N	N	N	N	N	N	N	N	N	N	20190730	N	N	N	N	N	N	N	N	N	N	N
+SP	30805	SIGISS              	SIGISS                                                           	20190731	134	S	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SP	31100	ISS WEB             	ISS WEB                                                          	19000101	440	N	N	N	N	N	N	N	N	N	N	N	S	 	N	N	N	N	N	N	N	N	N	N	N
+SP	31506	FGMAISS             	FGMAISS                                                          	19000101	326	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SP	31803	SIGISS              	SIGISS                                                           	19000101	247	S	N	N	N	N	N	N	N	N	N	N	S	20130131	N	N	N	N	N	N	N	N	N	N	N
+SP	31803	SIGIS               	SIGISS WEB                                                       	20130201	247	N	N	N	N	N	N	N	N	N	N	N	S	20151207	N	N	N	N	N	S	N	N	N	N	N
+SP	31803	ISS ONLINE 4R       	ISS Online 4R Sistemas                                           	20151210	247	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SP	32009	ISS WEB             	ISS WEB                                                          	19000101	464	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SP	33007	E.ISS               	E.ISS                                                            	19000101	120	N	N	N	N	N	N	N	N	N	N	N	S	20090622	N	N	N	N	N	N	N	N	N	N	N
+SP	33007	ISS WEB             	ISS WEB                                                          	20090623	120	N	N	N	N	N	N	N	N	N	N	N	S	20130606	N	N	N	N	N	N	N	N	N	N	N
+SP	33007	FGMAISS             	FGMAISS                                                          	20130607	120	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SP	33403	ISS WEB             	ISS WEB                                                          	19000101	426	N	N	N	N	N	N	N	N	N	N	N	S	 	N	N	N	N	N	N	N	N	N	N	N
+SP	34302	BETHA               	BETHA                                                            	19000101	140	S	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	S	N	N	N
+SP	34401	OSASCO              	OSASCO                                                           	19000101	291	S	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SP	34708	OURINHOS            	OURINHOS                                                         	19000101	199	N	N	N	N	N	N	N	N	N	N	N	S	20250325	N	N	N	N	N	N	N	N	N	N	N
+SP	34708	FINTELISS           	FINTELISS                                                        	20250326	199	S	N	N	N	N	N	N	N	N	N	N	S		S	N	N	N	N	N	N	N	N	N	N
+SP	37107	ISS WEB LAR PAULI   	ISS WEB XML                                                      	20230801	637	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SP	37305	ISS ONLINE          	ISS Online Assessor Publico                                      	19000101	260	N	N	N	N	N	N	N	N	N	N	N	S	20150731	N	N	N	N	N	N	N	N	N	N	N
+SP	37305	FGMAISS             	FGMAISS                                                          	20150801	260	N	N	N	N	N	N	N	N	N	N	N	S	20200630	N	N	N	N	N	N	N	N	N	N	N
+SP	37305	ISS ONLINE          	ISS Online Assessor Publico                                      	20200701	260	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SP	37602	ISS ONLINE 4R       	ISS ONLINE 4R SISTEMAS                                           	19000101	478	N	N	N	N	N	N	N	N	N	N	N	N	 	N	N	N	N	N	N	N	N	N	N	N
+SP	38006	ISS ONLINE          	ISS Online Assessor Publico                                      	20130502	400	N	N	N	N	N	N	N	N	N	N	N	S	20130502	N	N	N	N	N	N	N	N	N	N	N
+SP	38006	SIAP.NET            	SIAP.NET                                                         	20160101	400	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SP	38709	SIMPLISS            	SIMPLISS                                                         	19000101	085	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SP	38907	FGMAISS             	FGMAISS                                                          	19000101	396	N	N	N	N	N	N	N	N	N	N	N	S	20191028	N	N	N	N	N	N	N	N	N	N	N
+SP	38907	ISS WEB LAR PAULI   	ISS WEB XML                                                      	20191029	396	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SP	39301	E.ISS               	E.ISS                                                            	19000101	121	N	N	N	N	N	N	N	N	N	N	N	S	20130731	N	N	N	N	N	N	N	N	N	N	N
+SP	39301	DES XML             	DES XML                                                          	20130801	121	N	N	N	N	N	N	N	N	N	N	N	N	20200630	N	N	N	N	N	N	N	N	N	N	N
+SP	39301	NFSE GIAP           	NFSE GIAP-PRESCON                                                	20200701	121	N	N	N	N	N	N	N	N	N	N	N	S	20211002	N	N	N	N	N	N	N	N	N	N	N
+SP	39301	ISS ONLINE          	ISS Online Assessor Publico                                      	20211003	121	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SP	39509	ISS WEB             	ISS WEB                                                          	19000101	128	N	N	N	N	N	N	N	N	N	N	N	S	20201031	N	N	N	N	N	N	N	N	N	N	N
+SP	39509	FGMAISS             	FGMAISS                                                          	20201101	128	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SP	39806	E.ISS               	E.ISS                                                            	19000101	122	N	N	N	N	N	N	N	N	N	N	N	S	20101231	N	N	N	N	N	N	N	N	N	N	N
+SP	39806	DES XML             	DES XML                                                          	20110101	122	N	N	N	N	N	N	N	N	N	N	N	N		N	N	N	N	N	N	N	N	N	N	N
+SP	40606	ISS ONLINE 4R       	ISS Online 4R Sistemas                                           	19000101	409	N	N	N	N	N	N	N	N	N	N	N	S	20201031	N	N	N	N	N	N	N	N	N	N	N
+SP	40606	DEISS               	DEISS                                                            	20201101	409	S	S	N	S	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SP	40705	ISS WEB             	ISS WEB                                                          	19000101	289	N	N	N	N	N	N	N	N	N	N	N	S	20230430		N	N	N	N	N	N	N	N	N	N	N
+SP	40705	NFSE GIAP           	NFSE GIAP-PRESCON                                                	20230501	289	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SP	41000	ISS.NET             	ISS.NET                                                          	19000101	108	N	N	N	N	N	N	N	N	N	N	N	S	20241031	N	N	N	N	N	N	N	N	N	N	N
+SP	41307	FGMAISS             	FGMAISS                                                          	20090331	398	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SP	41406	SIMPLISS            	SIMPLISS                                                         	19000101	100	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SP	41604	FGMAISS             	FGMAISS                                                          	20101101	399	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SP	42206	FGMAISS             	FGMAISS                                                          	19000101	327	N	N	N	N	N	N	N	N	N	N	N	S	20230911	N	N	N	N	N	N	N	N	N	N	N
+SP	42206	ISS WEB LAR PAULI   	ISS WEB XML                                                      	20230912	327	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SP	42404	DEISS               	DEISS                                                            	19000101	277	S	S	N	S	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SP	42909	ISS WEB             	ISS WEB                                                          	19000101	466	N	N	N	N	N	N	N	N	N	N	N	S	20191231 	N	N	N	N	N	N	N	N	N	N	N
+SP	42909	ISS WEB LAR PAULI   	ISS WEB XML                                                      	20200101	466	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SP	44004	ARISS               	ARISS                                                            	19000101	505	N	N	N	N	N	N	N	N	N	N	N	N		N	N	N	N	N	N	N	N	N	N	N
+SP	44251	DEISS               	DEISS                                                            	20120903	436	S	S	N	S	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SP	45308	ISS WEB             	ISS WEB                                                          	19000101	468	N	N	N	N	N	N	N	N	N	N	N	S	 	N	N	N	N	N	N	N	N	N	N	N
+SP	44905	ISS WEB             	ISS WEB                                                          	19000101	469	N	N	N	N	N	N	N	N	N	N	N	S	 	N	N	N	N	N	N	N	N	N	N	N
+SP	45159	ISS WEB             	ISS WEB                                                          	20140627	488	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SP	45803	STA BARBARA         	STA BARBARA                                                      	19000101	198	S	N	N	N	N	N	S	N	N	N	N	N	20141031	N	N	N	N	N	N	N	N	N	N	N
+SP	45803	SIGIS               	SIGISS WEB                                                       	20141101	198	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	S	N	N	N	N	N
+SP	47304	ISS WEB             	ISS WEB                                                          	19000101	448	N	N	N	N	N	N	N	N	N	N	N	S	20200816	N	N	N	N	N	N	N	N	N	N	N
+SP	48005	ISS WEB             	ISS WEB                                                          	19000101	470	N	N	N	N	N	N	N	N	N	N	N	S	20150611	N	N	N	N	N	N	N	N	N	N	N
+SP	48005	ISS WEB LAR PAULI   	ISS WEB XML                                                      	20150612	470	N	N	N	N	N	N	N	N	N	N	N	S	 	N	N	N	N	N	N	N	N	N	N	N
+SP	49102	SIMPLISS            	SIMPLISS                                                         	19000101	098	N	N	N	N	N	N	N	N	N	N	N	S	20230630	N	N	N	N	N	N	N	N	N	N	N
+SP	49102	NFSE GIAP           	NFSE GIAP-PRESCON                                                	20230701	098	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SP	49409	ISS WEB             	ISS WEB                                                          	19000101	496	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SP	49706	SIMPLISS            	SIMPLISS                                                         	19000101	101	N	N	N	N	N	N	N	N	N	N	N	S	20120530	N	N	N	N	N	N	N	N	N	N	N
+SP	49706	SIMPLISS            	SIMPLISS                                                         	20130201	101	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SP	50100	ISS ONLINE 4R       	ISS Online 4R Sistemas                                           	19000101	401	N	N	N	N	N	N	N	N	N	N	N	S	 	N	N	N	N	N	N	N	N	N	N	N
+SP	50308	DIFSP               	DIFSP                                                            	19000101	   	S	N	N	N	N	N	N	N	N	S	S	N	20151231	N	N	N	N	N	N	N	N	N	N	N
+SP	50308	DESIF               	DESIF- Declaracao Eletronica de Servico Instituicoes Financeiras 	20160101	081	S	N	N	N	N	S	N	N	N	N	N	N		N	N	N	N	N	N	N	N	N	S	S
+SP	50605	GOV DIGITAL         	NFE-CIDADES                                                      	20171215	526	N	N	N	N	N	N	S	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SP	50902	FGMAISS             	FGMAISS                                                          	20191024	584	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SP	51009	ISS.NET             	ISS.NET                                                          	19000101	254	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SP	51603	DEISS               	DEISS                                                            	19000101	280	S	S	N	S	N	N	N	N	N	N	N	S	20140312	N	N	N	N	N	N	N	N	N	N	N
+SP	51603	ISS WEB             	ISS WEB                                                          	20140313	280	N	N	N	N	N	N	N	N	N	N	N	S	20241031	N	N	N	N	N	N	N	N	N	N	N
+SP	51603	ISS WEB LAR PAULI   	ISS WEB XML                                                     	20241101	280	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SP	51702	ISS WEB             	ISS WEB                                                          	19000101	129	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SP	51900	FGMAISS             	FGMAISS                                                          	19000101	356	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SP	52205	ISS DIGITAL         	ISS DIGITAL                                                      	19000101	080	S	S	N	N	N	S	N	N	N	N	N	S	20220228	N	N	N	N	N	N	N	N	N	N	N
+SP	52205	NOTA JOSEENSE         	DFSNET                                                          	20220301	080	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SP	52403	SIGISS              	SIGISS                                                           	19000101	251	S	N	N	N	N	N	N	N	N	N	N	S	20130131	N	N	N	N	N	N	N	N	N	N	N
+SP	52403	SIGIS               	SIGISS WEB                                                       	20130201	251	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	S	N	N	N	N	N
+SP	52700	ISS WEB             	ISS WEB                                                          	19000101	476	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SP	52809	E.ISS               	E.ISS                                                            	19000101	123	N	N	N	N	N	N	N	N	N	N	N	S	20150608	N	N	N	N	N	N	N	N	N	N	N
+SP	52809	DES XML             	DES XML                                                          	20150609	123	N	N	N	N	N	N	N	N	N	N	N	N		N	N	N	N	N	N	N	N	N	N	N
+SP	53401	FGMAISS             	FGMAISS                                                          	19000101	354	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SP	53708	FGMAISS             	FGMAISS                                                          	19000101	328	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SP	53807	DEISS               	DEISS                                                            	20120315	433	S	S	N	S	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SP	54102	E.ISS               	E.ISS                                                            	19000101	124	N	N	N	N	N	N	N	N	N	N	N	S	20130731	N	N	N	N	N	N	N	N	N	N	N
+SP	54102	DES XML             	DES XML                                                          	20130801	124	N	N	N	N	N	N	N	N	N	N	N	N	20220503	N	N	N	N	N	N	N	N	N	N	N
+SP	54102	SIGISS              	SIGISS                                                          	20220504	124	S	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SP	54300	SIMPLISS            	SIMPLISS                                                         	19000101	357	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SP	54508	GEISWEB             	GEISWEB                                                          	19000101	343	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SP	54706	ISS ONLINE          	ISS Online Assessor Publico                                      	19000101	261	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SP	54805	SIGISS              	SIGISS                                                           	19000101	383	S	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SP	55000	ISS WEB             	ISS WEB                                                          	19000101	500	N	N	N	N	N	N	N	N	N	N	N	S	20160914	N	N	N	N	N	N	N	N	N	N	N
+SP	55000	SIMPLISS            	SIMPLISS                                                         	20160915	500	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SP	56206	ISS WEB             	ISS WEB                                                          	19000101	290	N	N	N	N	N	N	N	N	N	N	N	S	20170228	N	N	N	N	N	N	N	N	N	N	N
+SP	56206	ISSQN WEB           	ISSQN WEB                                                        	20170301	290	N	N	N	N	N	N	N	N	N	N	N	S	20170930	N	N	N	N	N	N	N	N	N	N	N
+SP	56206	SIGIS               	SIGISS WEB                                                       	20171001	290	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	S	N	N	N	N	N
+SP	56453	GOV DIGITAL         	NFE-CIDADES                                                      	19000101	182	N	N	N	N	N	N	S	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SP	57006	GEISWEB             	GEISWEB                                                          	20160101	463	N	N	N	N	N	N	N	N	N	N	N	S	20181219	N	N	N	N	N	N	N	N	N	N	N
+SP	57006	ISS ONLINE          	ISS Online Assessor Publico                                      	20181220	463	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SP	57105	CEISS               	CEISS                                                            	20200701	592	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SP	12001	DEISS               	DEISS                                                            	20130322	517	S	S	N	S	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SP	56701 	PRESCON             	PRESCON                                                          	20170101	626	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SP	16200 	ISS WEB             	ISS WEB                                                          	20240730	644	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SP	22406 	DES XML             	DES XML                                                          	20250501	651	N	N	N	N	N	N	N	N	N	N	N	N		N	N	N	N	N	N	N	N	N	N	N
+TO	2109	BETHA               	BETHA                                                            	19000101	461	S	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	S	N	N	N
+TO	9500 	ISSIntel            	ISSIntel                                                         	20111229	   	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+TO	21000	DMS                 	DMS - Declaracao Mensal de Servicos                              	19000101	069	N	N	N	N	N	N	N	N	N	N	N	N		N	N	N	N	N	N	N	N	N	N	N
+MG	70701	DES XML             	DES XML                                                          	19000101	506	N	N	N	N	N	N	N	N	N	N	N	N	20231130	N	N	N	N	N	N	N	N	N	N	N
+MG	70701	BETHA               	BETHA                                                            	20231201	506	S	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	S	N	N	N
+SP	35309	FGMAISS             	FGMAISS                                                          	20091118	519	N	N	N	N	N	N	N	N	N	N	N	S	20171231	N	N	N	N	N	N	N	N	N	N	N
+SP	35309	DEISS               	DEISS                                                            	20180101	519	S	S	N	S	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+CE	4285	SPEED GOV           	SPEED GOV                                                        	20171101	522	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SP	18404	SIAP.NET            	SIAP.NET                                                        	20171101	523	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+PE	6200	REMESSAXML          	REMESSAXML                                                       	20060403	524	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	S	S	N	N	N	N	N	N
+SP	55406	PRESCON             	PRESCON                                                          	19000101	524	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+RN	12005	REMESSAXML          	REMESSAXML                                                       	20091209	567	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	S	S	N	N	N	N	N	N
+SP	15186	SIMPLISS            	SIMPLISS                                                         	19000101	568	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SP	10807	SIMPLISS            	SIMPLISS                                                         	19000101	569	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SP	19303	ISS WEB LAR PAULI   	ISS WEB XML                                                      	20120626	570	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SP	23404	FINTELISS           	FINTELISS                                                        	20190201	288	S	N	N	N	N	N	N	N	N	N	N	S		S	N	N	N	N	N	N	N	N	N	N
+CE	12908	SPEED GOV           	SPEED GOV                                                        	20180701	576	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+AP	303 	ISS WEB             	ISS WEB                                                         	20031231	577	N	N	N	N	N	N	N	N	N	N	N	S	20231231	N	N	N	N	N	N	N	N	N	N	N
+AP	303 	ISS.NET             	ISS.NET                                                          	20240101	577	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+MS	8305	NFSE NEAINFO        	NFSE NEAINFO                                                     	20070619	573	N	N	N	N	N	N	N	N	N	N	N	S	20210429	N	N	N	N	N	N	N	N	N	N	N
+MS	8305	ISS WEB LAR PAULI   	ISS WEB XML                                                      	20210430	573	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SP	303 	BETHA               	BETHA                                                            	20190618	578	S	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	S	N	N	N
+BA	13606	DES-e               	DES-e                                                            	20181201	579	N	N	N	N	N	N	N	N	N	N	N	N		N	N	N	N	N	N	N	N	N	N	N
+SP	31308	BETHA               	BETHA                                                            	20190901	580	S	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	S	N	N	N
+SC	2404	SIMPLISS            	SIMPLISS                                                         	20190916	581	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SP	18859	BETHA               	BETHA                                                            	20191030	583	S	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	S	N	N	N
+PA	6807 	SIAP.NET            	SIAP.NET                                                         	20190711	585	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+PA	1303 	ISS.NET             	ISS.NET                                                          	20191023	586	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+PA	5304	ISS.NET             	ISS.NET                                                          	20200805	639	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+RJ	1702	SPE                 	SPE                                                             	19000101	381	N	N	N	N	N	N	N	N	N	N	N	S	20200121	N	N	N	N	N	N	N	N	N	N	N
+RJ	1702	ISS.NET             	ISS.NET                                                         	20200122	381	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+RS	9308 	ATENDENET           	ATENDENET                                                        	20200122	587	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SP	49904 	NOTA JOSEENSE        	DFSNET                                                          	20190902	588	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+MT	7040	NFSE ABACO          	NFSE ABACO                                                       	20191025	590	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+MG	3504	GOV DIGITAL         	NFE-CIDADES                                                      	20150901	591	N	N	N	N	N	N	S	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+RJ	4904 	SIMPLISS            	SIMPLISS                                                         	20200915	358	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SP	47304	ISS WEB CECAM       	ISS WEB CECAM                                                    	20200817	448	N	N	N	N	N	N	N	N	N	N	N	N		N	N	N	N	N	N	N	N	N	N	N
+SP	43402	ISS.NET             	ISS.NET                                                          	20200731	593	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+RJ	258  	ISS DIGITAL CF      	ISS DIGITAL CF                                                   	20200101	594	N	N	N	N	N	N	N	N	N	N	N	N		N	N	N	N	N	N	N	N	N	N	N
+RJ	5505 	DEISS               	DEISS                                                            	20200101	595	S	S	N	S	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+RJ	2502	BETHA               	BETHA                                                            	20200101	596	S	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	S	N	N	N
+SP	47502	ISS WEB LAR PAULI   	ISS WEB XML                                                      	20210201	597	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+RS	3103	ATENDENET           	ATENDENET                                                        	20200501	525	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SP	1152	ISS WEB V9          	ISS WEB V9                                                       	20210701	598	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SC	2800	BETHA               	BETHA                                                            	20210629	600	S	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	S	N	N	N
+BA	23803	SAATRI NFSE         	SAATRI NFSE                                                      	19000101	601	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SP	46702	SIGIS               	SIGISS WEB                                                       	20130201	602	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	S	N	N	N	N	N
+SP	12407	SIGIS               	SIGISS WEB                                                       	20130201	603	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	S	N	N	N	N	N
+SP	13702	EISS LOUVEIRA       	EISS                                                             	20111024	604	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+BA	14604	SAATRI NFSE         	SAATRI NFSE                                                      	20220124	609	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+GO	8004	NFSE CENTI          	NFSE CENTI                                                       	20220103	611	S	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	S	N	N	N
+SP	48906	NFSE GIAP           	NFSE GIAP-PRESCON                                                	20210125	612	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+RN	7104	REMESSAXML          	DMSe - Declaracao Mensal de Servicos Eletronica                  	20110107	613	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	S	S	N	N	N	N	N	N
+SC	5506 	ATENDENET           	ATENDENET                                                        	20220419	610	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	S	N	N	N
+SC	16909 	BETHA               	BETHA                                                            	19000101	614	S	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	S	N	N	N
+SP	2903 	ISS WEB LAR PAULI   	ISS WEB XML                                                      	19000101	618	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+MS	6309 	ISS WEB LAR PAULI   	ISS WEB XML                                                      	19000101	619	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+MG	38625	GOV DIGITAL         	NFE-CIDADES                                                      	20200101	620	N	N	N	N	N	N	S	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SP	23602	DES XML             	DES XML                                                         	20220512	624	N	N	N	N	N	N	N	N	N	N	N	N	20241130	N	N	N	N	N	N	N	N	N	N	N
+SP	23602	SIGIS               	SIGISS WEB                                                       	20241201	624	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	S	N	N	N	N	N
+PR	4659	ATENDENET           	ATENDENET                                                        	20190101	627	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+RN	1651	REMESSAXML          	DMSe - Declaracao Mensal de Servicos Eletronica                  	20170901	628	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	S	S	N	N	N	N	N	N
+BA	16302	SAATRI NFSE         	SAATRI NFSE                                                      	20031231	629	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SP	51207	DEISS               	DEISS                                                            	20230201	631	S	S	N	S	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SP	600 	ISS WEB LAR PAULI   	ISS WEB XML                                                      	20240401	641	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SP	36703	NFSE GIAP           	NFSE GIAP-PRESCON                                                	20230401	642	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+MG	34905 	ISS WEB LAR PAULI   	ISS WEB XML                                                      	20240501	643	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SP	24907 	BETHA               	BETHA                                                            	20240101	645	S	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	S	N	N	N
+SP	501 	ISS WEB LAR PAULI   	ISS WEB XML                                                     	20230901	646	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+RS	4804	DMSTE Caxias        	DMSTE                                                           	20241001	647	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+MS	1003	ISS WEB LAR PAULI   	ISS WEB XML                                                     	20250113	648	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N
+SC	18004	ATENDENET           	ATENDENET                                                       	20250501	653	N	N	N	N	N	N	N	N	N	N	N	S		N	N	N	N	N	N	N	N	N	N	N

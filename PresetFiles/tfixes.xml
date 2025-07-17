@@ -1,0 +1,3309 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<tabelas>
+	<tabela>
+		<nome_tabela>TFIX02</nome_tabela>
+		<nome_tabela_banco>TRIBUTO</nome_tabela_banco>
+		<colunas>
+			<coluna nome='cod_tributo' tipo='VARCHAR2' ind_chave='TRUE' />
+			<coluna nome='descricao' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='titulo' tipo='VARCHAR2' ind_chave='FALSE'/>
+		</colunas>
+	</tabela>
+
+	<tabela>
+		<nome_tabela>TFIX03</nome_tabela>
+		<nome_tabela_banco>TRIBUTACAO</nome_tabela_banco>
+		<colunas>
+			<coluna nome='cod_tributo' tipo='VARCHAR2' ind_chave='TRUE'/>
+			<coluna nome='cod_tributacao' tipo='NUMBER' ind_chave='TRUE'/>
+			<coluna nome='descricao' tipo='VARCHAR2' ind_chave='FALSE'/>
+		</colunas>
+		<validacoes>
+			<validar coluna="0" tabela="tributo" campo_tabela="cod_tributo" cod_erro="093166"/>
+		</validacoes>
+	</tabela>
+
+	 <tabela>
+		<nome_tabela>TFIX04</nome_tabela>
+		<nome_tabela_banco>ESTADO</nome_tabela_banco>
+		<colunas>
+			<coluna nome='cod_estado' tipo='VARCHAR2' ind_chave='TRUE'/>
+			<coluna nome='descricao' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='destinatario' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='departamento' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='cargo' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='endereco' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='bairro' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='cep' tipo='NUMBER' ind_chave='FALSE'/>
+			<coluna nome='cidade' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='num_estado' tipo='NUMBER' ind_chave='FALSE'/>
+			<coluna nome='dig_verificador' tipo='NUMBER' ind_chave='FALSE'/>
+			<coluna nome='ident_estado' tipo='NUMBER' ind_ident='TRUE' ind_chave='FALSE' existe_so_no_banco='TRUE' />
+		</colunas>
+	</tabela>
+
+	<tabela>
+		<nome_tabela>TFIX05</nome_tabela>
+		<nome_tabela_banco>UF_ARRECADACAO</nome_tabela_banco>
+		<colunas>
+			<coluna nome='cod_estado' tipo='VARCHAR2' ind_chave='FALSE' existe_so_no_txt='TRUE'/>
+			<coluna nome='nro_banco' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='nro_agencia' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='nro_conta' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='nom_banco' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='ident_estado' tipo='NUMBER' ind_chave='TRUE'/>
+		</colunas>
+		<validacoes>
+			<recuperar coluna="5" tabela="estado" campo_recuperar="ident_estado" campo_ref="cod_estado" coluna_ref="0" cod_erro="090027"/>
+		</validacoes>
+	</tabela>
+
+	<tabela>
+		<nome_tabela>TFIX06</nome_tabela>
+		<nome_tabela_banco>CAT_ARQUIVOS</nome_tabela_banco>
+		<colunas>
+			<coluna nome='nome_logico_arq' tipo='VARCHAR2' ind_chave='TRUE' />
+			<coluna nome='ind_layout' tipo='CHAR' ind_chave='TRUE'/>
+			<coluna nome='descricao' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='nome_campo_tot' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='num_pag_lay' tipo='NUMBER' ind_chave='FALSE'/>
+			<coluna nome='ind_tipo_in' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='ind_versao_layout' tipo='VARCHAR2' ind_trim='FALSE' ind_chave='TRUE'/>
+		</colunas>
+	</tabela>
+	
+
+	<tabela>
+		<nome_tabela>TFIX07</nome_tabela>
+		<nome_tabela_banco>CAT_TABELAS</nome_tabela_banco>
+		<colunas>
+			<coluna nome='cod_tabela' tipo='NUMBER' ind_chave='TRUE' />
+			<coluna nome='descricao' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='ind_associacao' tipo='CHAR' ind_chave='FALSE'/>
+			<coluna nome='nome_bd' tipo='VARCHAR2' ind_chave='FALSE'/>
+		</colunas>
+	</tabela>	
+
+	<tabela>
+		<nome_tabela>TFIX08</nome_tabela>
+		<nome_tabela_banco>CAT_COLUNAS</nome_tabela_banco>
+		<colunas>
+			<coluna nome='ind_tipo_in' tipo='VARCHAR2' ind_chave='TRUE' />
+			<coluna nome='nome_logico_arq' tipo='VARCHAR2' ind_chave='TRUE'/>
+			<coluna nome='ind_layout' tipo='CHAR' ind_chave='TRUE'/>
+			<coluna nome='num_coluna' tipo='NUMBER' ind_chave='TRUE'/>
+			<coluna nome='descricao' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='posicao_ini' tipo='NUMBER' ind_chave='FALSE'/>
+			<coluna nome='posicao_fim' tipo='NUMBER' ind_chave='FALSE'/>
+			<coluna nome='tipo' tipo='CHAR' ind_chave='FALSE'/>
+			<coluna nome='observacao' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='ind_exig_normativa' tipo='CHAR' ind_chave='FALSE'/>
+			<coluna nome='num_campo' tipo='NUMBER' ind_chave='FALSE'/>
+			<coluna nome='tabela_origem' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='coluna_origem' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='ind_versao_layout' tipo='VARCHAR2' ind_trim='FALSE' ind_chave='TRUE'/>
+		</colunas>
+	</tabela>	
+
+	<tabela>
+		<nome_tabela>TFIX09</nome_tabela>
+		<nome_tabela_banco>CAT_FK</nome_tabela_banco>
+		<colunas>
+			<coluna nome='nom_fk' tipo='VARCHAR2' ind_chave='TRUE' />
+			<coluna nome='dsc_tabela' tipo='VARCHAR2' ind_chave='FALSE'/>
+		</colunas>
+	</tabela>
+
+	<tabela>
+		<nome_tabela>TFIX10</nome_tabela>
+		<nome_tabela_banco>IDENT_SUBSTITUTO</nome_tabela_banco>
+		<sobrepor_registro>FALSE</sobrepor_registro>
+		<colunas>
+			<coluna nome='nome_tabela' tipo='VARCHAR2' ind_chave='TRUE' />
+			<coluna nome='nome_coluna' tipo='VARCHAR2' ind_chave='TRUE'/>
+			<coluna nome='prox_ident_subst' tipo='NUMBER' ind_chave='FALSE'/>
+		</colunas>
+	</tabela>
+
+	<tabela>
+		<nome_tabela>TFIX11</nome_tabela>
+		<nome_tabela_banco>CAT_PRIOR_IMP</nome_tabela_banco>
+		<colunas>
+			<coluna nome='grupo_arquivo' tipo='NUMBER' ind_chave='TRUE' />
+			<coluna nome='numero_arquivo' tipo='NUMBER' ind_chave='TRUE'/>
+			<coluna nome='descricao_arquivo' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='nom_tab_work' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='ind_estab_grp' tipo='CHAR' ind_chave='FALSE'/>
+			<coluna nome='ind_lim_periodo' tipo='CHAR' ind_chave='FALSE'/>
+			<coluna nome='ind_tab_carga' tipo='CHAR' ind_chave='FALSE'/>
+			<coluna nome='ind_ato_cotepe' tipo='CHAR' ind_chave='FALSE'/>
+			<coluna nome='ind_multi_load' tipo='CHAR' ind_chave='FALSE'/>
+			<coluna nome='nom_tab_def' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='data_ref_tab_def' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='legislacao' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='objetivo' tipo='VARCHAR2' ind_chave='FALSE' ind_trim='FALSE'/>
+			<coluna nome='ind_valid_obi' tipo='VARCHAR2' ind_chave='FALSE'/>
+		</colunas>
+	</tabela>
+
+	<tabela>
+		<nome_tabela>TFIX12</nome_tabela>
+		<nome_tabela_banco>PARAMETROS</nome_tabela_banco>
+		<colunas>
+			<coluna nome='cod_variavel' tipo='VARCHAR2' ind_chave='TRUE' />
+			<coluna nome='dsc_variavel' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='dsc_conteudo' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='dsc_natureza' tipo='CHAR' ind_chave='FALSE'/>
+			<coluna nome='tag_variavel' tipo='VARCHAR2' ind_chave='FALSE'/>
+		</colunas>
+	</tabela>
+
+	<tabela>
+		<nome_tabela>TFIX13</nome_tabela>
+		<nome_tabela_banco>CAT_OBSERVACAO</nome_tabela_banco>
+		<colunas>
+			<coluna nome='cod_observacao' tipo='VARCHAR2' ind_chave='TRUE' />
+			<coluna nome='observacao' tipo='VARCHAR2' ind_chave='FALSE'/>
+		</colunas>
+	</tabela>
+
+	<tabela>
+		<nome_tabela>TFIX14</nome_tabela>
+		<nome_tabela_banco>TIPO_LIVRO_FISCAL</nome_tabela_banco>
+		<colunas>
+			<coluna nome='cod_tipo_livro' tipo='VARCHAR2' ind_chave='TRUE' />
+			<coluna nome='nom_oficial' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='nom_reduzido' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='ind_meio_emissao' tipo='CHAR' ind_chave='FALSE'/>
+			<coluna nome='ind_orgao_resp' tipo='CHAR' ind_chave='FALSE'/>
+			<coluna nome='ind_cat_tipo_livro' tipo='CHAR' ind_chave='FALSE'/>
+			<coluna nome='val_limite_pagina' tipo='NUMBER' ind_chave='FALSE'/>
+			<coluna nome='ind_centr' tipo='CHAR' ind_chave='FALSE'/>
+			<coluna nome='ind_ent_sai' tipo='CHAR' ind_chave='FALSE'/>
+			<coluna nome='ind_ipi' tipo='CHAR' ind_chave='FALSE'/>
+			<coluna nome='IND_INCENT1' tipo='CHAR' ind_chave='FALSE'/>
+			<coluna nome='IND_INCENT2' tipo='CHAR' ind_chave='FALSE'/>
+			<coluna nome='IND_INCENT3' tipo='CHAR' ind_chave='FALSE'/>
+			<coluna nome='IND_TEM_CONSOLIDADO' tipo='CHAR' ind_chave='FALSE'/>
+			<coluna nome='IND_INCENT4' tipo='CHAR' ind_chave='FALSE'/>
+		</colunas>
+	</tabela>
+
+	<tabela>
+		<nome_tabela>TFIX15</nome_tabela>
+		<nome_tabela_banco>TIPO_LIVRO_APURAC</nome_tabela_banco>
+		<colunas>
+			<coluna nome='cod_tipo_livro' tipo='VARCHAR2' ind_chave='TRUE' />
+			<coluna nome='ind_tributo' tipo='CHAR' ind_chave='FALSE'/>
+		</colunas>
+		<validacoes>
+			<validar coluna="0" tabela="tipo_livro_fiscal" campo_tabela="cod_tipo_livro" cod_erro="090555"/>
+		</validacoes>
+	</tabela>
+
+	<tabela>
+		<nome_tabela>TFIX16</nome_tabela>
+		<nome_tabela_banco>TIPO_CONSOLIDACAO</nome_tabela_banco>
+		<colunas>
+			<coluna nome='cod_tipo_consol' tipo='VARCHAR2' ind_chave='TRUE' />
+			<coluna nome='dsc_tipo_consol' tipo='VARCHAR2' ind_chave='FALSE'/>
+		</colunas>
+	</tabela>
+
+		<tabela>
+		<nome_tabela>TFIX17</nome_tabela>
+		<nome_tabela_banco>CONSOLID_TP_LIVRO</nome_tabela_banco>
+		<colunas>
+			<coluna nome='cod_tipo_livro' tipo='VARCHAR2' ind_chave='TRUE' />
+			<coluna nome='cod_tipo_consol' tipo='VARCHAR2' ind_chave='TRUE' />
+		</colunas>
+		<validacoes>
+			<validar coluna="0" tabela="tipo_livro_apurac" campo_tabela="cod_tipo_livro" cod_erro="090555"/>
+			<validar coluna="1" tabela="tipo_consolidacao" campo_tabela="cod_tipo_consol" cod_erro="090556"/>
+		</validacoes>
+	</tabela>
+
+	<tabela>
+		<nome_tabela>TFIX18</nome_tabela>
+		<reimportar>TRUE</reimportar>
+		<nome_tabela_banco>OPERACAO_APURACAO</nome_tabela_banco>
+		<colunas>
+			<coluna nome='cod_tipo_livro' tipo='VARCHAR2' ind_chave='TRUE' />
+			<coluna nome='cod_oper_apur' tipo='VARCHAR2' ind_chave='TRUE'/>
+			<coluna nome='dsc_oper_apur' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='ind_dig_discrim' tipo='CHAR' ind_chave='FALSE'/>
+			<coluna nome='ind_util_tipo_ded' tipo='CHAR' ind_chave='FALSE'/>
+			<coluna nome='ind_tipo_operacao' tipo='CHAR' ind_chave='FALSE'/>
+			<coluna nome='cod_op_ap_sub_tot' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='cod_op_ap_per_ant' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='cod_classe' tipo='VARCHAR2' ind_chave='FALSE'/>
+		</colunas>
+		<validacoes>
+			<validar coluna="0" tabela="tipo_livro_apurac" campo_tabela="cod_tipo_livro" cod_erro="090555"/>
+		</validacoes>
+	</tabela>
+
+	<tabela>
+		<nome_tabela>TFIX19</nome_tabela>
+		<nome_tabela_banco>CAT_PRIOR_BR</nome_tabela_banco>
+		<colunas>
+			<coluna nome='nome_tabela_banco' tipo='VARCHAR2' ind_chave='TRUE' />
+			<coluna nome='classificacao' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='desc_tabela' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='prior_limpeza' tipo='NUMBER' ind_chave='FALSE'/>
+			<coluna nome='versao' tipo='NUMBER' tamanho ='5' precisao='2' ind_chave='FALSE'/>
+			<coluna nome='ind_tem_estab' tipo='CHAR' ind_chave='FALSE'/>
+			<coluna nome='ind_tem_processo' tipo='CHAR' ind_chave='FALSE'/>
+			<coluna nome='nom_col_data_ref' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='ind_gera_bck_cd' tipo='CHAR' ind_chave='FALSE'/>
+		</colunas>
+	</tabela>
+
+	<tabela>
+		<nome_tabela>TFIX22</nome_tabela>
+		<nome_tabela_banco>CAT_ERRO</nome_tabela_banco>
+		<colunas>
+			<coluna nome='cod_erro' tipo='NUMBER' ind_chave='TRUE' />
+			<coluna nome='descricao' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='motivo' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='ind_erro_grave' tipo='CHAR' ind_chave='FALSE'/>
+			<coluna nome='ind_imprime' tipo='CHAR' ind_chave='FALSE'/>
+			<coluna nome='localizacao' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='solicita_in68' tipo='CHAR' ind_chave='FALSE'/>
+			<coluna nome='solicita_icms' tipo='CHAR' ind_chave='FALSE'/>
+			<coluna nome='solicita_mod_uf' tipo='CHAR' ind_chave='FALSE'/>
+			<coluna nome='solicita_mod_fed' tipo='CHAR' ind_chave='FALSE'/>
+			<coluna nome='solicita_mod_mun' tipo='CHAR' ind_chave='FALSE'/>
+			<coluna nome='solicita_ctr_imp' tipo='CHAR' ind_chave='FALSE'/>
+			<coluna nome='solicita_mod_dw' tipo='CHAR' ind_chave='FALSE'/>
+			<coluna nome='nome_coluna' tipo='VARCHAR2' tamanho='40' ind_chave='FALSE'/>
+			<coluna nome='solucao_erro' tipo='VARCHAR2' ind_chave='FALSE'/>
+		</colunas>
+	</tabela>
+
+	<tabela>
+		<nome_tabela>TFIX23</nome_tabela>
+		<nome_tabela_banco>BRT_GRUPO</nome_tabela_banco>
+		<colunas>
+			<coluna nome='cod_grupo' tipo='NUMBER' ind_chave='TRUE' />
+			<coluna nome='dsc_grupo' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='ind_sis_usu' tipo='CHAR' ind_chave='FALSE'/>
+		</colunas>
+	</tabela>
+
+	<tabela>
+		<nome_tabela>TFIX24</nome_tabela>
+		<nome_tabela_banco>BRT_GRUPO_TAB</nome_tabela_banco>
+		<colunas>
+			<coluna nome='cod_grupo' tipo='NUMBER' ind_chave='TRUE' />
+			<coluna nome='nome_tabela_banco' tipo='VARCHAR2' ind_chave='TRUE'/>
+			<coluna nome='ind_especie' tipo='CHAR' ind_chave='FALSE'/>
+		</colunas>
+		<validacoes>
+			<validar coluna="0" tabela="brt_grupo" campo_tabela="cod_grupo" cod_erro="900002"/>
+			<validar coluna="1" tabela="cat_prior_br" campo_tabela="nome_tabela_banco" cod_erro="090627"/>
+		</validacoes>
+	</tabela>
+
+	<tabela>
+		<nome_tabela>TFIX25</nome_tabela>
+		<nome_tabela_banco>DWT_AREA_LIVR_COM</nome_tabela_banco>
+		<colunas>
+			<coluna nome='cod_area_livr_com' tipo='VARCHAR2' ind_chave='TRUE' />
+			<coluna nome='dsc_area_livr_com' tipo='VARCHAR2' ind_chave='FALSE'/>
+		</colunas>
+	</tabela>
+
+	<tabela>
+		<nome_tabela>TACES06</nome_tabela>
+		<nome_tabela_banco>MUNICIPIO</nome_tabela_banco>
+		<colunas>
+			<coluna nome='cod_estado' tipo='VARCHAR2' ind_chave='FALSE' existe_so_no_txt='TRUE'/>
+			<coluna nome='cod_municipio' tipo='NUMBER' ind_chave='TRUE'/>
+			<coluna nome='descricao' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='cod_uf' tipo='NUMBER' ind_chave='FALSE'/>
+			<coluna nome='cod_mun_estado' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='cod_area_livr_com' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='cod_munic_dipj' tipo='NUMBER' ind_chave='FALSE'/>	
+			<coluna nome='descricao_ibge' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='ident_estado' tipo='NUMBER' ind_chave='TRUE'/>
+		</colunas>
+		<validacoes>
+			<recuperar coluna="8" tabela="estado" campo_recuperar="ident_estado" campo_ref="cod_estado" coluna_ref="0" cod_erro="090027"/>
+			<validar coluna="5" tabela="dwt_area_livr_com" campo_tabela="cod_area_livr_com" cod_erro="090650"/>
+		</validacoes>
+	</tabela>
+
+	<tabela>
+		<nome_tabela>TFIX27</nome_tabela>
+		<nome_tabela_banco>CDT_CAT_PROCED</nome_tabela_banco>
+		<colunas>
+			<coluna nome='cod_proced' tipo='VARCHAR2' ind_chave='TRUE' />
+			<coluna nome='dsc_proced' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='num_versao' tipo='NUMBER' ind_chave='FALSE'/>
+			<coluna nome='ind_tem_estab' tipo='CHAR' ind_chave='FALSE'/>
+			<coluna nome='ind_tem_data' tipo='CHAR' ind_chave='FALSE'/>
+		</colunas>
+	</tabela>
+
+	<tabela>
+		<nome_tabela>TFIX28</nome_tabela>
+		<nome_tabela_banco>FDT_SC_TIPO_OPER</nome_tabela_banco>
+		<colunas>
+			<coluna nome='cod_tp_oper_sc' tipo='NUMBER' ind_chave='TRUE' />
+			<coluna nome='descricao' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='ind_mov' tipo='CHAR' ind_chave='FALSE'/>
+		</colunas>
+	</tabela>
+
+	<tabela>
+		<nome_tabela>TFIX29</nome_tabela>
+		<nome_tabela_banco>DIPI_CLASSE_PAR</nome_tabela_banco>
+		<colunas>
+			<coluna nome='ano_versao_dipj' tipo='NUMBER' ind_chave='TRUE' />
+			<coluna nome='num_ficha' tipo='NUMBER' ind_chave='TRUE'/>
+			<coluna nome='num_linha' tipo='NUMBER' ind_chave='TRUE'/>
+			<coluna nome='cod_classe' tipo='VARCHAR2' ind_chave='TRUE'/>
+			<coluna nome='ind_tp_par' tipo='CHAR' ind_chave='TRUE'/>
+			<coluna nome='num_coluna' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='dsc_ficha' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='dsc_classe' tipo='VARCHAR2' ind_chave='FALSE'/>
+		</colunas>
+	</tabela>
+
+	
+	<tabela>
+		<nome_tabela>TFIX30</nome_tabela>
+		<nome_tabela_banco>PRT_MODULOS_MSAF</nome_tabela_banco>
+		<colunas>
+			<coluna nome='cod_modulo' tipo='VARCHAR2' ind_chave='TRUE' />
+			<coluna nome='dsc_modulo' tipo='VARCHAR2' ind_chave='FALSE'/>
+		</colunas>
+	</tabela>
+
+	<tabela>
+		<nome_tabela>TFIX31</nome_tabela>
+		<nome_tabela_banco>PRT_PAR2_MSAF</nome_tabela_banco>
+		<colunas>
+			<coluna nome='cod_param' tipo='NUMBER' ind_chave='TRUE' />
+			<coluna nome='dsc_param' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='cod_modulo' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='ind_cfop_nat' tipo='CHAR' ind_chave='FALSE'/>
+			<coluna nome='ind_produto' tipo='CHAR' ind_chave='FALSE'/>
+			<coluna nome='ind_ncm' tipo='CHAR' ind_chave='FALSE'/>
+			<coluna nome='ind_servico' tipo='CHAR' ind_chave='FALSE'/>
+			<coluna nome='ind_operacao' tipo='CHAR' ind_chave='FALSE'/>
+			<coluna nome='ind_conta' tipo='CHAR' ind_chave='FALSE'/>
+			<coluna nome='ind_trib_int' tipo='CHAR' ind_chave='FALSE'/>
+			<coluna nome='ind_pfj' tipo='CHAR' ind_chave='FALSE'/>
+			<coluna nome='ind_pfj_atividade' tipo='CHAR' ind_chave='FALSE'/>
+			<coluna nome='ind_estado' tipo='CHAR' ind_chave='FALSE'/>
+			<coluna nome='ind_classe_balanco' tipo='CHAR' ind_chave='FALSE'/>
+			<coluna nome='ind_ind_produto' tipo='CHAR' ind_chave='FALSE'/>
+		</colunas>
+		<validacoes>
+			<validar coluna="2" tabela="prt_modulos_msaf" campo_tabela="cod_modulo" cod_erro="090800"/>
+		</validacoes>
+	</tabela>
+
+	<tabela>
+		<nome_tabela>TFIX32</nome_tabela>
+		<nome_tabela_banco>PRT_CLASSE_MSAF</nome_tabela_banco>
+		<colunas>
+			<coluna nome='cod_classe' tipo='VARCHAR2' ind_chave='TRUE' />
+			<coluna nome='dsc_classe' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='cod_modulo' tipo='VARCHAR2' ind_chave='FALSE'/>
+		</colunas>
+		<validacoes>
+			<validar coluna="2" tabela="prt_modulos_msaf" campo_tabela="cod_modulo" cod_erro="090800"/>
+		</validacoes>
+	</tabela>
+
+	<tabela>
+		<nome_tabela>TFIX33</nome_tabela>
+		<nome_tabela_banco>PRT_GRUPO_TAB</nome_tabela_banco>
+		<colunas>
+			<coluna nome='cod_grupo' tipo='NUMBER' ind_chave='TRUE' />
+			<coluna nome='nome_tabela' tipo='VARCHAR2' ind_chave='TRUE'/>
+		</colunas>
+		<validacoes>
+			<validar coluna="0,1" tabela="brt_grupo_tab" campo_tabela="cod_grupo,nome_tabela_banco" cod_erro="093175"/>
+		</validacoes>
+	</tabela>
+
+	<tabela>
+		<nome_tabela>TFIX34</nome_tabela>
+		<nome_tabela_banco>IRT_COD_PG_INSS</nome_tabela_banco>
+		<colunas>
+			<coluna nome='cod_pagto' tipo='VARCHAR2' ind_chave='TRUE' />
+			<coluna nome='dsc_pagto' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='ind_autonomo' tipo='CHAR' ind_chave='FALSE'/>
+		</colunas>
+	</tabela>
+
+	<tabela>
+		<nome_tabela>TFIX35</nome_tabela>
+		<nome_tabela_banco>IPT_EMB_MM_ESP_PRD</nome_tabela_banco>
+		<colunas>
+			<coluna nome='cod_esp_prod' tipo='VARCHAR2' ind_chave='TRUE' />
+			<coluna nome='dsc_esp_prod' tipo='VARCHAR2' ind_chave='FALSE'/>
+		</colunas>
+	</tabela>
+
+	<tabela>
+		<nome_tabela>TFIX36</nome_tabela>
+		<nome_tabela_banco>EFT_COD_CORRECAO</nome_tabela_banco>
+		<colunas>
+			<coluna nome='codigo' tipo='NUMBER' ind_chave='TRUE' />
+			<coluna nome='descricao' tipo='VARCHAR2' ind_chave='FALSE'/>
+		</colunas>
+	</tabela>
+
+	<tabela>
+		<nome_tabela>TFIX37</nome_tabela>
+		<nome_tabela_banco>IST_LAYOUT_LVR_ISS</nome_tabela_banco>
+		<colunas>
+			<coluna nome='cod_layout_lvr_iss' tipo='NUMBER' ind_chave='TRUE' />
+			<coluna nome='dsc_layout_lvr_iss' tipo='VARCHAR2' ind_chave='FALSE'/>
+		</colunas>
+	</tabela>
+
+	<tabela>
+		<nome_tabela>TFIX38</nome_tabela>
+		<nome_tabela_banco>SCT_CLASS_PRD</nome_tabela_banco>
+		<colunas>
+			<coluna nome='tipo_obrigacao' tipo='VARCHAR2' ind_chave='TRUE' />
+			<coluna nome='cod_class_prd' tipo='VARCHAR2' ind_chave='TRUE'/>
+			<coluna nome='dsc_class_prd' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='dsc_especificacao' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='cod_nbm' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='cod_anexo' tipo='NUMBER' ind_chave='FALSE'/>
+			<coluna nome='qtd_min_pf' tipo='NUMBER'  tamanho ='17' precisao='6'  ind_chave='FALSE'/>
+			<coluna nome='cod_lista_anvisa' tipo='VARCHAR2' ind_chave='FALSE'/>
+		</colunas>
+	</tabela>
+
+	<tabela>
+		<nome_tabela>TFIX39</nome_tabela>
+		<nome_tabela_banco>EFT_COLUNAS_DOCTO</nome_tabela_banco>
+		<colunas>
+			<coluna nome='tipo_documento' tipo='VARCHAR2' ind_chave='TRUE' />
+			<coluna nome='num_coluna' tipo='NUMBER' ind_chave='TRUE'/>
+			<coluna nome='descricao' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='tipo_coluna' tipo='VARCHAR2' ind_chave='FALSE'/>
+		</colunas>
+	</tabela>
+
+	<tabela>
+		<nome_tabela>TFIX40</nome_tabela>
+		<nome_tabela_banco>EST_MG_CAE</nome_tabela_banco>
+		<colunas>
+			<coluna nome='cod_cae' tipo='VARCHAR2' ind_chave='TRUE' />
+			<coluna nome='cod_desmembramento' tipo='VARCHAR2' ind_chave='TRUE'/>
+			<coluna nome='desc_cae' tipo='VARCHAR2' ind_chave='FALSE'/>
+		</colunas>
+	</tabela>
+
+	<tabela>
+		<nome_tabela>TFIX41</nome_tabela>
+		<nome_tabela_banco>EST_MG_REG_RECOL</nome_tabela_banco>
+		<colunas>
+			<coluna nome='cod_regime' tipo='VARCHAR2' ind_chave='TRUE' />
+			<coluna nome='desc_regime' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='percentual' tipo='NUMBER' tamanho='7' precisao='3' ind_chave='FALSE'/>
+		</colunas>
+	</tabela>
+
+	<tabela>
+		<nome_tabela>TFIX42</nome_tabela>
+		<nome_tabela_banco>EST_MG_OPER_CFOP</nome_tabela_banco>
+		<colunas>
+			<coluna nome='cod_operacao' tipo='NUMBER' ind_chave='TRUE' />
+			<coluna nome='dt_ini_vigencia' tipo='DATE' ind_chave='TRUE'/>
+			<coluna nome='ind_ent_sai' tipo='CHAR' ind_chave='TRUE'/>
+			<coluna nome='cod_cfo' tipo='VARCHAR2' ind_chave='TRUE'/>
+			<coluna nome='dt_fim_vigencia' tipo='DATE' ind_chave='FALSE'/>
+		</colunas>
+	</tabela>
+
+	<tabela>
+		<nome_tabela>TFIX43</nome_tabela>
+		<nome_tabela_banco>PRT_CLASSE_UF_MSAF</nome_tabela_banco>
+		<colunas>
+			<coluna nome='cod_estado' tipo='VARCHAR2' ind_chave='FALSE' existe_so_no_txt='TRUE'/>
+			<coluna nome='cod_classe' tipo='VARCHAR2' ind_chave='TRUE'/>
+			<coluna nome='dsc_obrigacao' tipo='VARCHAR2' tamanho='60' ind_chave='FALSE'/>
+			<coluna nome='cod_classe_oficial' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='ident_estado' tipo='NUMBER' ind_chave='TRUE'/>
+		</colunas>
+		<validacoes>
+			<recuperar coluna="4" tabela="estado" campo_recuperar="ident_estado" campo_ref="cod_estado" coluna_ref="0" cod_erro="090027"/>
+			<validar coluna="1" tabela="prt_classe_msaf" campo_tabela="cod_classe" cod_erro="092695"/>
+		</validacoes>
+	</tabela>
+
+	<tabela>
+		<nome_tabela>TFIX44</nome_tabela>
+		<nome_tabela_banco>ICT_AM_COMP_APURAC</nome_tabela_banco>
+		<colunas>
+			<coluna nome='cod_componente' tipo='VARCHAR2' ind_chave='TRUE' />
+			<coluna nome='descricao' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='ind_incent' tipo='CHAR' ind_chave='FALSE'/>
+			<coluna nome='cod_tipo_livro' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='cod_oper_apur' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='cod_classe' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='ind_par_cfop_nat' tipo='CHAR' ind_chave='FALSE'/>
+			<coluna nome='cod_comp_apur' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='cod_estrut' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='cod_item_apur' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='ind_n_incent' tipo='CHAR' ind_chave='FALSE'/>
+			<coluna nome='cod_tp_livro_ninc' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='cod_oper_apur_ninc' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='cod_classe_ninc' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='cod_comp_ninc' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='cod_estrut_ninc' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='cod_item_apur_ninc' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='dsc_apur_inc' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='dsc_apur_ninc' tipo='VARCHAR2' ind_chave='FALSE'/>
+		</colunas>
+	</tabela>
+
+	<tabela>
+		<nome_tabela>TFIX45</nome_tabela>
+		<nome_tabela_banco>PRT_GRUPO_LIVRO</nome_tabela_banco>
+		<colunas>
+			<coluna nome='cod_grupo' tipo='NUMBER' ind_chave='TRUE' />
+			<coluna nome='cod_tipo_livro' tipo='VARCHAR2' ind_chave='TRUE'/>
+		</colunas>
+		<validacoes>
+			<validar coluna="0" tabela="brt_grupo" campo_tabela="cod_grupo" cod_erro="900002"/>
+			<validar coluna="1" tabela="tipo_livro_apurac" campo_tabela="cod_tipo_livro" cod_erro="090555"/>
+		</validacoes>
+	</tabela>
+
+	<tabela>
+		<nome_tabela>TFIX46</nome_tabela>
+		<nome_tabela_banco>INT_CAT_ARQUIVOS</nome_tabela_banco>
+		<colunas>
+			<coluna nome='cod_item' tipo='VARCHAR2' ind_chave='TRUE' />
+			<coluna nome='num_ordem' tipo='NUMBER' ind_chave='TRUE'/>
+			<coluna nome='ind_tip_in' tipo='VARCHAR2' ind_chave='TRUE'/>
+			<coluna nome='nom_logico_arq' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='dsc_item' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='nom_campo_tot' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='num_pag_lay' tipo='NUMBER' ind_chave='FALSE'/>
+			<coluna nome='num_arquivo' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='ind_versao_layout' tipo='VARCHAR2' ind_trim='FALSE' ind_chave='TRUE'/>
+		</colunas>
+	</tabela>
+
+	<tabela>
+		<nome_tabela>TFIX48</nome_tabela>
+		<nome_tabela_banco>ICT_PAR_MM_MODELO</nome_tabela_banco>
+		<colunas>
+			<coluna nome='tipo_registro' tipo='VARCHAR2' ind_chave='TRUE' />
+			<coluna nome='modelo_docto' tipo='VARCHAR2' ind_chave='TRUE'/>
+			<coluna nome='ind_conv_31' tipo='CHAR' ind_chave='FALSE'/>
+			<coluna nome='ind_conv_69' tipo='CHAR' ind_chave='FALSE'/>
+			<coluna nome='ind_conv_18' tipo='CHAR' ind_chave='FALSE'/>
+			<coluna nome='ind_conv_12' tipo='CHAR' ind_chave='FALSE'/>
+		</colunas>
+	</tabela>
+
+	<tabela>
+		<nome_tabela>TFIX50</nome_tabela> 
+		<nome_tabela_banco>CAD_TAB_PROC</nome_tabela_banco> 
+		<reimportar>TRUE</reimportar>
+		<colunas> 
+			<coluna nome='cod_categoria' tipo='NUMBER' ind_chave='TRUE' /> 
+			<coluna nome='dsc_categoria' tipo='VARCHAR2' ind_chave='FALSE'/> 
+			<coluna nome='cod_tab_proc' tipo='NUMBER' ind_chave='TRUE'/> 
+			<coluna nome='dsc_tab_proc' tipo='VARCHAR2' ind_chave='FALSE'/> 
+			<coluna nome='nome_bd' tipo='VARCHAR2' ind_chave='FALSE'/> 
+			<coluna nome='coluna_data_inic' tipo='VARCHAR2' ind_chave='FALSE'/>   
+		</colunas> 
+	</tabela> 
+
+	<tabela>
+		<nome_tabela>TFIX51</nome_tabela>
+		<nome_tabela_banco>CPT_OPERACAO</nome_tabela_banco>
+		<colunas>
+			<coluna nome='cod_operacao' tipo='VARCHAR2' ind_chave='TRUE' />
+			<coluna nome='descricao' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='ind_apuracao' tipo='CHAR' ind_chave='FALSE'/>
+		</colunas>
+	</tabela>
+
+	<tabela>
+		<nome_tabela>TFIX52</nome_tabela>
+		<nome_tabela_banco>CPT_PAR_OPERACAO</nome_tabela_banco>
+		<colunas>
+			<coluna nome='cod_operacao' tipo='VARCHAR2' ind_chave='TRUE' />
+			<coluna nome='ind_tipo_par' tipo='VARCHAR2' ind_chave='TRUE'/>
+			<coluna nome='valor_origem' tipo='VARCHAR2' ind_chave='FALSE'/>
+		</colunas>
+		<validacoes>
+			<validar coluna="0" tabela="cpt_operacao" campo_tabela="cod_operacao" cod_erro="090123"/>
+		</validacoes>
+	</tabela>
+
+	<tabela>
+		<nome_tabela>TFIX53</nome_tabela>
+		<nome_tabela_banco>ICT_ITDF_PAR2_MSAF</nome_tabela_banco>
+		<colunas>
+			<coluna nome='cod_param' tipo='NUMBER' ind_chave='TRUE' />
+			<coluna nome='cod_item_df' tipo='VARCHAR2' ind_chave='FALSE'/>
+		</colunas>
+		<validacoes>
+			<validar coluna="0" tabela="prt_par2_msaf" campo_tabela="cod_param" cod_erro="093166"/>
+		</validacoes>
+	</tabela>
+
+	<tabela>
+		<nome_tabela>TFIX54</nome_tabela>
+		<nome_tabela_banco>PRT_CATEGORIA_TRAB</nome_tabela_banco>
+		<colunas>
+			<coluna nome='data_valid' tipo='DATE' ind_chave='TRUE' />
+			<coluna nome='cod_categoria' tipo='VARCHAR2' ind_chave='TRUE'/>
+			<coluna nome='descricao' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='ind_autonomo' tipo='CHAR' ind_chave='FALSE'/>
+		</colunas>
+	</tabela>
+
+	<tabela>
+		<nome_tabela>TFIX55</nome_tabela>
+		<nome_tabela_banco>CAT_GRUPO</nome_tabela_banco>
+		<colunas>
+			<coluna nome='grupo_arquivo' tipo='NUMBER' ind_chave='TRUE' />
+			<coluna nome='dsc_grupo' tipo='VARCHAR2' ind_chave='FALSE'/>
+		</colunas>
+	</tabela>
+<!--
+	<tabela>
+		<nome_tabela>TFIX56</nome_tabela>
+		<nome_tabela_banco>LAYOUT_DIPJ</nome_tabela_banco>
+		<colunas>
+			<coluna nome='versao' tipo='VARCHAR2' ind_chave='TRUE'/>
+			<coluna nome='tipo' tipo='VARCHAR2' ind_chave='TRUE'/>
+			<coluna nome='ficha' tipo='VARCHAR2' ind_chave='TRUE' />
+			<coluna nome='campo' tipo='NUMBER' ind_chave='TRUE' />
+			<coluna nome='pos_ini' tipo='NUMBER' ind_chave='FALSE' />
+			<coluna nome='tamanho' tipo='NUMBER' ind_chave='FALSE' />
+			<coluna nome='descricao' tipo='VARCHAR2' ind_chave='FALSE' />
+			<coluna nome='formato_1' tipo='VARCHAR2' ind_chave='FALSE' />
+			<coluna nome='formato_2' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='formato_3' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='mascara' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='fator_mascara' tipo='NUMBER' ind_chave='FALSE'/>
+			<coluna nome='dominio' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='ind_campo_valor' tipo='VARCHAR2' ind_chave='FALSE'/>
+		</colunas>
+	</tabela>
+-->
+	<tabela>
+		<nome_tabela>TFIX57</nome_tabela>
+		<nome_tabela_banco>GID_CONTAS_LALUR</nome_tabela_banco>
+		<colunas>
+			<coluna nome='ano_lalur' tipo='NUMBER' ind_chave='TRUE' />
+			<coluna nome='cod_conta_lalur' tipo='VARCHAR2' ind_chave='TRUE'/>
+			<coluna nome='dsc_conta_lalur' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='tipo_lanc' tipo='NUMBER' ind_chave='FALSE'/>
+			<coluna nome='tipo_conta' tipo='NUMBER' ind_chave='FALSE'/>
+			<coluna nome='ind_geracao_gid' tipo='CHAR' ind_chave='FALSE'/>
+		</colunas>
+	</tabela>
+
+	<tabela>
+		<nome_tabela>TFIX58</nome_tabela>
+		<nome_tabela_banco>CAT_PROCESSO_AUTO</nome_tabela_banco>
+		<colunas>
+			<coluna nome='objeto' tipo='VARCHAR2' ind_chave='TRUE' />
+			<coluna nome='descricao' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='cod_modulo' tipo='VARCHAR2' ind_chave='FALSE'/>
+		</colunas>
+		<validacoes>
+			<validar coluna="2" tabela="prt_modulos_msaf" campo_tabela="cod_modulo" cod_erro="090800"/>
+		</validacoes>
+	</tabela>
+
+	<tabela>
+		<nome_tabela>TFIX59</nome_tabela>
+		<nome_tabela_banco>GID_CONTAS_EST_LALUR</nome_tabela_banco>
+		<colunas>
+			<coluna nome='ano_lalur' tipo='NUMBER' ind_chave='TRUE' />
+			<coluna nome='cod_conta_lalur' tipo='VARCHAR2' ind_chave='TRUE'/>
+			<coluna nome='dsc_conta_lalur' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='tipo_conta' tipo='NUMBER' ind_chave='FALSE'/>
+			<coluna nome='ind_geracao_gid' tipo='CHAR' ind_chave='FALSE'/>
+			<coluna nome='ind_natureza_lalur' tipo='CHAR' ind_chave='FALSE'/>
+		</colunas>
+	</tabela>
+
+	<tabela>
+		<nome_tabela>TFIX60</nome_tabela>
+		<nome_tabela_banco>DWT_SERVICO_LEI_116</nome_tabela_banco>
+		<colunas>
+			<coluna nome='cod_serv_lei_116' tipo='VARCHAR2' ind_chave='TRUE'/>
+			<coluna nome='valid_serv_lei_116' tipo='DATE' ind_chave='TRUE'/>
+			<coluna nome='dsc_serv_lei_116' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='tipo_serv_lei_116' tipo='CHAR' ind_chave='FALSE'/>
+			<coluna nome='ident_serv_lei_116' tipo='NUMBER' ind_ident='TRUE' ind_chave='FALSE' existe_so_no_banco='TRUE' />
+		</colunas>
+	</tabela>
+
+	<tabela>
+		<nome_tabela>TFIX61</nome_tabela>
+		<nome_tabela_banco>FICHAS_DIPJ</nome_tabela_banco>
+		<colunas>
+			<coluna nome='pasta' tipo='VARCHAR2' ind_chave='FALSE' />
+			<coluna nome='versao' tipo='VARCHAR2' ind_chave='TRUE'/>
+			<coluna nome='tipo' tipo='VARCHAR2' ind_chave='TRUE'/>
+			<coluna nome='ficha' tipo='VARCHAR2' ind_chave='TRUE'/>
+			<coluna nome='qualificacao_pj' tipo='VARCHAR2' ind_chave='TRUE'/>
+			<coluna nome='nome' tipo='VARCHAR2' ind_chave='FALSE'/>
+		</colunas>
+	</tabela>
+
+	<tabela>
+		<nome_tabela>TFIX62</nome_tabela>
+		<nome_tabela_banco>EST_SC_DIME_LAYOUT_IME</nome_tabela_banco>
+		<colunas>
+			<coluna nome='quadro' tipo='VARCHAR2' ind_chave='TRUE' />
+			<coluna nome='item' tipo='VARCHAR2' ind_chave='TRUE'/>
+			<coluna nome='descricao' tipo='VARCHAR2' ind_chave='FALSE'/>
+		</colunas>
+	</tabela>
+
+	<tabela>
+		<nome_tabela>TFIX63</nome_tabela>
+		<nome_tabela_banco>PRT_AJUSTE_APUR</nome_tabela_banco>
+		<colunas>
+			<coluna nome='cod_ajuste' tipo='VARCHAR2' ind_chave='TRUE' />
+			<coluna nome='dsc_ajuste' tipo='VARCHAR2' ind_chave='FALSE'/>
+		</colunas>
+	</tabela>
+
+	<tabela>
+		<nome_tabela>TFIX64</nome_tabela>
+		<nome_tabela_banco>SPED_CONTAS_REF</nome_tabela_banco>
+		<colunas>
+			<coluna nome='cod_conta_ref' tipo='VARCHAR2' ind_chave='TRUE'/>
+			<coluna nome='versao' tipo='VARCHAR2' ind_chave='TRUE'/>
+			<coluna nome='cod_entidade_resp' tipo='VARCHAR2' ind_chave='TRUE'/>
+			<coluna nome='descricao' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='nivel' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='ind_conta' tipo='CHAR' ind_chave='FALSE'/>
+			<coluna nome='ind_tipo_conta' tipo='CHAR' ind_chave='FALSE'/>
+			<coluna nome='dat_validade_ini' tipo='DATE' ind_chave='FALSE'/>
+			<coluna nome='dat_validade_fim' tipo='DATE' ind_chave='FALSE'/>
+			<coluna nome='titulos' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='ind_classif_conta' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='ident_conta_ref' tipo='NUMBER' ind_ident='TRUE' ind_chave='FALSE' existe_so_no_banco='TRUE' />
+		</colunas>
+	</tabela>
+
+		<tabela>
+		<nome_tabela>TFIX65</nome_tabela>
+		<nome_tabela_banco>CPP_PARAM_COP</nome_tabela_banco>
+		<colunas>
+			<coluna nome='cod_modulo' tipo='VARCHAR2' ind_chave='TRUE' />
+			<coluna nome='arquivo' tipo='VARCHAR2' ind_chave='TRUE'/>
+			<coluna nome='desc_item_menu' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='tp_dados' tipo='CHAR' ind_chave='FALSE'/>
+			<coluna nome='grupo' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='ord_grupo' tipo='NUMBER' ind_chave='FALSE'/>
+			<coluna nome='nivel' tipo='NUMBER' ind_chave='FALSE'/>
+			<coluna nome='item_menu' tipo='NUMBER' ind_chave='TRUE'/>
+		</colunas>
+		<validacoes>
+			<validar coluna="0" tabela="prt_modulos_msaf" campo_tabela="cod_modulo" cod_erro="090800"/>
+		</validacoes>
+	</tabela>
+
+	<tabela>
+		<nome_tabela>TFIX67</nome_tabela>
+		<nome_tabela_banco>CAD_LAYOUT</nome_tabela_banco>
+		<colunas>
+			<coluna nome='cod_layout' tipo='VARCHAR2' ind_chave='TRUE' />
+			<coluna nome='dsc_layout' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='hash_code' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='ind_alteracao' tipo='CHAR' ind_chave='FALSE'/>
+			<coluna nome='data_ult_alt' tipo='DATE' ind_chave='FALSE'/>
+			<coluna nome='cod_versao' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='dsc_versao' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='data_valid_ini' tipo='DATE' ind_chave='FALSE'/>
+			<coluna nome='data_valid_fim' tipo='DATE' ind_chave='FALSE'/>
+		</colunas>
+	</tabela>
+
+	<tabela>
+		<nome_tabela>TFIX68</nome_tabela>
+		<nome_tabela_banco>CAD_BLOCO_LAYOUT</nome_tabela_banco>
+		<colunas>
+			<coluna nome='cod_layout' tipo='VARCHAR2' ind_chave='TRUE' /> 
+			<coluna nome='cod_bloco' tipo='VARCHAR2' ind_chave='TRUE'/>
+			<coluna nome='dsc_bloco' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='ind_ordenacao' tipo='NUMBER' ind_chave='FALSE'/>
+		</colunas>
+		<validacoes>
+			<validar coluna="0" tabela="cad_layout" campo_tabela="cod_layout" cod_erro="091654"/>
+		</validacoes>
+	</tabela>
+
+	<tabela>
+		<nome_tabela>TFIX69</nome_tabela>
+		<nome_tabela_banco>CAD_REG_LAYOUT</nome_tabela_banco>
+		<colunas>
+			<coluna nome='cod_layout' tipo='VARCHAR2' ind_chave='TRUE' /> 
+			<coluna nome='cod_bloco' tipo='VARCHAR2' ind_chave='TRUE'/> 
+			<coluna nome='cod_registro' tipo='VARCHAR2' ind_chave='TRUE'/>
+			<coluna nome='nivel_hierarq' tipo='NUMBER' ind_chave='FALSE'/>
+			<coluna nome='dsc_registro' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='inf_compl' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='cod_grupo' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='cod_categoria' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='ind_geracao' tipo='CHAR' ind_chave='FALSE'/>
+			<coluna nome='ind_obrigatorio' tipo='CHAR' ind_chave='FALSE'/>
+			<coluna nome='ind_relat_conf' tipo='CHAR' ind_chave='FALSE'/>
+			<coluna nome='ind_gerar_zerado' tipo='CHAR' ind_chave='FALSE'/>
+			<coluna nome='ind_reg_movto' tipo='VARCHAR2' ind_chave='FALSE'/>
+		</colunas>
+		<validacoes>
+			<validar coluna="0,1" tabela="cad_bloco_layout" campo_tabela="cod_layout,cod_bloco" cod_erro="091657"/>
+		</validacoes>
+	</tabela>
+
+	<tabela>
+		<nome_tabela>TFIX70</nome_tabela>
+		<nome_tabela_banco>CAD_REG_LAYOUT_EFD</nome_tabela_banco>
+		<colunas>
+			<coluna nome='cod_layout' tipo='VARCHAR2' ind_chave='TRUE' /> 
+			<coluna nome='cod_bloco' tipo='VARCHAR2' ind_chave='TRUE'/> 
+			<coluna nome='cod_registro' tipo='VARCHAR2' ind_chave='TRUE'/> 
+			<coluna nome='ind_tp_apresent' tipo='VARCHAR2' ind_chave='TRUE'/>
+			<coluna nome='ind_obrigacao' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='ind_obrig_entr' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='ind_obrig_saida' tipo='VARCHAR2' ind_chave='FALSE'/>
+		</colunas>
+		<validacoes>
+			<validar coluna="0,1,2" tabela="cad_reg_layout" campo_tabela="cod_layout,cod_bloco,cod_registro" cod_erro="091659"/>
+		</validacoes>
+	</tabela>
+
+	<tabela>
+		<nome_tabela>TFIX71</nome_tabela>
+		<nome_tabela_banco>DET_REG_LAYOUT</nome_tabela_banco>
+		<colunas>
+			<coluna nome='cod_layout' tipo='VARCHAR2' ind_chave='TRUE' /> 
+			<coluna nome='cod_bloco' tipo='VARCHAR2' ind_chave='TRUE'/> 
+			<coluna nome='cod_registro' tipo='VARCHAR2' ind_chave='TRUE'/> 
+			<coluna nome='posicao' tipo='NUMBER' ind_chave='TRUE'/>
+			<coluna nome='nome_campo' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='pos_chave' tipo='NUMBER' ind_chave='FALSE'/>
+			<coluna nome='dsc_campo' tipo='VARCHAR2' ind_chave='FALSE' ind_trim='FALSE'/>
+			<coluna nome='tipo' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='tamanho' tipo='NUMBER' ind_chave='FALSE'/>
+			<coluna nome='decimais' tipo='NUMBER' ind_chave='FALSE'/>
+			<coluna nome='texto_fixo' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='id_campo' tipo='NUMBER' ind_chave='FALSE'/>
+			<coluna nome='pos_chave_log' tipo='NUMBER' ind_chave='FALSE'/>
+			<coluna nome='nome_campo_log' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='tam_log' tipo='NUMBER' ind_chave='FALSE'/>
+			<coluna nome='data_ini_vigencia' tipo='DATE' ind_chave='FALSE'/>
+			<coluna nome='data_fim_vigencia' tipo='DATE' ind_chave='FALSE'/>
+			<coluna nome='cod_lista_msaf' tipo='VARCHAR2' ind_chave='FALSE'/>
+		</colunas>
+		<validacoes>
+			<validar coluna="0,1,2" tabela="cad_reg_layout" campo_tabela="cod_layout,cod_bloco,cod_registro" cod_erro="091662"/>
+		</validacoes>
+	</tabela>
+
+	<tabela>
+		<nome_tabela>TFIX72</nome_tabela>
+		<nome_tabela_banco>GRUPO_DIC_DADOS</nome_tabela_banco>
+		<colunas>
+			<coluna nome='cod_grupo' tipo='VARCHAR2' ind_chave='TRUE' />
+			<coluna nome='dsc_grupo' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='inf_compl' tipo='VARCHAR2' ind_chave='FALSE'/>
+		</colunas>
+	</tabela>
+
+	<tabela>
+		<nome_tabela>TFIX73</nome_tabela>
+		<nome_tabela_banco>CAT_GRUPO_DIC_DADOS</nome_tabela_banco>
+		<colunas>
+			<coluna nome='cod_grupo' tipo='VARCHAR2' ind_chave='TRUE' />
+			<coluna nome='cod_categoria' tipo='VARCHAR2' ind_chave='TRUE'/>
+			<coluna nome='desc_categoria' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='inf_compl' tipo='VARCHAR2' ind_chave='FALSE'/>
+		</colunas>
+		<validacoes>
+			<validar coluna="0" tabela="grupo_dic_dados" campo_tabela="cod_grupo" cod_erro="091667"/>
+		</validacoes>
+	</tabela>
+
+	<tabela>
+		<nome_tabela>TFIX74</nome_tabela>
+		<nome_tabela_banco>DET_GRUPO_DIC_DADOS</nome_tabela_banco>
+		<colunas>
+			<coluna nome='cod_grupo' tipo='VARCHAR2' ind_chave='TRUE' />
+			<coluna nome='cod_categoria' tipo='VARCHAR2' ind_chave='TRUE'/>
+			<coluna nome='id_campo' tipo='NUMBER' ind_chave='TRUE'/>
+			<coluna nome='nome_campo' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='tamanho' tipo='NUMBER' ind_chave='FALSE'/>
+			<coluna nome='dsc_campo' tipo='VARCHAR2' ind_chave='FALSE' ind_trim='FALSE'/>
+			<coluna nome='origem' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='localizacao' tipo='VARCHAR2' ind_chave='FALSE'/>
+		</colunas>
+		<validacoes>
+			<validar coluna="0,1" tabela="cat_grupo_dic_dados" campo_tabela="cod_grupo,cod_categoria" cod_erro="091670"/>
+		</validacoes>
+	</tabela>
+
+	<tabela>
+		<nome_tabela>TFIX75</nome_tabela>
+		<nome_tabela_banco>REGRA_VALID_DADOS</nome_tabela_banco>
+		<colunas>
+			<coluna nome='cod_regra' tipo='NUMBER' ind_chave='TRUE' />
+			<coluna nome='criticidade' tipo='CHAR' ind_chave='FALSE'/>
+			<coluna nome='tipo_regra' tipo='NUMBER' ind_chave='FALSE'/>
+			<coluna nome='texto_regra' tipo='VARCHAR2' ind_chave='FALSE'/>
+		</colunas>
+	</tabela>
+
+	<tabela>
+		<nome_tabela>TFIX76</nome_tabela>
+		<nome_tabela_banco>DET_GRUPO_DIC_REGRA</nome_tabela_banco>
+		<colunas>
+			<coluna nome='cod_grupo' tipo='VARCHAR2' ind_chave='TRUE' />
+			<coluna nome='cod_categoria' tipo='VARCHAR2' ind_chave='TRUE'/>
+			<coluna nome='id_campo' tipo='NUMBER' ind_chave='TRUE'/>
+			<coluna nome='cod_regra' tipo='NUMBER' ind_chave='TRUE'/>
+			<coluna nome='condicao' tipo='VARCHAR2' ind_chave='FALSE'/>
+		</colunas>
+		<validacoes>
+			<validar coluna="0,1,2" tabela="det_grupo_dic_dados" campo_tabela="cod_grupo,cod_categoria,id_campo" cod_erro="091675"/>
+			<validar coluna="3" tabela="regra_valid_dados" campo_tabela="cod_regra" cod_erro="091676"/>
+		</validacoes>
+	</tabela>
+
+	<tabela>
+		<nome_tabela>TFIX77</nome_tabela>
+		<nome_tabela_banco>PRT_ATIV_OBRIG</nome_tabela_banco>
+		<colunas>
+			<coluna nome='cod_modulo' tipo='VARCHAR2' ind_chave='TRUE' />
+			<coluna nome='cod_cnae_obrig' tipo='NUMBER' ind_chave='TRUE'/>
+			<coluna nome='dsc_cnae_obrig' tipo='VARCHAR2' ind_chave='FALSE'/>
+		</colunas>
+	</tabela>
+
+	<tabela>
+		<nome_tabela>TFIX78</nome_tabela>
+		<nome_tabela_banco>PRT_LIVRO_AUX_SUBCONTA</nome_tabela_banco>
+		<colunas>
+			<coluna nome='cod_layout_ecd' tipo='VARCHAR2' ind_chave='TRUE' />
+			<coluna nome='cod_item' tipo='VARCHAR2' ind_chave='TRUE'/>
+			<coluna nome='descricao' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='ind_formato' tipo='CHAR' ind_chave='FALSE'/>
+		</colunas>
+	</tabela>
+
+	<tabela>
+		<nome_tabela>TFIX80</nome_tabela>
+		<nome_tabela_banco>SAICS_TP_LANCTO</nome_tabela_banco>
+		<colunas>
+			<coluna nome='cod_tp_lancto' tipo='NUMBER' ind_chave='TRUE' />
+			<coluna nome='dsc_tp_lancto' tipo='VARCHAR2' ind_chave='FALSE'/>
+		</colunas>
+	</tabela>
+
+	<tabela>
+		<nome_tabela>TFIX81</nome_tabela>
+		<nome_tabela_banco>SAICS_TP_LANCTO_REG</nome_tabela_banco>
+		<colunas>
+			<coluna nome='cod_layout' tipo='VARCHAR2' ind_chave='TRUE' />
+			<coluna nome='cod_tp_lancto' tipo='NUMBER' ind_chave='TRUE'/>
+			<coluna nome='cod_reg_dca' tipo='NUMBER' ind_chave='TRUE'/>
+			<coluna nome='ind_movto' tipo='CHAR' ind_chave='TRUE'/>
+			<coluna nome='cod_ficha' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='ind_norm_dev' tipo='VARCHAR2' ind_chave='FALSE'/>
+		</colunas>
+	</tabela>
+
+	<tabela>
+		<nome_tabela>TFIX82</nome_tabela>
+		<nome_tabela_banco>SAICS_COD_CHAVE</nome_tabela_banco>
+		<colunas>
+			<coluna nome='cod_modelo_docto' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='cod_chave' tipo='NUMBER' ind_chave='TRUE' />
+			<coluna nome='descricao_modelo' tipo='VARCHAR2' ind_chave='FALSE'/>
+		</colunas>
+	</tabela>
+
+	<tabela>
+		<nome_tabela>TFIX83</nome_tabela>
+		<nome_tabela_banco>PRT_SERIE_OBRIG</nome_tabela_banco>
+		<colunas>
+			<coluna nome='cod_modulo' tipo='VARCHAR2' ind_chave='TRUE' />
+			<coluna nome='cod_serie_obrig' tipo='VARCHAR2' ind_chave='TRUE'/>
+			<coluna nome='dsc_serie_obrig' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='ind_serie_modelo' tipo='CHAR' ind_chave='FALSE'/>
+		</colunas>
+		<validacoes>
+			<validar coluna="0" tabela="prt_modulos_msaf" campo_tabela="cod_modulo" cod_erro="090800"/>
+		</validacoes>
+	</tabela>
+
+	
+	<tabela>
+		<nome_tabela>TFIX84</nome_tabela>
+		<nome_tabela_banco>PRT_TP_DOCTO_OBRIG</nome_tabela_banco>
+		<colunas>
+			<coluna nome='cod_modulo' tipo='VARCHAR2' ind_chave='TRUE' />
+			<coluna nome='cod_tp_docto_obrig' tipo='VARCHAR2' ind_chave='TRUE'/>
+			<coluna nome='dsc_tp_docto_obrig' tipo='VARCHAR2' ind_chave='FALSE'/>
+		</colunas>
+		<validacoes>
+			<validar coluna="0" tabela="prt_modulos_msaf" campo_tabela="cod_modulo" cod_erro="090800"/>
+		</validacoes>
+	</tabela>
+
+	<tabela>
+		<nome_tabela>TFIX85</nome_tabela>
+		<nome_tabela_banco>PRT_SERVICO_OBRIG</nome_tabela_banco>
+		<colunas>
+			<coluna nome='cod_modulo' tipo='VARCHAR2' ind_chave='TRUE' />
+			<coluna nome='cod_servico_obrig' tipo='VARCHAR2' ind_chave='TRUE'/>
+			<coluna nome='dsc_servico_obrig' tipo='VARCHAR2' ind_chave='FALSE'/>
+		</colunas>
+		<validacoes>
+			<validar coluna="0" tabela="prt_modulos_msaf" campo_tabela="cod_modulo" cod_erro="090800"/>
+		</validacoes>
+	</tabela>
+
+	
+	<tabela>
+		<nome_tabela>TFIX87</nome_tabela>
+		<nome_tabela_banco>ECF_CAD_DYNTB</nome_tabela_banco>
+		<colunas>
+			<coluna nome='cod_version' tipo='VARCHAR2' ind_chave='TRUE' />
+			<coluna nome='dat_startup_effective' tipo='DATE' ind_chave='FALSE'/>
+			<coluna nome='dat_end_effective' tipo='DATE' ind_chave='FALSE'/>
+			<coluna nome='dsc_version' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='ident_cad_dyntb' tipo='NUMBER' ind_ident='TRUE' ind_chave='FALSE' existe_so_no_banco='TRUE' />
+		</colunas>
+	</tabela>
+
+	<tabela>
+		<nome_tabela>TFIX88</nome_tabela>
+		<nome_tabela_banco>ECF_CAD_DYNTB_RC</nome_tabela_banco>
+		<colunas>
+			<coluna nome='cod_version' tipo='VARCHAR2' ind_chave='FALSE' existe_so_no_txt='TRUE'/>
+			<coluna nome='cod_record' tipo='VARCHAR2' ind_chave='TRUE'/>
+			<coluna nome='dsc_record' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='ident_cad_dyntb_rc' tipo='NUMBER' ind_ident='TRUE' ind_chave='FALSE' existe_so_no_banco='TRUE' />
+			<coluna nome='ident_cad_dyntb' tipo='NUMBER' ind_chave='TRUE'/>
+		</colunas>
+		<validacoes>
+			<recuperar coluna="4" tabela="ecf_cad_dyntb" campo_recuperar="ident_cad_dyntb" campo_ref="cod_version" coluna_ref="0" cod_erro="913068"/>
+		</validacoes>
+	</tabela>
+
+	<tabela>
+		<nome_tabela>TFIX89</nome_tabela>
+		<nome_tabela_banco>ECF_CAD_DYNTB_IT</nome_tabela_banco>
+		<colunas>
+			<coluna nome='cod_version' tipo='VARCHAR2' ind_chave='FALSE'  existe_so_no_txt='TRUE'/>
+			<coluna nome='cod_record' tipo='VARCHAR2' ind_chave='FALSE' existe_so_no_txt='TRUE'/>
+			<coluna nome='cod_item' tipo='VARCHAR2' ind_chave='TRUE'/>
+			<coluna nome='dat_startup_effective' tipo='DATE' ind_chave='TRUE'/>
+			<coluna nome='dat_end_effective' tipo='DATE' ind_chave='FALSE'/>
+			<coluna nome='dsc_item' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='num_order' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='ind_item_type' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='ind_item_format' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='num_line' tipo='NUMBER' ind_chave='FALSE'/>
+			<coluna nome='txt_formula' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='ind_entry_type' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='pct_account_bal' tipo='NUMBER' tamanho='7' precisao='4' ind_chave='FALSE'/>
+			<coluna nome='ident_cad_dyntb' tipo='NUMBER' ind_chave='FALSE' existe_so_no_banco='TRUE' existe_so_no_txt='TRUE'/>
+			<coluna nome='ident_cad_dyntb_rc' tipo='NUMBER' ind_chave='TRUE' existe_so_no_banco='TRUE'/>
+		</colunas>
+		<validacoes>
+			<recuperar coluna="13" tabela="ecf_cad_dyntb" campo_recuperar="ident_cad_dyntb" campo_ref="cod_version" coluna_ref="0" cod_erro="913068"/>
+			<recuperar coluna="14" tabela="ecf_cad_dyntb_rc" campo_recuperar="ident_cad_dyntb_rc" campo_ref="ident_cad_dyntb,cod_record" coluna_ref="13,1" cod_erro="913070"/>
+		</validacoes>
+	</tabela>
+
+	<tabela>
+		<nome_tabela>TFIX90</nome_tabela>
+		<nome_tabela_banco>ECF_CAD_PLREF</nome_tabela_banco>
+		<colunas>
+			<coluna nome='cod_version' tipo='VARCHAR2' ind_chave='TRUE' />
+			<coluna nome='dat_startup_effective' tipo='DATE' ind_chave='FALSE'/>
+			<coluna nome='dat_end_effective' tipo='DATE' ind_chave='FALSE'/>
+			<coluna nome='dsc_version' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='ident_cad_plref' tipo='NUMBER' ind_ident='TRUE' ind_chave='FALSE' existe_so_no_banco='TRUE' />
+		</colunas>
+	</tabela>
+
+	<tabela>
+		<nome_tabela>TFIX91</nome_tabela>
+		<nome_tabela_banco>ECF_CAD_PLREF_RC</nome_tabela_banco>
+		<colunas>
+			<coluna nome='cod_version' tipo='VARCHAR2' ind_chave='FALSE' existe_so_no_txt='TRUE'/>
+			<coluna nome='cod_record' tipo='VARCHAR2' ind_chave='TRUE'/>
+			<coluna nome='dsc_record' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='ident_cad_plref_rc' tipo='NUMBER' ind_ident='TRUE' ind_chave='FALSE' existe_so_no_banco='TRUE' />
+			<coluna nome='ident_cad_plref' tipo='NUMBER' ind_chave='TRUE'/>
+		</colunas>
+		<validacoes>
+			<recuperar coluna="4" tabela="ecf_cad_plref" campo_recuperar="ident_cad_plref" campo_ref="cod_version" coluna_ref="0" cod_erro="913053"/>
+		</validacoes>
+	</tabela>
+
+	<tabela>
+		<nome_tabela>TFIX92</nome_tabela>
+		<nome_tabela_banco>ECF_CAD_PLREF_CTA</nome_tabela_banco>
+		<colunas>
+			<coluna nome='cod_version' tipo='VARCHAR2' ind_chave='FALSE'  existe_so_no_txt='TRUE'/>
+			<coluna nome='cod_record' tipo='VARCHAR2' ind_chave='FALSE' existe_so_no_txt='TRUE'/>
+			<coluna nome='cod_cta_ref' tipo='VARCHAR2' ind_chave='TRUE'/>
+			<coluna nome='dat_startup_effective' tipo='DATE' ind_chave='FALSE'/>
+			<coluna nome='dat_end_effective' tipo='DATE' ind_chave='FALSE'/>
+			<coluna nome='dsc_cta_ref' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='num_order' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='ind_cta_type' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='num_level' tipo='NUMBER' ind_chave='FALSE'/>
+			<coluna nome='cod_nat_cta' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='cod_cad_plref_cta_up' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='ident_cad_plref' tipo='NUMBER' ind_chave='FALSE' existe_so_no_banco='TRUE' existe_so_no_txt='TRUE'/>
+			<coluna nome='ident_cad_plref_rc' tipo='NUMBER' ind_chave='TRUE' existe_so_no_banco='TRUE'/>
+			<coluna nome='ident_cad_plref_cta' tipo='NUMBER' ind_chave='FALSE' existe_so_no_banco='TRUE'/>   
+		</colunas>
+		<validacoes>
+			<recuperar coluna="11" tabela="ecf_cad_plref" campo_recuperar="ident_cad_plref" campo_ref="cod_version" coluna_ref="0" cod_erro="913053"/>
+			<recuperar coluna="12" tabela="ecf_cad_plref_rc" campo_recuperar="ident_cad_plref_rc" campo_ref="ident_cad_plref,cod_record" coluna_ref="11,1" cod_erro="913055"/>
+		</validacoes>
+	</tabela>
+
+	<tabela>
+		<nome_tabela>TFIX93</nome_tabela>
+		<nome_tabela_banco>EPC_COD_CRED_TRANS</nome_tabela_banco>
+		<colunas>
+			<coluna nome='cod_cred_trans' tipo='VARCHAR2' ind_chave='TRUE' />
+			<coluna nome='dsc_cred_trans' tipo='VARCHAR2' ind_chave='FALSE'/>
+		</colunas>
+	</tabela>
+
+	<tabela>
+		<nome_tabela>TFIX94</nome_tabela>
+		<nome_tabela_banco>CAD_LISTA_MSAF</nome_tabela_banco>
+		<colunas>
+			<coluna nome='cod_lista_msaf' tipo='VARCHAR2' ind_chave='TRUE' />
+			<coluna nome='dsc_lista_msaf' tipo='VARCHAR2' ind_chave='FALSE'/>
+		</colunas>
+	</tabela>
+
+	<tabela>
+		<nome_tabela>TFIX95</nome_tabela>
+		<nome_tabela_banco>CAD_VAL_LISTA_MSAF</nome_tabela_banco>
+		<colunas>
+			<coluna nome='cod_lista_msaf' tipo='VARCHAR2' ind_chave='TRUE' />
+			<coluna nome='cod_val_lista' tipo='VARCHAR2' ind_chave='TRUE' />
+			<coluna nome='dsc_val_lista' tipo='VARCHAR2' tamanho='200' ind_chave='FALSE'/>
+			</colunas>
+		<validacoes>
+			<validar coluna="0" tabela="cad_lista_msaf" campo_tabela="cod_lista_msaf" cod_erro="093174"/>
+		</validacoes>
+	</tabela>
+
+	<tabela>
+		<nome_tabela>TFIX96</nome_tabela>
+		<nome_tabela_banco>CAT_LAYOUT_IMP</nome_tabela_banco>
+		<colunas>
+			<coluna nome='nom_tab_work' tipo='VARCHAR2' ind_chave='TRUE' />
+			<coluna nome='num_campo' tipo='NUMBER' ind_chave='TRUE'/>
+			<coluna nome='ind_obrig' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='descricao' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='nome_campo' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='tamanho' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='tipo' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='versao' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='patch' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='mfs_origem' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='cod_erro' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='nome_campo_dest' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='dsc_comentario' tipo='VARCHAR2' ind_chave='FALSE' ind_trim='FALSE'/>
+			<coluna nome='ind_valid_obi' tipo='VARCHAR2' ind_chave='FALSE'/>
+		</colunas>
+		<validacoes>
+			<validar coluna="0" tabela="cat_prior_imp" campo_tabela="nom_tab_work" cod_erro="913115"/>
+		</validacoes>
+	</tabela>
+
+	<tabela>
+		<nome_tabela>TFIX97</nome_tabela>
+		<nome_tabela_banco>CAT_LAYOUT_HIST</nome_tabela_banco>
+		<colunas>
+			<coluna nome='nom_tab_work' tipo='VARCHAR2' ind_chave='TRUE' />
+			<coluna nome='num_campo' tipo='NUMBER' ind_chave='TRUE'/>
+			<coluna nome='patch' tipo='VARCHAR2' ind_chave='TRUE'/>
+			<coluna nome='ind_obrig' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='descricao' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='nome_campo' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='tamanho' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='tipo' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='versao' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='mfs_altera' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='ind_alt' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='dsc_comentario' tipo='VARCHAR2' ind_chave='FALSE' ind_trim='FALSE'/>
+		</colunas>
+		<validacoes>
+			<validar coluna="0" tabela="cat_layout_imp" campo_tabela="nom_tab_work" cod_erro="913116"/>
+		</validacoes>
+	</tabela>
+
+	<tabela>
+		<nome_tabela>TFIX99</nome_tabela>
+		<nome_tabela_banco>DIPI_PAR_CFO</nome_tabela_banco>
+		<colunas>
+			<coluna nome='cod_classe' tipo='VARCHAR2' ind_chave='TRUE' />
+			<coluna nome='ind_tp_par' tipo='CHAR' ind_chave='TRUE'/>
+			<coluna nome='cod_cfo' tipo='VARCHAR2' ind_chave='TRUE'/>   
+			<coluna nome='ano_versao_dipj' tipo='NUMBER' ind_chave='TRUE'/>
+		</colunas>
+	</tabela>
+
+	<tabela>
+		<nome_tabela>TFIX100</nome_tabela>
+		<nome_tabela_banco>PRT_MODULO_ESTADUAL</nome_tabela_banco>
+		<colunas>
+			<coluna nome='cod_estado' tipo='VARCHAR2' ind_chave='FALSE' existe_so_no_txt='TRUE'/>
+			<coluna nome='cod_modulo' tipo='VARCHAR2' ind_chave='TRUE'/>
+			<coluna nome='cod_geracao' tipo='VARCHAR2' ind_chave='TRUE'/>
+			<coluna nome='ind_par_cfop_sai' tipo='CHAR' ind_chave='FALSE'/>
+			<coluna nome='ind_par_nat_sai' tipo='CHAR' ind_chave='FALSE'/>
+			<coluna nome='ind_par_cfop_ent' tipo='CHAR' ind_chave='FALSE'/>
+			<coluna nome='ind_par_nat_ent' tipo='CHAR' ind_chave='FALSE'/>
+			<coluna nome='ind_par_cfop_rec' tipo='CHAR' ind_chave='FALSE'/>
+			<coluna nome='ind_par_nat_rec' tipo='CHAR' ind_chave='FALSE'/>
+			<coluna nome='ind_par_prod' tipo='CHAR' ind_chave='FALSE'/>
+			<coluna nome='ind_par_ncm' tipo='CHAR' ind_chave='FALSE'/>
+			<coluna nome='ind_par_lanc' tipo='CHAR' ind_chave='FALSE'/>
+			<coluna nome='ind_ger_c176' tipo='CHAR' ind_chave='FALSE'/>
+			<coluna nome='ind_ger_util' tipo='CHAR' ind_chave='FALSE'/>
+			<coluna nome='ind_rel_anexo1' tipo='CHAR' ind_chave='FALSE'/>
+			<coluna nome='ind_rel_anexo2' tipo='CHAR' ind_chave='FALSE'/>
+			<coluna nome='ind_rel_anexo3' tipo='CHAR' ind_chave='FALSE'/>
+			<coluna nome='ident_estado' tipo='NUMBER' ind_chave='TRUE'/>
+		</colunas>
+		<validacoes>
+			<recuperar coluna="17" tabela="estado" campo_recuperar="ident_estado" campo_ref="cod_estado" coluna_ref="0" cod_erro="090027"/>
+			<validar coluna="1" tabela="prt_modulos_msaf" campo_tabela="cod_modulo" cod_erro="090800"/>
+		</validacoes>
+	</tabela>
+
+	<tabela>
+		<nome_tabela>TFIX101</nome_tabela>
+		<nome_tabela_banco>ICT_COD_GNRE</nome_tabela_banco>
+		<colunas>
+			<coluna nome='cod_gnre' tipo='VARCHAR2' ind_chave='TRUE' />
+			<coluna nome='descricao' tipo='VARCHAR2' ind_chave='FALSE'/>
+		</colunas>
+	</tabela>
+
+	<tabela>
+		<nome_tabela>TFIX104</nome_tabela>
+		<nome_tabela_banco>PRT_ARRECAD_OBRIG</nome_tabela_banco>
+		<colunas>
+			<coluna nome='cod_modulo' tipo='VARCHAR2' ind_chave='TRUE' />
+			<coluna nome='cod_arrecad' tipo='VARCHAR2' ind_chave='TRUE'/>
+			<coluna nome='dsc_arrecad' tipo='VARCHAR2' ind_chave='FALSE'/>
+		</colunas>
+	</tabela>
+
+	<tabela>
+		<nome_tabela>TFIX105</nome_tabela>
+		<nome_tabela_banco>PRT_VALIDADOR_MUNIC</nome_tabela_banco>
+		<colunas>
+			<coluna nome='cod_estado' tipo='VARCHAR2' ind_chave='FALSE' existe_so_no_txt='TRUE'/>
+			<coluna nome='cod_municipio' tipo='VARCHAR2' ind_chave='TRUE'/>
+			<coluna nome='cod_validador' tipo='VARCHAR2' ind_chave='TRUE'/>
+			<coluna nome='desc_validador' tipo='CHAR' ind_chave='FALSE'/>
+			<coluna nome='valid_validador' tipo='DATE' ind_chave='TRUE'/>
+			<coluna nome='cod_modulo' tipo='CHAR' ind_chave='FALSE'/>
+			<coluna nome='ind_gera_banco' tipo='CHAR' ind_chave='FALSE'/>
+			<coluna nome='ind_manut_deducao' tipo='CHAR' ind_chave='FALSE'/>
+			<coluna nome='ind_manut_sigamweb' tipo='CHAR' ind_chave='FALSE'/>
+			<coluna nome='ind_manut_receita' tipo='CHAR' ind_chave='FALSE'/>
+			<coluna nome='ind_manut_prof_liberal' tipo='CHAR' ind_chave='FALSE'/>
+			<coluna nome='ind_manut_banco' tipo='CHAR' ind_chave='FALSE'/>
+			<coluna nome='ind_gera_rps' tipo='CHAR' ind_chave='FALSE'/>
+			<coluna nome='ind_manut_socios' tipo='CHAR' ind_chave='FALSE'/>
+			<coluna nome='ind_manut_inf_econom' tipo='CHAR' ind_chave='FALSE'/>
+			<coluna nome='ind_estab_ccontab' tipo='CHAR' ind_chave='FALSE'/>
+			<coluna nome='ind_estab_scontab' tipo='CHAR' ind_chave='FALSE'/>
+			<coluna nome='ind_gera_cc' tipo='CHAR' ind_chave='FALSE'/>
+			<coluna nome='valid_final' tipo='DATE' ind_chave='FALSE'/>
+			<coluna nome='ind_gera_assinatura' tipo='CHAR' ind_chave='FALSE'/>
+			<coluna nome='ind_manut_canoas' tipo='CHAR' ind_chave='FALSE'/>
+			<coluna nome='ind_manut_remessa' tipo='CHAR' ind_chave='FALSE'/>
+			<coluna nome='ind_manut_despesa' tipo='CHAR' ind_chave='FALSE'/>
+			<coluna nome='ind_manut_deducao_proj' tipo='CHAR' ind_chave='FALSE'/>
+			<coluna nome='ind_manut_sigis' tipo='CHAR' ind_chave='FALSE'/>
+			<coluna nome='ind_manut_parnamirim' tipo='CHAR' ind_chave='FALSE'/>
+			<coluna nome='ind_manut_mat_betha' tipo='CHAR' ind_chave='FALSE'/>
+			<coluna nome='ind_gera_cadastro' tipo='CHAR' ind_chave='FALSE'/>
+			<coluna nome='ind_manut_desif_0430' tipo='CHAR' ind_chave='FALSE'/>
+			<coluna nome='ind_manut_desif_0440' tipo='CHAR' ind_chave='FALSE'/>
+			<coluna nome='ident_estado' tipo='NUMBER' ind_chave='TRUE'/>
+		</colunas>
+		<validacoes>
+			<recuperar coluna="30" tabela="estado" campo_recuperar="ident_estado" campo_ref="cod_estado" coluna_ref="0" cod_erro="090027"/>
+			<validar coluna="30,1" tabela="municipio" campo_tabela="ident_estado,cod_municipio" cod_erro="090549"/>
+		</validacoes>
+	</tabela>
+
+	<tabela>
+		<nome_tabela>TFIX106</nome_tabela>
+		<nome_tabela_banco>SERV_MUNIC_GISS</nome_tabela_banco>
+		<colunas>
+			<coluna nome='cod_estado' tipo='VARCHAR2' ind_chave='FALSE' existe_so_no_txt='TRUE'/>
+			<coluna nome='cod_municipio' tipo='NUMBER' ind_chave='TRUE'/>
+			<coluna nome='cod_servico_giss' tipo='VARCHAR2' ind_chave='TRUE'/>
+			<coluna nome='desc_servico' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='valid_servico' tipo='DATE' ind_chave='TRUE'/>
+			<coluna nome='ident_estado' tipo='NUMBER' ind_chave='TRUE'/>
+		</colunas>
+		<validacoes>
+			<recuperar coluna="5" tabela="estado" campo_recuperar="ident_estado" campo_ref="cod_estado" coluna_ref="0" cod_erro="090027"/>
+			<validar coluna="5,1" tabela="municipio" campo_tabela="ident_estado,cod_municipio" cod_erro="090549"/>
+		</validacoes>
+	</tabela>
+
+	<tabela>
+		<nome_tabela>TFIX107</nome_tabela>
+		<nome_tabela_banco>CAT_TABELAS_BCK</nome_tabela_banco>
+		<colunas>
+			<coluna nome='nome_bd_bck' tipo='VARCHAR2' ind_chave='TRUE' />
+			<coluna nome='descricao' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='dsc_modulo' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='num_os' tipo='VARCHAR2' ind_chave='FALSE'/>
+		</colunas>
+	</tabela>
+
+	<tabela>
+		<nome_tabela>TFIX108</nome_tabela>
+		<nome_tabela_banco>EST_AL_CAT_DESPESA</nome_tabela_banco>
+		<colunas>
+			<coluna nome='cod_despesa' tipo='VARCHAR2' ind_chave='TRUE' />
+			<coluna nome='descricao' tipo='VARCHAR2' ind_chave='FALSE'/>
+		</colunas>
+	</tabela>
+
+	<tabela>
+		<nome_tabela>TFIX109</nome_tabela>
+		<nome_tabela_banco>PRT_TP_LOGRADOURO_OBRIG</nome_tabela_banco>
+		<colunas>
+			<coluna nome='cod_modulo' tipo='VARCHAR2' ind_chave='TRUE' />
+			<coluna nome='cod_tp_logradouro_obrig' tipo='VARCHAR2' ind_chave='TRUE'/>
+			<coluna nome='dsc_tp_logradouro_obrig' tipo='VARCHAR2' ind_chave='FALSE'/>
+		</colunas>
+		<validacoes>
+			<validar coluna="0" tabela="prt_modulos_msaf" campo_tabela="cod_modulo" cod_erro="090800"/>
+		</validacoes>
+	</tabela>
+
+	<tabela>
+		<nome_tabela>TFIX110</nome_tabela>
+		<nome_tabela_banco>PRT_TP_BAIRRO_OBRIG</nome_tabela_banco>
+		<colunas>
+			<coluna nome='cod_modulo' tipo='VARCHAR2' ind_chave='TRUE' />
+			<coluna nome='cod_tp_bairro_obrig' tipo='VARCHAR2' ind_chave='TRUE'/>
+			<coluna nome='dsc_tp_bairro_obrig' tipo='VARCHAR2' ind_chave='FALSE'/>
+		</colunas>
+		<validacoes>
+			<validar coluna="0" tabela="prt_modulos_msaf" campo_tabela="cod_modulo" cod_erro="090800"/>
+		</validacoes>
+	</tabela>
+
+	<tabela>
+		<nome_tabela>TFIX111</nome_tabela>
+		<nome_tabela_banco>SAF_DIC_INDICE</nome_tabela_banco>
+		<colunas>
+			<coluna nome='cod_tabela' tipo='VARCHAR2' ind_chave='TRUE' />
+			<coluna nome='nome' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='dsc_legislacao' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='obj_tabela' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='cod_tabela_pai' tipo='VARCHAR2' ind_chave='FALSE'/>
+		</colunas>
+	</tabela>
+
+	<tabela>
+		<nome_tabela>TFIX112</nome_tabela>
+		<nome_tabela_banco>SAF_DIC_LAYOUT</nome_tabela_banco>
+		<colunas>
+			<coluna nome='cod_tabela' tipo='VARCHAR2' ind_chave='TRUE' />
+			<coluna nome='seq_id' tipo='NUMBER' ind_chave='TRUE'/>
+			<coluna nome='nome_campo' tipo='VARCHAR2' ind_chave='TRUE'/>
+			<coluna nome='ind_obrig' tipo='CHAR' ind_chave='FALSE'/>
+			<coluna nome='dsc_campo' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='comentario' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='ind_tipo' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='tamanho' tipo='NUMBER' ind_chave='FALSE'/>
+			<coluna nome='num_decimal' tipo='NUMBER' ind_chave='FALSE'/>
+			<coluna nome='ind_pk' tipo='CHAR' ind_chave='FALSE'/>
+		</colunas>
+		<validacoes>
+			<validar coluna="0" tabela="saf_dic_indice" campo_tabela="cod_tabela" cod_erro="093166"/>
+		</validacoes>
+	</tabela>
+
+		<tabela>
+		<nome_tabela>TFIX113</nome_tabela>
+		<nome_tabela_banco>PRT_CIDADE_OBRIG</nome_tabela_banco>
+		<colunas>
+			<coluna nome='cod_modulo' tipo='VARCHAR2' ind_chave='TRUE' />
+			<coluna nome='cod_cidade_obrig' tipo='VARCHAR2' ind_chave='TRUE'/>
+			<coluna nome='dsc_cidade_obrig' tipo='VARCHAR2' ind_chave='FALSE'/>
+		</colunas>
+	</tabela>
+
+	<tabela>
+		<nome_tabela>TFIX114</nome_tabela>
+		<nome_tabela_banco>PRT_COD_ALIQ_OBRIG</nome_tabela_banco>
+		<colunas>
+			<coluna nome='cod_modulo' tipo='VARCHAR2' ind_chave='TRUE' />
+			<coluna nome='cod_aliq_obrig' tipo='VARCHAR2' ind_chave='TRUE'/>
+			<coluna nome='dsc_aliq_obrig' tipo='VARCHAR2' ind_chave='FALSE'/>
+		</colunas>
+	</tabela>
+
+	<tabela>
+		<nome_tabela>TFIX115</nome_tabela>
+		<nome_tabela_banco>PRT_VALIDADOR</nome_tabela_banco>
+		<colunas>
+			<coluna nome='cod_validador' tipo='VARCHAR2' ind_chave='TRUE' />
+			<coluna nome='ind_modelo_msaf_modelo' tipo='CHAR' ind_chave='FALSE'/>
+			<coluna nome='ind_modelo_msaf_serie' tipo='CHAR' ind_chave='FALSE'/>
+			<coluna nome='ind_tp_bairro_msaf_tp_bairro' tipo='CHAR' ind_chave='FALSE'/>
+			<coluna nome='ind_cidade_msaf_cidade' tipo='CHAR' ind_chave='FALSE'/>
+			<coluna nome='ind_aliquota_msaf_aliquota' tipo='CHAR' ind_chave='FALSE'/>
+			<coluna nome='ind_tp_docto_msaf_tp_docto' tipo='CHAR' ind_chave='FALSE'/>
+			<coluna nome='ind_tp_docto_msaf_especie' tipo='CHAR' ind_chave='FALSE'/>
+			<coluna nome='ind_tp_lograd_msaf_tp_lograd' tipo='CHAR' ind_chave='FALSE'/>
+			<coluna nome='ind_serie_msaf_serie' tipo='CHAR' ind_chave='FALSE'/>
+			<coluna nome='ind_servico_msaf_atividade' tipo='CHAR' ind_chave='FALSE'/>
+			<coluna nome='ind_servico_msaf_servico' tipo='CHAR' ind_chave='FALSE'/>
+			<coluna nome='ind_ativ_msaf_cod_ctiss' tipo='CHAR' ind_chave='FALSE'/>
+			<coluna nome='ind_serie_modelo_msaf_serie' tipo='CHAR' ind_chave='FALSE'/>
+			<coluna nome='ind_modelo_munic_msaf_modelo' tipo='CHAR' ind_chave='FALSE'/>
+			<coluna nome='ind_ativ_munic_msaf_atividade' tipo='CHAR' ind_chave='FALSE'/>
+			<coluna nome='ind_canal_distrib_obras_seq' tipo='CHAR' ind_chave='FALSE'/>
+			<coluna nome='ind_centraliza_estab' tipo='CHAR' ind_chave='FALSE'/>
+		</colunas>
+	</tabela>
+	
+	<tabela>
+		<nome_tabela>TFIX116</nome_tabela>
+		<nome_tabela_banco>PRT_OPER_OBRIG</nome_tabela_banco>
+		<colunas>
+			<coluna nome='cod_modulo' tipo='VARCHAR2' ind_chave='TRUE'/>
+			<coluna nome='cod_oper_obrig' tipo='VARCHAR2' ind_chave='TRUE'/>
+			<coluna nome='valid_ini_oper_obrig' tipo='DATE' ind_chave='TRUE'/>
+			<coluna nome='valid_fim_oper_obrig' tipo='DATE' ind_chave='FALSE'/>
+			<coluna nome='dsc_oper_obrig' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='ind_tipo_oper' tipo='CHAR' ind_chave='FALSE'/>
+			<coluna nome='ind_regular' tipo='CHAR' ind_chave='FALSE'/>
+			<coluna nome='ident_oper_obrig' tipo='NUMBER' ind_ident='TRUE' ind_chave='FALSE' existe_so_no_banco='TRUE' />
+		</colunas>
+		<validacoes>
+			<validar coluna="0" tabela="prt_modulos_msaf" campo_tabela="cod_modulo" cod_erro="090800"/>
+		</validacoes>
+	</tabela>
+
+	<tabela>
+		<nome_tabela>TFIX117</nome_tabela>
+		<nome_tabela_banco>PRT_PROD_OBRIG</nome_tabela_banco>
+		<colunas>
+			<coluna nome='cod_modulo' tipo='VARCHAR2' ind_chave='TRUE'/>
+			<coluna nome='cod_produto_obrig' tipo='VARCHAR2' ind_chave='TRUE'/>
+			<coluna nome='valid_ini_produto_obrig' tipo='DATE' ind_chave='TRUE'/>
+			<coluna nome='valid_fim_produto_obrig' tipo='DATE' ind_chave='FALSE'/>
+			<coluna nome='dsc_produto_obrig' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='cod_medida' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='ident_produto_obrig' tipo='NUMBER' ind_max_valor='TRUE' ind_chave='FALSE' existe_so_no_banco='TRUE' />
+		</colunas>
+		<validacoes>
+			<validar coluna="0" tabela="prt_modulos_msaf" campo_tabela="cod_modulo" cod_erro="090800"/>
+		</validacoes>
+	</tabela>
+
+	<tabela>
+		<nome_tabela>TFIX118</nome_tabela>
+		<nome_tabela_banco>PRT_VEIC_TRANSP_OBRIG</nome_tabela_banco>
+		<colunas>
+			<coluna nome='cod_modulo' tipo='VARCHAR2' ind_chave='TRUE'/>
+			<coluna nome='cod_veic_transp_obrig' tipo='VARCHAR2' ind_chave='TRUE'/>
+			<coluna nome='tp_veic_transp_obrig' tipo='CHAR' ind_chave='TRUE'/>
+			<coluna nome='valid_ini_veic_transp_obrig' tipo='DATE' ind_chave='TRUE'/>
+			<coluna nome='valid_fim_veic_transp_obrig' tipo='DATE' ind_chave='FALSE'/>
+			<coluna nome='dsc_veic_transp_obrig' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='dsc_tp_veic_transp_obrig' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='ident_veic_transp_obrig' tipo='NUMBER' ind_ident='TRUE' ind_chave='FALSE' existe_so_no_banco='TRUE' />
+		</colunas>
+		<validacoes>
+			<validar coluna="0" tabela="prt_modulos_msaf" campo_tabela="cod_modulo" cod_erro="090800"/>
+		</validacoes>
+	</tabela>
+
+	<tabela>
+		<nome_tabela>TFIX119</nome_tabela>
+		<nome_tabela_banco>PRT_CNAE_OBRIG</nome_tabela_banco>
+		<colunas>
+			<coluna nome='cod_modulo' tipo='VARCHAR2' ind_chave='TRUE'/>
+			<coluna nome='cod_cnae_obrig' tipo='VARCHAR2' ind_chave='TRUE'/>
+			<coluna nome='valid_ini_cnae_obrig' tipo='DATE' ind_chave='TRUE'/>
+			<coluna nome='valid_fim_cnae_obrig' tipo='DATE' ind_chave='FALSE'/>
+			<coluna nome='dsc_cnae_obrig' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='ident_cnae_obrig' tipo='NUMBER' ind_ident='TRUE' ind_chave='FALSE' existe_so_no_banco='TRUE' />
+		</colunas>
+		<validacoes>
+			<validar coluna="0" tabela="prt_modulos_msaf" campo_tabela="cod_modulo" cod_erro="090800"/>
+		</validacoes>
+	</tabela>
+
+	<tabela>
+		<nome_tabela>TFIX120</nome_tabela>
+		<nome_tabela_banco>PRT_PAIS_OBRIG</nome_tabela_banco>
+		<colunas>
+			<coluna nome='cod_modulo' tipo='VARCHAR2' ind_chave='TRUE'/>
+			<coluna nome='cod_pais_obrig' tipo='VARCHAR2' ind_chave='TRUE'/>
+			<coluna nome='valid_ini_pais_obrig' tipo='DATE' ind_chave='TRUE'/>
+			<coluna nome='valid_fim_pais_obrig' tipo='DATE' ind_chave='FALSE'/>
+			<coluna nome='dsc_pais_obrig' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='ident_pais_obrig' tipo='NUMBER' ind_ident='TRUE' ind_chave='FALSE' existe_so_no_banco='TRUE' />
+		</colunas>
+		<validacoes>
+			<validar coluna="0" tabela="prt_modulos_msaf" campo_tabela="cod_modulo" cod_erro="090800"/>
+		</validacoes>
+	</tabela>
+
+	<tabela>
+		<nome_tabela>TFIX121</nome_tabela>
+		<nome_tabela_banco>PRT_VIA_TRANSP_OBRIG</nome_tabela_banco>
+		<colunas>
+			<coluna nome='cod_modulo' tipo='VARCHAR2' ind_chave='TRUE'/>
+			<coluna nome='cod_via_transp_obrig' tipo='VARCHAR2' ind_chave='TRUE'/>
+			<coluna nome='valid_ini_via_transp_obrig' tipo='DATE' ind_chave='TRUE'/>
+			<coluna nome='valid_fim_via_transp_obrig' tipo='DATE' ind_chave='FALSE'/>
+			<coluna nome='dsc_via_transp_obrig' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='ident_via_transp_obrig' tipo='NUMBER' ind_ident='TRUE' ind_chave='FALSE' existe_so_no_banco='TRUE' />
+		</colunas>
+		<validacoes>
+			<validar coluna="0" tabela="prt_modulos_msaf" campo_tabela="cod_modulo" cod_erro="090800"/>
+		</validacoes>
+		</tabela>
+
+	<tabela>
+		<nome_tabela>TFIX122</nome_tabela>
+		<nome_tabela_banco>PRT_BENEF_FISCAL_OBRIG</nome_tabela_banco>
+		<colunas>
+			<coluna nome='cod_modulo' tipo='VARCHAR2' ind_chave='TRUE' />
+			<coluna nome='cod_benef_fiscal' tipo='VARCHAR2' ind_chave='TRUE'/>
+			<coluna nome='dsc_benef_fiscal' tipo='VARCHAR2' ind_chave='FALSE'/>
+		</colunas>
+		<validacoes>
+			<validar coluna="0" tabela="prt_modulos_msaf" campo_tabela="cod_modulo" cod_erro="090800"/>
+		</validacoes>
+	</tabela>
+
+	<tabela>
+		<nome_tabela>TFIX123</nome_tabela>
+		<nome_tabela_banco>CAD_TAB_MSAF</nome_tabela_banco>
+		<colunas>
+			<coluna nome='id_tab_msaf' tipo='NUMBER' ind_chave='TRUE' />
+			<coluna nome='nom_tab_bd' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='nom_tab_func' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='nom_safx' tipo='VARCHAR2' ind_chave='FALSE'/>
+		</colunas>
+	</tabela>
+
+	<tabela>
+		<nome_tabela>TFIX124</nome_tabela>
+		<nome_tabela_banco>CAD_CAMPO_MSAF</nome_tabela_banco>
+		<colunas>
+			<coluna nome='id_tab_msaf' tipo='NUMBER' ind_chave='TRUE' />
+			<coluna nome='id_campo_msaf' tipo='NUMBER' ind_chave='TRUE'/>
+			<coluna nome='nom_campo_bd' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='nom_campo_func' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='dsc_tipo' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='num_tam' tipo='NUMBER' ind_chave='FALSE'/>
+			<coluna nome='num_dec' tipo='NUMBER' ind_chave='FALSE'/>
+		</colunas>
+		<validacoes>
+			<validar coluna="0" tabela="cad_tab_msaf" campo_tabela="id_tab_msaf" cod_erro="092476"/>
+		</validacoes>
+	</tabela>
+
+	<tabela>
+		<nome_tabela>TFIX125</nome_tabela>
+		<nome_tabela_banco>CAD_GRP_REL</nome_tabela_banco>
+		<colunas>
+			<coluna nome='id_grp_rel' tipo='NUMBER' ind_chave='TRUE' />
+			<coluna nome='dsc_grp_rel' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='clausula_from' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='clausula_where' tipo='VARCHAR2' ind_chave='FALSE'/>
+			
+		</colunas>
+	</tabela>
+
+	<tabela>
+		<nome_tabela>TFIX126</nome_tabela>
+		<nome_tabela_banco>CAD_GRP_REL_TAB</nome_tabela_banco>
+		<colunas>
+			<coluna nome='id_grp_rel' tipo='NUMBER' ind_chave='TRUE' />
+			<coluna nome='id_tab_grp' tipo='NUMBER' ind_chave='TRUE'/>
+			<coluna nome='id_tab_msaf' tipo='NUMBER' ind_chave='FALSE'/>
+			<coluna nome='nom_tab_alias' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='nom_tab_func' tipo='VARCHAR2' ind_chave='FALSE'/>
+		</colunas>
+		<validacoes>
+			<validar coluna="0" tabela="cad_grp_rel" campo_tabela="id_grp_rel" cod_erro="092477"/>
+			<validar coluna="2" tabela="cad_tab_msaf" campo_tabela="id_tab_msaf" cod_erro="092476"/>
+		</validacoes>
+	</tabela>
+
+	<tabela>
+		<nome_tabela>TFIX127</nome_tabela>
+		<nome_tabela_banco>CAD_GRP_REL_CAMPO</nome_tabela_banco>
+		<colunas>
+			<coluna nome='id_grp_rel' tipo='NUMBER' ind_chave='TRUE' />
+			<coluna nome='id_tab_grp' tipo='NUMBER' ind_chave='TRUE'/>
+			<coluna nome='id_campo_grp' tipo='NUMBER' ind_chave='TRUE'/>
+			<coluna nome='id_tab_msaf' tipo='NUMBER' ind_chave='FALSE'/>
+			<coluna nome='id_campo_msaf' tipo='NUMBER' ind_chave='FALSE'/>
+			<coluna nome='nom_campo_alias' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='nom_campo_func' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='ind_permite_agrupar' tipo='CHAR' ind_chave='FALSE'/>
+			<coluna nome='ind_permite_totalizar' tipo='CHAR' ind_chave='FALSE'/>
+			<coluna nome='ind_sum_sql' tipo='CHAR' ind_chave='FALSE'/>
+		</colunas>
+		<validacoes>
+			<validar coluna="0" tabela="cad_grp_rel" campo_tabela="id_grp_rel" cod_erro="092477"/>
+			<validar coluna="0,1" tabela="cad_grp_rel_tab" campo_tabela="id_grp_rel,id_tab_grp" cod_erro="092479"/>
+			<validar coluna="3" tabela="cad_tab_msaf" campo_tabela="id_tab_msaf" cod_erro="092476"/>
+			<validar coluna="3,4" tabela="cad_campo_msaf" campo_tabela="id_tab_msaf,id_campo_msaf" cod_erro="092478"/>
+		</validacoes>
+	</tabela>
+
+	<tabela>
+		<nome_tabela>TFIX128</nome_tabela>
+		<nome_tabela_banco>GPE_CAMPO</nome_tabela_banco>
+		<colunas>
+			<coluna nome='cod_campo' tipo='NUMBER' ind_chave='TRUE' />
+			<coluna nome='desc_campo' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='tipo' tipo='CHAR' ind_chave='FALSE'/>
+			<coluna nome='ind_formato' tipo='CHAR' ind_chave='FALSE'/>
+			<coluna nome='tamanho' tipo='NUMBER' ind_chave='FALSE'/>
+			<coluna nome='nome_tabela' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='ind_obrigatorio' tipo='CHAR' ind_chave='FALSE'/>
+		</colunas>
+	</tabela>
+
+	<tabela>
+		<nome_tabela>TFIX130</nome_tabela>
+		<nome_tabela_banco>PRT_MODULOS_MUNIC</nome_tabela_banco>
+		<colunas>
+			<coluna nome='cod_modulo' tipo='VARCHAR2' ind_chave='FALSE' />
+			<coluna nome='cod_estado' tipo='VARCHAR2' ind_chave='FALSE' existe_so_no_txt='TRUE'/>
+			<coluna nome='cod_munic' tipo='NUMBER' ind_chave='TRUE'/>
+			<coluna nome='ind_serv' tipo='CHAR' ind_chave='FALSE'/>
+			<coluna nome='ident_estado' tipo='NUMBER' ind_chave='TRUE'/>
+		</colunas>
+		<validacoes>
+			<recuperar coluna="4" tabela="estado" campo_recuperar="ident_estado" campo_ref="cod_estado" coluna_ref="1" cod_erro="090027"/>
+			<validar coluna="0" tabela="prt_modulos_msaf" campo_tabela="cod_modulo" cod_erro="090800"/>
+		</validacoes>
+	</tabela>
+
+	<tabela>
+		<nome_tabela>TFIX131</nome_tabela>
+		<nome_tabela_banco>WCA_REGRA</nome_tabela_banco>
+		<colunas>   
+			<coluna nome='cod_regra' tipo='VARCHAR2' ind_chave='TRUE'/>
+			<coluna nome='tit_regra' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='data_inicial' tipo='DATE' ind_chave='FALSE'/>
+			<coluna nome='ind_ativa' tipo='CHAR' ind_chave='FALSE'/>
+			<coluna nome='ind_tipo_fixa' tipo='CHAR' ind_chave='FALSE'/>
+			<coluna nome='cod_empresa' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='cod_estab' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='grupo_conta' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='id_regra' tipo='NUMBER' ind_chave='FALSE' nome_sequence="seq_wca_regra" existe_so_no_banco='TRUE' />
+		</colunas>
+	</tabela>
+
+	<tabela>
+		<nome_tabela>TFIX132</nome_tabela>
+		<nome_tabela_banco>WCA_REGRA_ITEM</nome_tabela_banco>
+		<colunas>
+			<coluna nome='cod_regra' tipo='VARCHAR2' ind_chave='FALSE' existe_so_no_txt='TRUE'/>
+			<coluna nome='cod_item' tipo='VARCHAR2' ind_chave='TRUE'/>
+			<coluna nome='tip_item' tipo='CHAR' ind_chave='TRUE'/>
+			<coluna nome='id_regra' tipo='NUMBER' ind_chave='TRUE'/>
+			<coluna nome='id_regra_item' tipo='NUMBER' ind_chave='FALSE' nome_sequence="seq_wca_regra_item" existe_so_no_banco='TRUE'/>
+		</colunas>
+		<validacoes>
+			<recuperar coluna="3" tabela="wca_regra" campo_recuperar="id_regra" campo_ref="cod_regra" coluna_ref="0" cod_erro="093166"/>
+		</validacoes>
+	</tabela>
+
+	<tabela>
+		<nome_tabela>TFIX133</nome_tabela>
+		<nome_tabela_banco>WCA_ITEM_EXPRESSAO</nome_tabela_banco>
+		<colunas>
+			<coluna nome='cod_regra' tipo='VARCHAR2' ind_chave='FALSE' existe_so_no_txt='TRUE'/>
+			<coluna nome='cod_item' tipo='VARCHAR2' ind_chave='FALSE' existe_so_no_txt='TRUE'/>
+			<coluna nome='tip_item' tipo='CHAR' ind_chave='FALSE' existe_so_no_txt='TRUE'/>
+			<coluna nome='cod_regra_1' tipo='VARCHAR2' ind_chave='FALSE' existe_so_no_txt='TRUE'/>
+			<coluna nome='cod_item_1' tipo='VARCHAR2' ind_chave='FALSE' existe_so_no_txt='TRUE'/>
+			<coluna nome='tip_item_1' tipo='CHAR' ind_chave='FALSE' existe_so_no_txt='TRUE'/>
+			<coluna nome='tip_oper' tipo='VARCHAR2' ind_chave='TRUE'/>
+			<coluna nome='cod_regra_2' tipo='VARCHAR2' ind_chave='FALSE' existe_so_no_txt='TRUE'/>
+			<coluna nome='cod_item_2' tipo='VARCHAR2' ind_chave='FALSE' existe_so_no_txt='TRUE'/>
+			<coluna nome='tip_item_2' tipo='CHAR' ind_chave='FALSE' existe_so_no_txt='TRUE'/>
+			<coluna nome='id_regra' tipo='NUMBER' ind_chave='FALSE' existe_so_no_txt='TRUE' existe_so_no_banco='TRUE'/>
+			<coluna nome='id_regra_1' tipo='NUMBER' ind_chave='FALSE' existe_so_no_txt='TRUE' existe_so_no_banco='TRUE'/>
+			<coluna nome='id_regra_2' tipo='NUMBER' ind_chave='FALSE' existe_so_no_txt='TRUE' existe_so_no_banco='TRUE'/>
+			<coluna nome='id_regra_item' tipo='NUMBER' ind_chave='TRUE' />
+			<coluna nome='id_regra_item_1' tipo='NUMBER' ind_chave='TRUE'/>
+			<coluna nome='id_regra_item_2' tipo='NUMBER' ind_chave='TRUE'/>
+		</colunas>
+		<validacoes>
+			<recuperar coluna="10" tabela="wca_regra" campo_recuperar="id_regra" campo_ref="cod_regra" coluna_ref="0" cod_erro="093166"/>
+			<recuperar coluna="11" tabela="wca_regra" campo_recuperar="id_regra" campo_ref="cod_regra" coluna_ref="3" cod_erro="093166"/>
+			<recuperar coluna="12" tabela="wca_regra" campo_recuperar="id_regra" campo_ref="cod_regra" coluna_ref="7" cod_erro="093166"/>
+			<recuperar coluna="13" tabela="wca_regra_item" campo_recuperar="id_regra_item" campo_ref="cod_item,tip_item,id_regra" coluna_ref="1,2,10" cod_erro="093166"/>
+			<recuperar coluna="14" tabela="wca_regra_item" campo_recuperar="id_regra_item" campo_ref="cod_item,tip_item,id_regra" coluna_ref="4,5,11" cod_erro="093166"/>
+			<recuperar coluna="15" tabela="wca_regra_item" campo_recuperar="id_regra_item" campo_ref="cod_item,tip_item,id_regra" coluna_ref="8,9,12" cod_erro="093166"/>
+		</validacoes>
+	</tabela>
+
+	<tabela>
+		<nome_tabela>TFIX134</nome_tabela>
+		<nome_tabela_banco>WCA_MENSAGEM</nome_tabela_banco>
+		<colunas>
+			<coluna nome='cod_regra' tipo='VARCHAR2' ind_chave='FALSE' existe_so_no_txt='TRUE'/>
+			<coluna nome='cod_item' tipo='VARCHAR2' ind_chave='FALSE' existe_so_no_txt='TRUE'/>
+			<coluna nome='tip_item' tipo='CHAR' ind_chave='FALSE' existe_so_no_txt='TRUE'/>   
+			<coluna nome='ind_tipo' tipo='CHAR' ind_chave='TRUE'/>
+			<coluna nome='texto_padrao' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='texto_custom' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='id_regra' tipo='NUMBER' ind_chave='FALSE' existe_so_no_txt='TRUE' existe_so_no_banco='TRUE'/>
+			<coluna nome='id_regra_item' tipo='NUMBER' ind_chave='TRUE' />
+		</colunas>
+		<validacoes>
+			<recuperar coluna="6" tabela="wca_regra" campo_recuperar="id_regra" campo_ref="cod_regra" coluna_ref="0" cod_erro="093166"/>
+			<recuperar coluna="7" tabela="wca_regra_item" campo_recuperar="id_regra_item" campo_ref="cod_item,tip_item,id_regra" coluna_ref="1,2,6" cod_erro="093166"/>
+		</validacoes>
+	</tabela>
+
+	<tabela>
+		<nome_tabela>TFIX135</nome_tabela>
+		<nome_tabela_banco>WCA_TABELA</nome_tabela_banco>
+		<colunas>
+			<coluna nome='nom_tabela' tipo='VARCHAR2' ind_chave='TRUE'/>
+			<coluna nome='dsc_tabela' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='data_inicial' tipo='DATE' ind_chave='FALSE'/>
+			<coluna nome='id_tabela' tipo='NUMBER' ind_ident='TRUE' ind_chave='FALSE' existe_so_no_banco='TRUE' />
+		</colunas>
+	</tabela>
+
+	<tabela>
+		<nome_tabela>TFIX136</nome_tabela>
+		<nome_tabela_banco>WCA_COLUNA</nome_tabela_banco>
+		<colunas>
+			<coluna nome='nom_coluna' tipo='VARCHAR2' ind_chave='TRUE'/>
+			<coluna nome='dsc_coluna' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='tip_coluna' tipo='CHAR' ind_chave='FALSE'/>
+			<coluna nome='ind_formato' tipo='CHAR' ind_chave='FALSE'/>
+			<coluna nome='tamanho' tipo='NUMBER' ind_chave='FALSE'/>
+			<coluna nome='tip_campo_filtro' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='id_coluna' tipo='NUMBER' ind_ident='TRUE' ind_chave='FALSE' existe_so_no_banco='TRUE' />
+		</colunas>
+	</tabela>
+
+	<tabela>
+		<nome_tabela>TFIX137</nome_tabela>
+		<nome_tabela_banco>WCA_TAB_COLUNA</nome_tabela_banco>
+		<colunas>
+			<coluna nome='nom_tabela' tipo='VARCHAR2' ind_chave='FALSE' existe_so_no_txt='TRUE'/>
+			<coluna nome='nom_coluna' tipo='VARCHAR2' ind_chave='FALSE' existe_so_no_txt='TRUE'/>
+			<coluna nome='nom_tabela_cad' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='posicao' tipo='NUMBER' ind_chave='FALSE'/>
+			<coluna nome='registro' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='inicio' tipo='NUMBER' ind_chave='FALSE'/>
+			<coluna nome='tamanho' tipo='NUMBER' ind_chave='FALSE'/>
+			<coluna nome='decimais' tipo='NUMBER' ind_chave='FALSE'/>
+			<coluna nome='tip_coluna' tipo='CHAR' ind_chave='FALSE'/>
+			<coluna nome='ind_formato' tipo='CHAR' ind_chave='FALSE'/>
+			<coluna nome='id_tabela' tipo='NUMBER' ind_chave='TRUE' />
+			<coluna nome='id_coluna' tipo='NUMBER' ind_chave='TRUE'/>
+		</colunas>
+		<validacoes>
+			<recuperar coluna="10" tabela="wca_tabela" campo_recuperar="id_tabela" campo_ref="nom_tabela" coluna_ref="0" cod_erro="090627"/>
+			<recuperar coluna="11" tabela="wca_coluna" campo_recuperar="id_coluna" campo_ref="nom_coluna" coluna_ref="1" cod_erro="090562"/>
+		</validacoes>
+	</tabela>
+
+	<tabela>
+		<nome_tabela>TFIX138</nome_tabela>
+		<nome_tabela_banco>WCA_ITEM_FILTRO</nome_tabela_banco>
+		<colunas>
+			<coluna nome='cod_regra' tipo='VARCHAR2' ind_chave='FALSE' existe_so_no_txt='TRUE'/>
+			<coluna nome='cod_item' tipo='VARCHAR2' ind_chave='FALSE' existe_so_no_txt='TRUE'/>
+			<coluna nome='tpi_item' tipo='VARCHAR2' ind_chave='FALSE' existe_so_no_txt='TRUE'/>
+			<coluna nome='nom_tabela' tipo='VARCHAR2' ind_chave='FALSE' existe_so_no_txt='TRUE'/>
+			<coluna nome='nom_coluna' tipo='VARCHAR2' ind_chave='FALSE' existe_so_no_txt='TRUE'/>
+			<coluna nome='tip_oper' tipo='VARCHAR2' ind_chave='TRUE'/>
+			<coluna nome='vlr_filtro' tipo='VARCHAR2' ind_chave='TRUE'/>
+			<coluna nome='ind_agrupar' tipo='CHAR' ind_chave='FALSE'/>
+			<coluna nome='id_regra' tipo='NUMBER' ind_chave='FALSE' existe_so_no_txt='TRUE' existe_so_no_banco='TRUE'/>
+			<coluna nome='id_regra_item' tipo='NUMBER' ind_chave='TRUE' />
+			<coluna nome='id_tabela' tipo='NUMBER' ind_chave='TRUE'/>
+			<coluna nome='id_coluna' tipo='NUMBER' ind_chave='TRUE'/>
+		</colunas>
+		<validacoes>
+			<recuperar coluna="8" tabela="wca_regra" campo_recuperar="id_regra" campo_ref="cod_regra" coluna_ref="0" cod_erro="093166"/>
+			<recuperar coluna="9" tabela="wca_regra_item" campo_recuperar="id_regra_item" campo_ref="cod_item,tip_item,id_regra" coluna_ref="1,2,8" cod_erro="093166"/>
+			<recuperar coluna="10" tabela="wca_tabela" campo_recuperar="id_tabela" campo_ref="nom_tabela" coluna_ref="3" cod_erro="090627"/>
+			<recuperar coluna="11" tabela="wca_coluna" campo_recuperar="id_coluna" campo_ref="nom_coluna" coluna_ref="4" cod_erro="090562"/>
+		</validacoes>
+	</tabela>
+
+	<tabela>
+		<nome_tabela>TFIX139</nome_tabela>
+		<nome_tabela_banco>WCA_ITEM_COLUNA</nome_tabela_banco>
+		<colunas>
+			<coluna nome='cod_regra' tipo='VARCHAR2' ind_chave='FALSE' existe_so_no_txt='TRUE'/>
+			<coluna nome='cod_item' tipo='VARCHAR2' ind_chave='FALSE' existe_so_no_txt='TRUE'/>
+			<coluna nome='tpi_item' tipo='VARCHAR2' ind_chave='FALSE' existe_so_no_txt='TRUE'/>
+			<coluna nome='nom_tabela' tipo='VARCHAR2' ind_chave='FALSE' existe_so_no_txt='TRUE'/>
+			<coluna nome='nom_coluna' tipo='VARCHAR2' ind_chave='FALSE' existe_so_no_txt='TRUE'/>
+			<coluna nome='id_regra' tipo='NUMBER' ind_chave='FALSE' existe_so_no_txt='TRUE' existe_so_no_banco='TRUE'/>
+			<coluna nome='id_regra_item' tipo='NUMBER' ind_chave='TRUE' />
+			<coluna nome='id_tabela' tipo='NUMBER' ind_chave='TRUE'/>
+			<coluna nome='id_coluna' tipo='NUMBER' ind_chave='TRUE'/>
+		</colunas>
+		<validacoes>
+			<recuperar coluna="5" tabela="wca_regra" campo_recuperar="id_regra" campo_ref="cod_regra" coluna_ref="0" cod_erro="093166"/>
+			<recuperar coluna="6" tabela="wca_regra_item" campo_recuperar="id_regra_item" campo_ref="cod_item,tip_item,id_regra" coluna_ref="1,2,5" cod_erro="093166"/>
+			<recuperar coluna="7" tabela="wca_tabela" campo_recuperar="id_tabela" campo_ref="nom_tabela" coluna_ref="3" cod_erro="090627"/>
+			<recuperar coluna="8" tabela="wca_coluna" campo_recuperar="id_coluna" campo_ref="nom_coluna" coluna_ref="4" cod_erro="090562"/>
+		</validacoes>
+	</tabela>
+<!--
+	<tabela>
+		<nome_tabela>TFIX140</nome_tabela>
+		<nome_tabela_banco>GEMT_DET_CONT_LAYOUT</nome_tabela_banco>
+		<colunas>
+			<coluna nome='id_conteudo' tipo='NUMBER' ind_chave='TRUE' />
+			<coluna nome='grupo_tributo' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='desc_cont' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='desc_cont_bd' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='tipo_col_bd' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='tam_col_bd' tipo='NUMBER' ind_chave='FALSE'/>
+			<coluna nome='dec_col_bd' tipo='NUMBER' ind_chave='FALSE'/>
+			<coluna nome='ind_param_selec' tipo='VARCHAR2' ind_chave='FALSE'/>
+		</colunas>
+	</tabela>
+-->
+   <tabela>
+		<nome_tabela>TFIX142</nome_tabela>
+		<nome_tabela_banco>ICT_PAR_MODELO_LIVRO</nome_tabela_banco>
+		<sobrepor_registro>FALSE</sobrepor_registro>
+		<colunas>
+			<coluna nome='cod_tipo_livro' tipo='VARCHAR2' ind_chave='TRUE'/>
+			<coluna nome='item_menu_emissao' tipo='VARCHAR2' ind_chave='TRUE'/>
+			<coluna nome='dsc_menu_emissao' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='dsc_tipo_livro' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='modelo' tipo='CHAR' ind_chave='FALSE'/>
+			<coluna nome='dsc_modelo' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='cod_modulo' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='ind_exibe_prog_batch' tipo='CHAR' ind_chave='FALSE'/>
+			<coluna nome='ind_exibe_modelo' tipo='CHAR' ind_chave='FALSE'/>
+			<coluna nome='formato_livro' tipo='VARCHAR2' ind_chave='FALSE'/>
+			<coluna nome='ind_telecom' tipo='CHAR' ind_chave='FALSE'/>
+			<coluna nome='ind_obs_valor_st' tipo='CHAR' ind_chave='FALSE'/>
+			<coluna nome='ind_resumo_observacoes' tipo='CHAR' ind_chave='FALSE'/>
+			<coluna nome='ind_trata_icmss_n_escrit' tipo='CHAR' ind_chave='FALSE'/>
+			<coluna nome='ind_base_st_n_escrit_obs' tipo='CHAR' ind_chave='FALSE'/>
+		</colunas>
+		<validacoes>
+			<validar coluna="0" tabela="TIPO_LIVRO_FISCAL" campo_tabela="COD_TIPO_LIVRO" cod_erro="090564"/>
+		</validacoes>
+	</tabela>
+		<tabela>
+				<nome_tabela>TACES01</nome_tabela>
+				<nome_tabela_banco>ATIV_ECONOMICA</nome_tabela_banco>
+				<sobrepor_registro>FALSE</sobrepor_registro>
+				<colunas>
+					<coluna nome='cod_atividade' tipo='NUMBER' ind_chave='TRUE'/>
+					<coluna nome='descricao' tipo='VARCHAR2' ind_chave='FALSE'/>
+					<coluna nome='dat_validade_ini' tipo='DATE' ind_chave='TRUE'/>
+				</colunas>
+		</tabela>
+		<tabela>
+				<nome_tabela>TACES02</nome_tabela>
+				<nome_tabela_banco>CLASSE_ESTAB</nome_tabela_banco>
+				<sobrepor_registro>FALSE</sobrepor_registro>
+				<colunas>
+					<coluna nome='cod_classe_estab' tipo='NUMBER' ind_chave='TRUE'/>
+					<coluna nome='descricao' tipo='VARCHAR2' ind_chave='FALSE'/>
+				</colunas>
+
+		</tabela>
+		<tabela>
+				<nome_tabela>TACES05</nome_tabela>
+				<nome_tabela_banco>PAIS</nome_tabela_banco>
+				<sobrepor_registro>FALSE</sobrepor_registro>
+				<colunas>
+					<coluna nome='cod_pais' tipo='VARCHAR2' ind_chave='TRUE'/>
+					<coluna nome='descricao' tipo='VARCHAR2' ind_chave='FALSE'/>
+					<coluna nome='descr_nacion' tipo='VARCHAR2' ind_chave='FALSE'/>
+					<coluna nome='cod_indice' tipo='VARCHAR2' ind_chave='FALSE'/>
+					<coluna nome='dig_verificador' tipo='NUMBER' ind_chave='FALSE'/>
+					<coluna nome='ind_tribut_favorec' tipo='CHAR' ind_chave='FALSE'/>
+					<coluna nome='sigla_pais' tipo='VARCHAR2' ind_chave='FALSE'/>
+				</colunas>
+		</tabela>		
+
+
+		<tabela>
+				<nome_tabela>TACES08</nome_tabela>
+				<nome_tabela_banco>Y2046_INDICE</nome_tabela_banco>
+				<sobrepor_registro>FALSE</sobrepor_registro>
+				<colunas>
+					<coluna nome='cod_indice' tipo='VARCHAR2' ind_chave='TRUE'/>
+					<coluna nome='descricao' tipo='VARCHAR2' ind_chave='FALSE'/>
+				</colunas>
+				<validacoes>
+				</validacoes>
+		</tabela>
+		<tabela>
+				<nome_tabela>TACES09</nome_tabela>
+				<nome_tabela_banco>SECAO_TIPI</nome_tabela_banco>
+				<sobrepor_registro>FALSE</sobrepor_registro>
+				<colunas>
+					<coluna nome='cod_secao_tipi' tipo='NUMBER' ind_chave='TRUE'/>
+					<coluna nome='descricao' tipo='VARCHAR2' ind_chave='FALSE'/>
+				</colunas>
+				<validacoes>
+				</validacoes>
+		</tabela>
+		<tabela>
+				<nome_tabela>TACES10</nome_tabela>
+				<nome_tabela_banco>NOTA_SECAO_TIPI</nome_tabela_banco>
+				<sobrepor_registro>FALSE</sobrepor_registro>
+				<colunas>
+					<coluna nome='cod_secao_tipi' tipo='NUMBER' ind_chave='TRUE'/>
+					<coluna nome='cod_nota_sec_tipi' tipo='NUMBER' ind_chave='TRUE'/>
+					<coluna nome='descricao' tipo='VARCHAR2' ind_chave='FALSE'/>
+					<coluna nome='ident_nota_tipi' tipo='NUMBER' ind_ident='TRUE' ind_chave='FALSE' existe_so_no_banco='TRUE' />
+				</colunas>
+				<validacoes>
+					<validar coluna="0" tabela="secao_tipi" campo_tabela="cod_secao_tipi" cod_erro="090335"/>
+				</validacoes>
+		</tabela>
+		
+		<tabela>
+				<nome_tabela>TACES15</nome_tabela>
+				<nome_tabela_banco>DWT_TRIBUTO</nome_tabela_banco>
+				<sobrepor_registro>FALSE</sobrepor_registro>
+				<colunas>
+					<coluna nome='cod_tributo' tipo='VARCHAR2' ind_chave='TRUE'/>
+					<coluna nome='dsc_abrev' tipo='VARCHAR2' ind_chave='FALSE'/>
+					<coluna nome='dsc_completa' tipo='VARCHAR2' ind_chave='FALSE'/>
+					<coluna nome='ind_imposto' tipo='CHAR' ind_chave='FALSE'/>
+					<coluna nome='org_arrecad' tipo='VARCHAR2' ind_chave='FALSE'/>
+				</colunas>
+				<validacoes>
+				</validacoes>
+		</tabela>
+		<tabela>
+				<nome_tabela>TACES16</nome_tabela>
+				<nome_tabela_banco>CAD_SPED_MOEDA</nome_tabela_banco>
+				<sobrepor_registro>FALSE</sobrepor_registro>
+				<colunas>
+					<coluna nome='cod_moeda' tipo='VARCHAR2' ind_chave='TRUE'/>
+					<coluna nome='dsc_moeda' tipo='VARCHAR2' ind_chave='FALSE'/>
+					<coluna nome='data_inicial' tipo='DATE' ind_chave='FALSE'/>
+					<coluna nome='data_final' tipo='DATE' ind_chave='FALSE'/>
+					<coluna nome='cod_versao' tipo='VARCHAR2' ind_chave='FALSE'/>
+				</colunas>
+				<validacoes>
+				</validacoes>
+		</tabela>
+		<tabela>
+				<nome_tabela>TACES17</nome_tabela>
+				<nome_tabela_banco>CAD_SPED_TIPATIVO</nome_tabela_banco>
+				<sobrepor_registro>FALSE</sobrepor_registro>
+				<colunas>
+					<coluna nome='cod_tip_ativo' tipo='VARCHAR2' ind_chave='TRUE'/>
+					<coluna nome='dsc_tip_ativo' tipo='VARCHAR2' ind_chave='FALSE'/>
+					<coluna nome='data_inicial' tipo='DATE' ind_chave='FALSE'/>
+					<coluna nome='data_final' tipo='DATE' ind_chave='FALSE'/>
+					<coluna nome='cod_versao' tipo='VARCHAR2' ind_chave='FALSE'/>
+					<coluna nome='cod_grupo' tipo='VARCHAR2' ind_chave='FALSE'/>
+				</colunas>
+				<validacoes>
+				</validacoes>
+		</tabela>
+		<tabela>
+				<nome_tabela>TACES18</nome_tabela>
+				<nome_tabela_banco>CAD_SPED_NATOPER</nome_tabela_banco>
+				<sobrepor_registro>FALSE</sobrepor_registro>
+				<colunas>
+					<coluna nome='cod_nat_oper' tipo='VARCHAR2' ind_chave='TRUE'/>
+					<coluna nome='dsc_nat_oper' tipo='VARCHAR2' ind_chave='FALSE'/>
+					<coluna nome='data_inicial' tipo='DATE' ind_chave='TRUE'/>
+					<coluna nome='data_final' tipo='DATE' ind_chave='FALSE'/>
+					<coluna nome='cod_versao' tipo='VARCHAR2' ind_chave='FALSE'/>
+					<coluna nome='dsc_conta' tipo='VARCHAR2' ind_chave='FALSE'/>
+					<coluna nome='cod_ordem' tipo='VARCHAR2' ind_chave='FALSE'/>
+				</colunas>
+				<validacoes>
+				</validacoes>
+		</tabela>
+		<tabela>
+				<nome_tabela>TACES19</nome_tabela>
+				<nome_tabela_banco>CAD_SPED_RECOLH</nome_tabela_banco>
+				<sobrepor_registro>FALSE</sobrepor_registro>
+				<colunas>
+					<coluna nome='cod_recolh' tipo='VARCHAR2' ind_chave='TRUE'/>
+					<coluna nome='dsc_recolh' tipo='VARCHAR2' ind_chave='FALSE'/>
+					<coluna nome='data_inicial' tipo='DATE' ind_chave='FALSE'/>
+					<coluna nome='data_final' tipo='DATE' ind_chave='FALSE'/>
+					<coluna nome='cod_versao' tipo='VARCHAR2' ind_chave='FALSE'/>
+					<coluna nome='dsc_beneficio' tipo='VARCHAR2' ind_chave='FALSE'/>
+					<coluna nome='dsc_orgao_publico' tipo='VARCHAR2' ind_chave='FALSE'/>
+					<coluna nome='dsc_irrf' tipo='VARCHAR2' ind_chave='FALSE'/>
+					<coluna nome='dsc_csll' tipo='VARCHAR2' ind_chave='FALSE'/>
+				</colunas>
+				<validacoes>
+				</validacoes>
+		</tabela>
+		<tabela>
+				<nome_tabela>TACES20</nome_tabela>
+				<nome_tabela_banco>DWT_TRIBUTO_ESP</nome_tabela_banco>
+				<sobrepor_registro>FALSE</sobrepor_registro>
+				<colunas>
+					<coluna nome='cod_tributo' tipo='VARCHAR2' ind_chave='TRUE'/>
+					<coluna nome='esp_tributo' tipo='VARCHAR2' ind_chave='TRUE'/>
+					<coluna nome='dsc_esp_abrev' tipo='VARCHAR2' ind_chave='FALSE'/>
+					<coluna nome='dsc_esp_compl' tipo='VARCHAR2' ind_chave='FALSE'/>
+					<coluna nome='ind_area_neg' tipo='CHAR' ind_chave='FALSE'/>
+					<coluna nome='ind_estab' tipo='CHAR' ind_chave='FALSE'/>
+					<coluna nome='ind_unid_neg' tipo='CHAR' ind_chave='FALSE'/>
+					<coluna nome='ind_centro_resp' tipo='CHAR' ind_chave='FALSE'/>
+					<coluna nome='ind_localidade' tipo='CHAR' ind_chave='FALSE'/>
+					<coluna nome='ind_servico' tipo='CHAR' ind_chave='FALSE'/>
+					<coluna nome='ind_produto' tipo='CHAR' ind_chave='FALSE'/>
+					<coluna nome='ind_merc_ext_int' tipo='CHAR' ind_chave='FALSE'/>
+					<coluna nome='ind_uf' tipo='CHAR' ind_chave='FALSE'/>
+					<coluna nome='ind_pais' tipo='CHAR' ind_chave='FALSE'/>
+					<coluna nome='cod_rel' tipo='VARCHAR2' ind_chave='FALSE'/>
+					<coluna nome='ident_darf' tipo='NUMBER' ind_chave='FALSE'/>
+					<coluna nome='cod_arrec_estad' tipo='VARCHAR2' ind_chave='FALSE'/>
+					<coluna nome='cod_arrec_munic' tipo='VARCHAR2' ind_chave='FALSE'/>
+					<coluna nome='ind_dat_comp_aut' tipo='CHAR' ind_chave='FALSE'/>		
+					<coluna nome='ind_periodic' tipo='CHAR' ind_chave='FALSE'/>					
+				</colunas>
+				<validacoes>
+					<validar coluna="0" tabela="dwt_tributo" campo_tabela="cod_tributo" cod_erro="090871"/>
+				
+				</validacoes>
+		</tabela>
+		<tabela>
+				<nome_tabela>TACES21</nome_tabela>
+				<nome_tabela_banco>DWT_AMPARO_LEGAL</nome_tabela_banco>
+				<sobrepor_registro>FALSE</sobrepor_registro>
+				<colunas>
+					<coluna nome='cod_estado' tipo='VARCHAR2' ind_chave='FALSE' existe_so_no_txt='TRUE'/>
+					<coluna nome='cod_amparo_legal' tipo='VARCHAR2' ind_chave='TRUE'/>
+					<coluna nome='dat_validade' tipo='DATE' ind_chave='TRUE'/>
+					<coluna nome='dsc_amparo_legal' tipo='VARCHAR2' ind_chave='FALSE'/>
+					<coluna nome='dsc_ocorrencia' tipo='VARCHAR2' ind_chave='FALSE'/>
+					<coluna nome='dat_fim_validade' tipo='DATE' ind_chave='FALSE'/>
+					<coluna nome='dados_compl1' tipo='VARCHAR2' ind_chave='FALSE'/>
+					<coluna nome='dados_compl2' tipo='VARCHAR2' ind_chave='FALSE'/>
+					<coluna nome='cod_receita' tipo='VARCHAR2' ind_chave='FALSE'/>
+					<coluna nome='ind_incide_icms' tipo='CHAR' ind_chave='FALSE'/>
+					<coluna nome='ind_incide_ipi' tipo='CHAR' ind_chave='FALSE'/>
+					<coluna nome='ind_incide_icmss' tipo='CHAR' ind_chave='FALSE'/>
+					<coluna nome='ind_tributo' tipo='CHAR' ind_chave='FALSE'/>
+					<coluna nome='ident_estado' tipo='NUMBER' ind_chave='TRUE'/>
+					
+				</colunas>
+				<validacoes>
+					<recuperar coluna="13" tabela="estado" campo_recuperar="ident_estado" campo_ref="cod_estado" coluna_ref="0" cod_erro="090027"/>
+				</validacoes>
+		</tabela>
+		<tabela>
+				<nome_tabela>TACES22</nome_tabela>
+				<nome_tabela_banco>EST_DETALHE</nome_tabela_banco>
+				<sobrepor_registro>FALSE</sobrepor_registro>
+				<colunas>
+					<coluna nome='cod_uf_obrig' tipo='VARCHAR2' ind_chave='TRUE'/>
+					<coluna nome='ind_e_s' tipo='CHAR' ind_chave='TRUE'/>
+					<coluna nome='cod_estado' tipo='VARCHAR2' ind_chave='TRUE'/>
+					<coluna nome='cod_detalhe' tipo='VARCHAR2' ind_chave='TRUE'/>
+					<coluna nome='dsc_detalhe' tipo='VARCHAR2' ind_chave='FALSE'/>
+				</colunas>
+				<validacoes>
+				</validacoes>
+		</tabela>
+		<tabela>
+				<nome_tabela>TACES23</nome_tabela>
+				<nome_tabela_banco>EST_CFO_DET</nome_tabela_banco>
+				<sobrepor_registro>FALSE</sobrepor_registro>
+				<colunas>
+					<coluna nome='cod_uf_obrig' tipo='VARCHAR2' ind_chave='TRUE'/>
+					<coluna nome='ind_e_s' tipo='CHAR' ind_chave='TRUE'/>
+					<coluna nome='cod_estado' tipo='VARCHAR2' ind_chave='TRUE'/>
+					<coluna nome='cod_detalhe' tipo='VARCHAR2' ind_chave='TRUE'/>
+					<coluna nome='cod_cfop' tipo='VARCHAR2' ind_chave='TRUE'/>
+					<coluna nome='ind_aquis_transf' tipo='CHAR' ind_chave='FALSE'/>
+				</colunas>
+				<validacoes>
+				</validacoes>
+		</tabela>
+		<tabela>
+				<nome_tabela>TACES24</nome_tabela>
+				<nome_tabela_banco>EST_DE_PARA_MUNIC</nome_tabela_banco>
+				<sobrepor_registro>FALSE</sobrepor_registro>
+				<colunas>
+					<coluna nome='cod_estado' tipo='VARCHAR2' ind_chave='FALSE' existe_so_no_txt='TRUE'/>
+					<coluna nome='cod_estado_dest' tipo='VARCHAR2' ind_chave='FALSE' existe_so_no_txt='TRUE'/>
+					<coluna nome='cod_municipio' tipo='NUMBER' ind_chave='TRUE'/>
+					<coluna nome='cod_municipio_dest' tipo='NUMBER' ind_chave='FALSE'/>
+					<coluna nome='ident_estado_obrig' tipo='NUMBER' ind_chave='TRUE'/>
+					<coluna nome='ident_estado' tipo='NUMBER' ind_chave='TRUE'/>
+				</colunas>
+				<validacoes>
+					<recuperar coluna="4" tabela="estado" campo_recuperar="ident_estado" campo_ref="cod_estado" coluna_ref="0" cod_erro="090027"/>
+					<recuperar coluna="5" tabela="estado" campo_recuperar="ident_estado" campo_ref="cod_estado" coluna_ref="1" cod_erro="090027"/>
+				</validacoes>
+		</tabela>
+		
+		<tabela>
+				<nome_tabela>TACES25</nome_tabela>
+				<nome_tabela_banco>EST_REGUL_ICMS</nome_tabela_banco>
+				<sobrepor_registro>FALSE</sobrepor_registro>
+				<colunas>
+					<coluna nome='cod_uf_obrig' tipo='VARCHAR2' ind_chave='TRUE'/>
+					<coluna nome='ind_e_s' tipo='CHAR' ind_chave='TRUE'/>
+					<coluna nome='cod_estado' tipo='VARCHAR2' ind_chave='TRUE'/>
+					<coluna nome='cod_regto_icms' tipo='VARCHAR2' ind_chave='TRUE'/>
+					<coluna nome='dsc_regto_icms' tipo='VARCHAR2' ind_chave='FALSE'/>
+				</colunas>
+				<validacoes>
+				</validacoes>
+		</tabela>
+		<tabela>
+				<nome_tabela>TACES26</nome_tabela>
+				<nome_tabela_banco>EST_REGUL_CFO</nome_tabela_banco>
+				<sobrepor_registro>FALSE</sobrepor_registro>
+				<colunas>
+					<coluna nome='cod_uf_obrig' tipo='VARCHAR2' ind_chave='TRUE'/>
+					<coluna nome='ind_e_s' tipo='CHAR' ind_chave='TRUE'/>
+					<coluna nome='cod_estado' tipo='VARCHAR2' ind_chave='TRUE'/>
+					<coluna nome='cod_regto_icms' tipo='VARCHAR2' ind_chave='TRUE'/>
+					<coluna nome='cod_cfop' tipo='VARCHAR2' ind_chave='TRUE'/>
+				</colunas>
+				<validacoes>
+				</validacoes>
+		</tabela>
+		<tabela>
+				<nome_tabela>TACES27</nome_tabela>
+				<nome_tabela_banco>EST_UF_REGIAO</nome_tabela_banco>
+				<sobrepor_registro>FALSE</sobrepor_registro>
+				<colunas>
+					<coluna nome='cod_uf_obrig' tipo='VARCHAR2' ind_chave='TRUE'/>
+					<coluna nome='cod_regiao' tipo='VARCHAR2' ind_chave='FALSE'/>
+					<coluna nome='cod_uf_regiao' tipo='VARCHAR2' ind_chave='TRUE'/>
+				</colunas>
+				<validacoes>
+				</validacoes>
+		</tabela>
+		<tabela>
+				<nome_tabela>TACES28</nome_tabela>
+				<nome_tabela_banco>EST_PB_GIM_UF_CFOP</nome_tabela_banco>
+				<sobrepor_registro>FALSE</sobrepor_registro>
+				<colunas>
+					<coluna nome='cod_estado' tipo='VARCHAR2' ind_chave='TRUE'/>
+					<coluna nome='cod_cfop' tipo='VARCHAR2' ind_chave='TRUE'/>
+					<coluna nome='dat_ini_vigencia' tipo='DATE' ind_chave='TRUE'/>
+					<coluna nome='dat_fim_vigencia' tipo='DATE' ind_chave='FALSE'/>
+				</colunas>
+				<validacoes>
+				</validacoes>
+		</tabela>	
+
+		<tabela>
+			<nome_tabela>TACES29</nome_tabela>
+			<nome_tabela_banco>EST_UND_PADRAO</nome_tabela_banco>
+			<sobrepor_registro>FALSE</sobrepor_registro>
+			<colunas>
+				<coluna nome='cod_estado' tipo='VARCHAR2' ind_chave='FALSE' existe_so_no_txt='TRUE'/>
+				<coluna nome='cod_und_padrao' tipo='VARCHAR2' ind_chave='TRUE'/>
+				<coluna nome='dsc_und_padrao' tipo='VARCHAR2' ind_chave='FALSE'/>
+				<coluna nome='ident_estado' tipo='NUMBER' ind_chave='TRUE'/>
+			</colunas>
+			<validacoes>
+				<recuperar coluna="3" tabela="estado" campo_recuperar="ident_estado" campo_ref="cod_estado" coluna_ref="0" cod_erro="090027"/>
+			</validacoes>
+		</tabela>
+		<tabela>
+				<nome_tabela>TACES30</nome_tabela>
+				<nome_tabela_banco>EST_DET_REGUL_ICMS</nome_tabela_banco>
+				<sobrepor_registro>FALSE</sobrepor_registro>
+				<colunas>
+					<coluna nome='cod_uf_obrig' tipo='VARCHAR2' ind_chave='TRUE'/>
+					<coluna nome='ind_e_s' tipo='CHAR' ind_chave='TRUE'/>
+					<coluna nome='cod_estado' tipo='VARCHAR2' ind_chave='TRUE'/>
+					<coluna nome='cod_detalhe' tipo='VARCHAR2' ind_chave='TRUE'/>
+					<coluna nome='cod_regto_icms' tipo='VARCHAR2' ind_chave='TRUE'/>
+				</colunas>
+				<validacoes>
+				</validacoes>
+		</tabela>
+		<tabela>
+				<nome_tabela>TACES31</nome_tabela>
+				<nome_tabela_banco>CAD_SPED_CBC_MOEDA</nome_tabela_banco>
+				<sobrepor_registro>FALSE</sobrepor_registro>
+				<colunas>
+					<coluna nome='tip_moeda' tipo='VARCHAR2' ind_chave='TRUE'/>
+					<coluna nome='dsc_moeda' tipo='VARCHAR2' ind_chave='FALSE'/>
+					<coluna nome='data_inicial' tipo='DATE' ind_chave='FALSE'/>
+					<coluna nome='data_final' tipo='DATE' ind_chave='FALSE'/>
+					<coluna nome='cod_versao' tipo='VARCHAR2' ind_chave='FALSE'/>
+					<coluna nome='dsc_pais' tipo='VARCHAR2' ind_chave='FALSE'/>
+				</colunas>
+				<validacoes>
+				</validacoes>
+		</tabela>
+		<tabela>
+				<nome_tabela>TACES32</nome_tabela>
+				<nome_tabela_banco>CAD_SPED_CNC</nome_tabela_banco>
+				<sobrepor_registro>FALSE</sobrepor_registro>
+				<colunas>
+					<coluna nome='cod_cnc' tipo='VARCHAR2' ind_chave='TRUE'/>
+					<coluna nome='dsc_cnc' tipo='VARCHAR2' ind_chave='FALSE'/>
+					<coluna nome='data_inicial' tipo='DATE' ind_chave='FALSE'/>
+					<coluna nome='data_final' tipo='DATE' ind_chave='FALSE'/>
+					<coluna nome='cod_versao' tipo='VARCHAR2' ind_chave='FALSE'/>
+				</colunas>
+
+		</tabela>
+		<tabela>
+				<nome_tabela>TACES33</nome_tabela>
+				<nome_tabela_banco>CAD_SPED_CBC_JURISDICAO</nome_tabela_banco>
+				<sobrepor_registro>FALSE</sobrepor_registro>
+				<colunas>
+					<coluna nome='cod_jurisdicao' tipo='VARCHAR2' ind_chave='TRUE'/>
+					<coluna nome='dsc_jurisdicao' tipo='VARCHAR2' ind_chave='FALSE'/>
+					<coluna nome='data_inicial' tipo='DATE' ind_chave='FALSE'/>
+					<coluna nome='data_final' tipo='DATE' ind_chave='FALSE'/>
+					<coluna nome='cod_versao' tipo='VARCHAR2' ind_chave='FALSE'/>
+				</colunas>
+
+		</tabela>
+		<tabela>
+				<nome_tabela>TACES34</nome_tabela>
+				<nome_tabela_banco>IPT_EMB_UND_MEDIDA</nome_tabela_banco>
+				<sobrepor_registro>FALSE</sobrepor_registro>
+				<colunas>
+					<coluna nome='cod_medida' tipo='VARCHAR2' ind_chave='TRUE'/>
+					<coluna nome='num_medida' tipo='VARCHAR2' ind_chave='FALSE'/>
+					<coluna nome='descricao' tipo='VARCHAR2' ind_chave='FALSE'/>
+				</colunas>
+
+		</tabela>
+		<tabela>
+				<nome_tabela>TACES35</nome_tabela>
+				<nome_tabela_banco>IPT_EMB_NCM_MEDIDA</nome_tabela_banco>
+				<sobrepor_registro>FALSE</sobrepor_registro>
+				<colunas>
+					<coluna nome='cod_ncm' tipo='VARCHAR2' ind_chave='TRUE'/>
+					<coluna nome='cod_especie_ncm' tipo='NUMBER' ind_chave='TRUE'/>
+					<coluna nome='cod_medida' tipo='VARCHAR2' ind_chave='FALSE'/>
+					<coluna nome='dat_ini_vigencia' tipo='DATE' ind_chave='TRUE'/>
+				</colunas>
+
+		</tabela>
+		<tabela>
+				<nome_tabela>TACES36</nome_tabela>
+				<nome_tabela_banco>EST_OPER_DOCFIS</nome_tabela_banco>
+				<sobrepor_registro>FALSE</sobrepor_registro>
+				<colunas>
+					<coluna nome='cod_uf_obrig' tipo='VARCHAR2' ind_chave='TRUE'/>
+					<coluna nome='cod_operacao' tipo='VARCHAR2' ind_chave='TRUE'/>
+					<coluna nome='dsc_operacao' tipo='VARCHAR2' ind_chave='FALSE'/>
+				</colunas>
+		</tabela>	
+		<tabela>
+				<nome_tabela>TACES37</nome_tabela>
+				<nome_tabela_banco>EST_SIT_DOCFIS</nome_tabela_banco>
+				<sobrepor_registro>FALSE</sobrepor_registro>
+				<colunas>
+					<coluna nome='cod_uf_obrig' tipo='VARCHAR2' ind_chave='TRUE'/>
+					<coluna nome='cod_situacao' tipo='VARCHAR2' ind_chave='TRUE'/>
+					<coluna nome='dsc_situacao' tipo='VARCHAR2' ind_chave='FALSE'/>
+				</colunas>
+		</tabela>
+		<tabela>
+				<nome_tabela>TACES38</nome_tabela>
+				<nome_tabela_banco>PRT_TRIBUTO</nome_tabela_banco>
+				<sobrepor_registro>TRUE</sobrepor_registro>
+				<colunas>
+					<coluna nome='cod_tributo' tipo='VARCHAR2' ind_chave='TRUE'/>
+					<coluna nome='valid_tributo' tipo='DATE' ind_chave='TRUE'/>
+					<coluna nome='vlr_min_recolh' tipo='NUMBER' tamanho ='17' precisao='2' ind_chave='FALSE'/>
+					<coluna nome='vlr_min_enq' tipo='NUMBER' tamanho ='17' precisao='2' ind_chave='FALSE'/>
+					<coluna nome='vlr_min_ret' tipo='NUMBER' tamanho ='17' precisao='2' ind_chave='FALSE'/>
+				</colunas>
+		</tabela>
+		<tabela>
+				<nome_tabela>TACES39</nome_tabela>
+				<nome_tabela_banco>PRT_LINHA_UF_MSAF</nome_tabela_banco>
+				<sobrepor_registro>FALSE</sobrepor_registro>
+				<colunas>
+					<coluna nome='cod_estado' tipo='VARCHAR2' ind_chave='TRUE'/>
+					<coluna nome='num_linha' tipo='NUMBER' ind_chave='TRUE'/>
+					<coluna nome='dat_vigencia' tipo='DATE' ind_chave='TRUE'/>
+					<coluna nome='dsc_linha' tipo='VARCHAR2' ind_chave='FALSE'/>
+					<coluna nome='ind_tp_par' tipo='CHAR' ind_chave='FALSE'/>
+					<coluna nome='ind_valor' tipo='CHAR' ind_chave='FALSE'/>
+				</colunas>
+		</tabela>
+		<tabela>
+				<nome_tabela>TACES40</nome_tabela>
+				<nome_tabela_banco>PRT_CFO_LINHA </nome_tabela_banco>
+				<sobrepor_registro>FALSE</sobrepor_registro>
+				<colunas>
+					<coluna nome='cod_estado' tipo='VARCHAR2' ind_chave='TRUE'/>
+					<coluna nome='num_linha' tipo='NUMBER' ind_chave='TRUE'/>
+					<coluna nome='dat_vigencia' tipo='DATE' ind_chave='TRUE'/>
+					<coluna nome='cod_cfo' tipo='VARCHAR2' ind_chave='TRUE'/>
+				</colunas>
+		</tabela>		
+		<tabela>
+				<nome_tabela>TACES41</nome_tabela>
+				<nome_tabela_banco>EST_DE_PARA_ZFM</nome_tabela_banco>
+				<sobrepor_registro>FALSE</sobrepor_registro>
+				<colunas>
+					<coluna nome='cod_estado_obrig' tipo='VARCHAR2' ind_chave='TRUE'/>
+					<coluna nome='cod_estado' tipo='VARCHAR2' ind_chave='TRUE'/>
+					<coluna nome='cod_municipio_msaf' tipo='NUMBER' ind_chave='TRUE'/>
+					<coluna nome='cod_municipio_dest' tipo='NUMBER' ind_chave='FALSE'/>
+				</colunas>
+		</tabela>
+		<tabela>
+				<nome_tabela>TACES42</nome_tabela>
+				<nome_tabela_banco>PRT_RJ_GIA_UF </nome_tabela_banco>
+				<sobrepor_registro>FALSE</sobrepor_registro>
+				<colunas>
+					<coluna nome='cod_estado' tipo='VARCHAR2' ind_chave='TRUE'/>
+					<coluna nome='cod_estado_gia' tipo='VARCHAR2' ind_chave='FALSE'/>
+				</colunas>
+		</tabela>
+		<tabela>
+				<nome_tabela>TACES43</nome_tabela>
+				<nome_tabela_banco>PRT_RJ_GIA_AMPARO </nome_tabela_banco>
+				<sobrepor_registro>FALSE</sobrepor_registro>
+				<colunas>
+					<coluna nome='cod_amparo_legal' tipo='VARCHAR2' ind_chave='TRUE'/>
+					<coluna nome='cod_amparo_gia' tipo='NUMBER' ind_chave='FALSE'/>
+				</colunas>
+		</tabela>
+		<tabela>
+				<nome_tabela>TACES44</nome_tabela>
+				<nome_tabela_banco>PRT_CLASSE_LINHA </nome_tabela_banco>
+				<sobrepor_registro>FALSE</sobrepor_registro>
+				<colunas>
+					<coluna nome='cod_estado' tipo='VARCHAR2' ind_chave='TRUE'/>
+					<coluna nome='num_linha' tipo='NUMBER' ind_chave='TRUE'/>
+					<coluna nome='dat_vigencia' tipo='DATE' ind_chave='TRUE'/>
+					<coluna nome='cod_classe' tipo='VARCHAR2' ind_chave='TRUE'/>
+				</colunas>
+		</tabela>	
+		<tabela>
+				<nome_tabela>TACES45</nome_tabela>
+				<nome_tabela_banco>PRT_CALC_LINHA </nome_tabela_banco>
+				<sobrepor_registro>FALSE</sobrepor_registro>
+				<colunas>
+					<coluna nome='cod_estado' tipo='VARCHAR2' ind_chave='TRUE'/>
+					<coluna nome='num_linha' tipo='NUMBER' ind_chave='TRUE'/>
+					<coluna nome='dat_vigencia' tipo='DATE' ind_chave='TRUE'/>
+					<coluna nome='num_linha_comp' tipo='NUMBER' ind_chave='TRUE'/>
+					<coluna nome='dat_vig_comp' tipo='DATE' ind_chave='TRUE'/>
+					<coluna nome='cod_tp_oper' tipo='VARCHAR2' ind_chave='FALSE'/>
+				</colunas>
+		</tabela>
+		<tabela>
+				<nome_tabela>TACES46</nome_tabela>
+				<nome_tabela_banco>EST_SC_COD_INF</nome_tabela_banco>
+				<sobrepor_registro>FALSE</sobrepor_registro>
+				<colunas>
+					<coluna nome='cod_sef' tipo='VARCHAR2' ind_chave='TRUE'/>
+					<coluna nome='descricao' tipo='VARCHAR2' ind_chave='FALSE'/>
+				</colunas>
+
+		</tabela>
+		<tabela>
+				<nome_tabela>TACES47</nome_tabela>
+				<nome_tabela_banco>DWT_PRODUTO_SEF</nome_tabela_banco>
+				<sobrepor_registro>FALSE</sobrepor_registro>
+				<colunas>
+					<coluna nome='cod_prod_sef' tipo='VARCHAR2' ind_chave='TRUE'/>
+					<coluna nome='descr_prod_sef' tipo='VARCHAR2' ind_chave='FALSE'/>
+					<coluna nome='unid_prod_sef' tipo='VARCHAR2' ind_chave='FALSE'/>
+				</colunas>
+
+		</tabela>
+		<tabela>
+				<nome_tabela>TACES48</nome_tabela>
+				<nome_tabela_banco>EST_SE_DIC_GRP_PRD</nome_tabela_banco>
+				<sobrepor_registro>FALSE</sobrepor_registro>
+				<colunas>
+					<coluna nome='grp_prod_dic' tipo='VARCHAR2' ind_chave='TRUE'/>
+					<coluna nome='descricao' tipo='VARCHAR2' ind_chave='FALSE'/>
+					<coluna nome='ident_grp_prod_dic' tipo='NUMBER' ind_ident='TRUE' ind_chave='FALSE' existe_so_no_banco='TRUE'/>
+				</colunas>
+
+		</tabela>	
+		<tabela>
+				<nome_tabela>TACES49</nome_tabela>
+				<nome_tabela_banco>NAT_JURIDICA</nome_tabela_banco>
+				<sobrepor_registro>FALSE</sobrepor_registro>
+				<colunas>
+					<coluna nome='cod_nat_jur' tipo='VARCHAR2' ind_chave='TRUE'/>
+					<coluna nome='descricao' tipo='VARCHAR2' ind_chave='FALSE'/>
+				</colunas>
+				<validacoes>
+				</validacoes>
+		</tabela>
+		<tabela>
+				<nome_tabela>TACES50</nome_tabela>
+				<nome_tabela_banco>PRT_PRD_OBRIG</nome_tabela_banco>
+				<sobrepor_registro>FALSE</sobrepor_registro>
+				<colunas>
+					<coluna nome='cod_modulo' tipo='VARCHAR2' ind_chave='TRUE'/>
+					<coluna nome='cod_produto_obrig' tipo='VARCHAR2' ind_chave='TRUE'/>
+					<coluna nome='dsc_produto_obrig' tipo='VARCHAR2' ind_chave='FALSE'/>
+					<coluna nome='cod_medida' tipo='VARCHAR2' ind_chave='FALSE'/>
+					<coluna nome='tp_produto' tipo='VARCHAR2' ind_chave='TRUE'/>
+				</colunas>
+				<validacoes>
+				</validacoes>
+		</tabela>
+		<tabela>
+				<nome_tabela>TACES51</nome_tabela>
+				<nome_tabela_banco>EST_UF_CFO_SIT</nome_tabela_banco>
+				<sobrepor_registro>FALSE</sobrepor_registro>
+				<colunas>
+					<coluna nome='cod_uf' tipo='VARCHAR2' ind_chave='TRUE'/>
+					<coluna nome='cod_cfo' tipo='VARCHAR2' ind_chave='TRUE'/>
+					<coluna nome='ind_vlr_contabil' tipo='VARCHAR2' ind_chave='FALSE'/>
+					<coluna nome='ind_base_calc' tipo='VARCHAR2' ind_chave='FALSE'/>
+					<coluna nome='ind_isenta' tipo='VARCHAR2' ind_chave='FALSE'/>
+					<coluna nome='ind_outras' tipo='VARCHAR2' ind_chave='FALSE'/>
+					<coluna nome='ind_excluida' tipo='VARCHAR2' ind_chave='FALSE'/>
+					<coluna nome='calc_e' tipo='VARCHAR2' ind_chave='FALSE'/>
+					<coluna nome='ind_obs' tipo='VARCHAR2' ind_chave='FALSE'/>
+				</colunas>
+				<validacoes>
+				</validacoes>
+		</tabela>
+		<tabela>
+				<nome_tabela>TACES52</nome_tabela>
+				<nome_tabela_banco>PRT_TIPO_DOCTO_MUNIC</nome_tabela_banco>
+				<sobrepor_registro>FALSE</sobrepor_registro>
+				<colunas>
+					<coluna nome='cod_estado' tipo='VARCHAR2' ind_chave='FALSE' existe_so_no_txt='TRUE'/>
+					<coluna nome='cod_municipio' tipo='NUMBER' ind_chave='TRUE'/>
+					<coluna nome='cod_docto_munic' tipo='VARCHAR2' ind_chave='TRUE'/>
+					<coluna nome='descricao' tipo='VARCHAR2' ind_chave='FALSE'/>
+					<coluna nome='ident_estado' tipo='NUMBER' ind_chave='TRUE'/>
+				</colunas>
+				<validacoes>
+					<recuperar coluna="4" tabela="estado" campo_recuperar="ident_estado" campo_ref="cod_estado" coluna_ref="0" cod_erro="090027"/>		
+				</validacoes>
+		</tabela>
+		<tabela>
+				<nome_tabela>TACES53</nome_tabela>
+				<nome_tabela_banco>PRT_TIPO_CONHECIMENTO</nome_tabela_banco>
+				<sobrepor_registro>FALSE</sobrepor_registro>
+				<colunas>
+					<coluna nome='cod_tipo' tipo='VARCHAR2' ind_chave='TRUE'/>
+					<coluna nome='descricao' tipo='VARCHAR2' ind_chave='FALSE'/>
+				</colunas>
+		</tabela>
+		<tabela>
+				<nome_tabela>TACES54</nome_tabela>
+				<nome_tabela_banco>DWT_TRIB_ESP_REGRA</nome_tabela_banco>
+				<sobrepor_registro>FALSE</sobrepor_registro>
+				<colunas>
+					<coluna nome='cod_tributo' tipo='VARCHAR2' ind_chave='TRUE'/>
+					<coluna nome='esp_tributo' tipo='VARCHAR2' ind_chave='TRUE'/>
+					<coluna nome='dat_validade_ini' tipo='DATE' ind_chave='TRUE'/>
+					<coluna nome='ind_periodicidade' tipo='CHAR' ind_chave='FALSE'/>
+					<coluna nome='num_dias_corr_ant' tipo='NUMBER' ind_chave='FALSE'/>
+					<coluna nome='num_dias_corr_pos' tipo='NUMBER' ind_chave='FALSE'/>
+					<coluna nome='num_dias_uteis' tipo='NUMBER' ind_chave='FALSE'/>
+					<coluna nome='ind_ult_dia_util' tipo='CHAR' ind_chave='FALSE'/>
+					<coluna nome='cod_darf' tipo='VARCHAR2' ind_chave='TRUE'/>
+				</colunas>
+		</tabela>
+		<tabela>
+				<nome_tabela>TACES55</nome_tabela>
+				<nome_tabela_banco> DAC_GRUPO_PRODUTOS</nome_tabela_banco>
+				<sobrepor_registro>FALSE</sobrepor_registro>
+				<colunas>
+					<coluna nome='tipo_aliquota_prod' tipo='VARCHAR2' ind_chave='TRUE'/>
+					<coluna nome='grupo_produto_dacon' tipo='VARCHAR2' ind_chave='TRUE'/>
+					<coluna nome='descricao' tipo='VARCHAR2' ind_chave='FALSE'/>
+				</colunas>
+		</tabela>
+		<tabela>
+				<nome_tabela>TACES56</nome_tabela>
+				<nome_tabela_banco>DAC_PRODUTOS</nome_tabela_banco>
+				<sobrepor_registro>FALSE</sobrepor_registro>
+				<colunas>
+					<coluna nome='cod_produto_dacon' tipo='VARCHAR2' ind_chave='TRUE'/>
+					<coluna nome='grupo_produto_dacon' tipo='VARCHAR2' ind_chave='FALSE'/>
+					<coluna nome='descricao' tipo='VARCHAR2' ind_chave='FALSE'/>
+					<coluna nome='tipo_aliquota_prod' tipo='VARCHAR2' ind_chave='FALSE'/>
+				</colunas>
+		</tabela>
+		<tabela>
+				<nome_tabela>TACES57</nome_tabela>
+				<nome_tabela_banco>PRT_PRD_SERC</nome_tabela_banco>
+				<sobrepor_registro>FALSE</sobrepor_registro>
+				<colunas>
+					<coluna nome='cod_prod_serc' tipo='VARCHAR2' ind_chave='TRUE'/>
+					<coluna nome='desc_prod_serc' tipo='VARCHAR2' ind_chave='FALSE'/>
+				</colunas>
+		</tabela>
+		<tabela>
+				<nome_tabela>TACES58</nome_tabela>
+				<nome_tabela_banco>DWT_COD_IATA </nome_tabela_banco>
+				<sobrepor_registro>FALSE</sobrepor_registro>
+				<colunas>
+					<coluna nome='cod_estado' tipo='VARCHAR2' ind_chave='FALSE' existe_so_no_txt='TRUE'/>
+					<coluna nome='dsc_municipio' tipo='VARCHAR2' ind_chave='FALSE' existe_so_no_txt='TRUE'/>
+					<coluna nome='cod_iata' tipo='VARCHAR2' ind_chave='TRUE'/>
+					<coluna nome='dsc_aeroporto' tipo='VARCHAR2' ind_chave='FALSE'/>
+					<coluna nome='ident_estado' tipo='NUMBER' ind_chave='TRUE'/>			
+					<coluna nome='cod_municipio' tipo='NUMBER' ind_chave='TRUE'/>
+				</colunas>
+				<validacoes>
+					<recuperar coluna="4" tabela="estado" campo_recuperar="ident_estado" campo_ref="cod_estado" coluna_ref="0" cod_erro="090027"/>
+					<recuperar coluna="5" tabela="municipio" campo_recuperar="cod_municipio" campo_ref="ident_estado,descricao" coluna_ref="4,1" cod_erro="090571"/>					
+				</validacoes>
+		</tabela>
+		<tabela>
+				<nome_tabela>TACES59</nome_tabela>
+				<nome_tabela_banco>DWT_TOTALIZADOR_OBRIG_ECF</nome_tabela_banco>
+				<sobrepor_registro>FALSE</sobrepor_registro>
+				<colunas>
+					<coluna nome='ind_tipo_obrig' tipo='CHAR' ind_chave='TRUE'/>
+					<coluna nome='cod_totalizador_obrig' tipo='VARCHAR2' ind_chave='TRUE'/>
+					<coluna nome='dsc_totalizador_obrig' tipo='VARCHAR2' ind_chave='FALSE'/>
+					<coluna nome='ind_tipo_oper' tipo='CHAR' ind_chave='FALSE'/>
+				</colunas>
+		</tabela>
+		<tabela>
+				<nome_tabela>TACES60</nome_tabela>
+				<nome_tabela_banco>ICT_COD_DEB_ICMS</nome_tabela_banco>
+				<sobrepor_registro>FALSE</sobrepor_registro>
+				<colunas>
+					<coluna nome='cod_deb_icms' tipo='NUMBER' ind_chave='TRUE'/>
+					<coluna nome='descricao' tipo='VARCHAR2' ind_chave='FALSE'/>
+					<coluna nome='data_valid_ini' tipo='DATE' ind_chave='FALSE'/>
+					<coluna nome='data_valid_fin' tipo='DATE' ind_chave='FALSE'/>
+				</colunas>
+		</tabela>
+		<tabela>
+				<nome_tabela>TACES61</nome_tabela>
+				<nome_tabela_banco>DWT_MODELO_MUNICIPAL</nome_tabela_banco>
+				<sobrepor_registro>FALSE</sobrepor_registro>
+				<colunas>
+					<coluna nome='cod_estado' tipo='VARCHAR2' ind_chave='FALSE' existe_so_no_txt='TRUE'/>
+					<coluna nome='cod_munic_msaf' tipo='NUMBER' ind_chave='TRUE'/>
+					<coluna nome='cod_modelo_nf' tipo='VARCHAR2' ind_chave='TRUE'/>
+					<coluna nome='dsc_modelo_nf' tipo='VARCHAR2' ind_chave='FALSE'/>
+					<coluna nome='ident_estado' tipo='NUMBER' ind_chave='TRUE'/>
+				</colunas>
+				<validacoes>
+					<recuperar coluna="4" tabela="estado" campo_recuperar="ident_estado" campo_ref="cod_estado" coluna_ref="0" cod_erro="090027"/>	
+					<validar coluna="1,4" tabela="municipio" campo_tabela="cod_municipio,ident_estado" cod_erro="090571"/>
+				</validacoes>
+		</tabela>
+		<tabela>
+				<nome_tabela>TACES62</nome_tabela>
+				<nome_tabela_banco>PRT_INCID_TRIBUT_ESOCIAL</nome_tabela_banco>
+				<sobrepor_registro>FALSE</sobrepor_registro>
+				<colunas>
+					<coluna nome='tipo_incid_trib' tipo='VARCHAR2' ind_chave='TRUE'/>
+					<coluna nome='cod_incid_trib' tipo='VARCHAR2' ind_chave='TRUE'/>
+					<coluna nome='dsc_incid_trib' tipo='VARCHAR2' ind_chave='FALSE'/>
+				</colunas>
+				<validacoes>
+				</validacoes>
+		</tabela>
+		<tabela>
+				<nome_tabela>TACES63</nome_tabela>
+				<nome_tabela_banco>PRT_UF_OBRIG_MSAF</nome_tabela_banco>
+				<sobrepor_registro>FALSE</sobrepor_registro>
+				<colunas>
+					<coluna nome='cod_modulo' tipo='VARCHAR2' ind_chave='TRUE'/>
+					<coluna nome='valid_inicial' tipo='DATE' ind_chave='TRUE'/>
+					<coluna nome='cod_uf_msaf' tipo='VARCHAR2' ind_chave='TRUE'/>
+					<coluna nome='cod_uf_obrig' tipo='VARCHAR2' ind_chave='FALSE'/>
+					<coluna nome='dsc_uf_obrig' tipo='VARCHAR2' ind_chave='FALSE'/>
+				</colunas>
+				<validacoes>
+				</validacoes>
+		</tabela>
+		<tabela>
+				<nome_tabela>TACES64</nome_tabela>
+				<nome_tabela_banco>PRT_NAT_RUBRICA_ESOCIAL</nome_tabela_banco>
+				<sobrepor_registro>FALSE</sobrepor_registro>
+				<colunas>
+					<coluna nome='cod_nat_rubrica' tipo='VARCHAR2' ind_chave='TRUE'/>
+					<coluna nome='dsc_nat_rubrica' tipo='VARCHAR2' ind_chave='FALSE'/>
+				</colunas>
+				<validacoes>
+				</validacoes>
+		</tabela>
+		<tabela>
+				<nome_tabela>TACES65</nome_tabela>
+				<nome_tabela_banco>Y2027_SIT_TRIBUTARIA</nome_tabela_banco>
+				<sobrepor_registro>FALSE</sobrepor_registro>
+				<colunas>
+					<coluna nome='ind_tributacao' tipo='VARCHAR2' ind_chave='TRUE'/>
+					<coluna nome='cod_tributacao' tipo='NUMBER' ind_chave='TRUE'/>
+					<coluna nome='data_valid' tipo='DATE' ind_chave='TRUE'/>
+					<coluna nome='dsc_tributacao' tipo='VARCHAR2' ind_chave='FALSE'/>
+				</colunas>
+				<validacoes>
+				</validacoes>
+		</tabela>
+		<tabela>
+				<nome_tabela>TACES66</nome_tabela>
+				<nome_tabela_banco>PRT_CATEG_TRAB_ESOCIAL</nome_tabela_banco>
+				<sobrepor_registro>FALSE</sobrepor_registro>
+				<colunas>
+					<coluna nome='cod_categ_trab' tipo='VARCHAR2' ind_chave='TRUE'/>
+					<coluna nome='dsc_categ_trab' tipo='VARCHAR2' ind_chave='FALSE'/>
+				</colunas>
+				<validacoes>
+				</validacoes>
+		</tabela>
+		<tabela>
+				<nome_tabela>TACES67</nome_tabela>
+				<nome_tabela_banco>MUNICIPIO_SIAFI</nome_tabela_banco>
+				<sobrepor_registro>FALSE</sobrepor_registro>
+				<colunas>
+					<coluna nome='cod_munic_siafi' tipo='VARCHAR2' ind_chave='TRUE'/>
+					<coluna nome='cod_uf_siafi' tipo='VARCHAR2' ind_chave='TRUE'/>
+					<coluna nome='cnpj_siafi' tipo='VARCHAR2' ind_chave='FALSE'/>
+					<coluna nome='dsc_munic_siafi' tipo='VARCHAR2' ind_chave='FALSE'/>
+				</colunas>
+				<validacoes>
+				</validacoes>
+		</tabela>
+		<tabela>
+				<nome_tabela>TACES68</nome_tabela>
+				<nome_tabela_banco>DWT_TIPO_MOV_EST</nome_tabela_banco>
+				<sobrepor_registro>FALSE</sobrepor_registro>
+				<colunas>
+					<coluna nome='cod_tipo_mov_est' tipo='VARCHAR2' ind_chave='TRUE'/>
+					<coluna nome='dat_valid_ini' tipo='DATE' ind_chave='TRUE'/>
+					<coluna nome='dat_valid_fim' tipo='DATE' ind_chave='FALSE'/>
+					<coluna nome='descricao' tipo='VARCHAR2' ind_chave='FALSE'/>
+					<coluna nome='ind_ent_sai' tipo='CHAR' ind_chave='FALSE'/>
+				</colunas>
+				<validacoes>
+				</validacoes>
+		</tabela>
+		<tabela>
+				<nome_tabela>TACES69</nome_tabela>
+				<nome_tabela_banco>DWT_COD_FISCAL_SERV</nome_tabela_banco>
+				<sobrepor_registro>FALSE</sobrepor_registro>
+				<colunas>
+					<coluna nome='cod_cfps' tipo='VARCHAR2' ind_chave='TRUE'/>
+					<coluna nome='dsc_cfps' tipo='VARCHAR2' ind_chave='FALSE'/>
+				</colunas>
+				<validacoes>
+				</validacoes>
+		</tabela>
+		<tabela>
+				<nome_tabela>TACES70</nome_tabela>
+				<nome_tabela_banco>CAD_SPED_TPDOC</nome_tabela_banco>
+				<sobrepor_registro>FALSE</sobrepor_registro>
+				<colunas>
+					<coluna nome='cod_tpdoc' tipo='VARCHAR2' ind_chave='TRUE'/>
+					<coluna nome='dsc_tpdoc' tipo='VARCHAR2' ind_chave='FALSE'/>
+					<coluna nome='data_inicial' tipo='DATE' ind_chave='FALSE'/>
+					<coluna nome='data_final' tipo='DATE' ind_chave='FALSE'/>
+					<coluna nome='cod_versao' tipo='VARCHAR2' ind_chave='FALSE'/>
+				</colunas>
+				<validacoes>
+				</validacoes>
+		</tabela>
+		
+
+		<tabela>
+				<nome_tabela>TACES72</nome_tabela>
+				<nome_tabela_banco>DWT_NAT_REC</nome_tabela_banco>
+				<sobrepor_registro>TRUE</sobrepor_registro>
+				<colunas>
+					<coluna nome='cod_cst_pis_cofins' tipo='NUMBER' ind_chave='TRUE'/>
+					<coluna nome='cod_nat_rec' tipo='NUMBER' ind_chave='TRUE'/>
+					<coluna nome='dat_validade' tipo='DATE' ind_chave='TRUE'/>
+					<coluna nome='dsc_nat_rec' tipo='VARCHAR2' ind_chave='FALSE'/>
+					<coluna nome='dat_validade_final' tipo='DATE' ind_chave='FALSE'/>
+				</colunas>
+				<validacoes>
+				</validacoes>
+		</tabela>
+
+		<tabela>
+				<nome_tabela>TACES74</nome_tabela>
+				<nome_tabela_banco>PRT_CLASSE_OPER_PREST</nome_tabela_banco>
+				<sobrepor_registro>FALSE</sobrepor_registro>
+				<colunas>
+					<coluna nome='cod_cpo' tipo='VARCHAR2' ind_chave='TRUE'/>
+					<coluna nome='dat_valid_ini' tipo='DATE' ind_chave='TRUE'/>
+					<coluna nome='dat_valid_fim' tipo='DATE' ind_chave='FALSE'/>
+					<coluna nome='descricao' tipo='VARCHAR2' ind_chave='FALSE'/>
+					<coluna nome='cod_cfo' tipo='VARCHAR2' ind_chave='TRUE'/>
+				</colunas>
+				<validacoes>
+				</validacoes>
+		</tabela>
+		
+		<tabela>
+				<nome_tabela>TACES75</nome_tabela>
+				<nome_tabela_banco>DWT_ATIV_CONT_PREV</nome_tabela_banco>
+				<sobrepor_registro>FALSE</sobrepor_registro>
+				<colunas>
+					<coluna nome='cod_ativ_cont_prev' tipo='VARCHAR2' ind_chave='TRUE'/>
+					<coluna nome='dsc_ativ_cont_prev' tipo='VARCHAR2' ind_chave='FALSE'/>
+					<coluna nome='cod_ncm' tipo='VARCHAR2' ind_chave='FALSE'/>
+					<coluna nome='aliquota' tipo='NUMBER' tamanho ='8' precisao='4'  ind_chave='FALSE'/>
+					<coluna nome='data_ini_vigencia' tipo='DATE' ind_chave='TRUE'/>
+					<coluna nome='dat_fim_vigencia' tipo='DATE' ind_chave='FALSE'/>
+					<coluna nome='ind_atividade' tipo='CHAR' ind_chave='FALSE'/>
+					<coluna nome='cod_cnae' tipo='VARCHAR2' ind_chave='FALSE'/>
+					<coluna nome='dat_ini_escrit' tipo='DATE' ind_chave='FALSE'/>
+					<coluna nome='cod_receita' tipo='VARCHAR2' ind_chave='FALSE'/>
+					<coluna nome='ident_ativ_cont_prev' tipo='NUMBER' ind_chave='FALSE' nome_sequence="seq_dwt_ativ_cprev" existe_so_no_banco='TRUE'/>
+				</colunas>
+				<validacoes>
+				</validacoes>
+		</tabela>		
+		
+		<tabela>
+				<nome_tabela>TACES76</nome_tabela>
+				<nome_tabela_banco>PRT_COD_TRIB_AM</nome_tabela_banco>
+				<sobrepor_registro>FALSE</sobrepor_registro>
+				<colunas>
+					<coluna nome='cod_trib_prod' tipo='VARCHAR2' ind_chave='TRUE'/>
+					<coluna nome='dsc_trib_prod' tipo='VARCHAR2' ind_chave='FALSE'/>
+				</colunas>
+				<validacoes>
+				</validacoes>
+		</tabela>
+		<tabela>
+				<nome_tabela>TACES77</nome_tabela>
+				<nome_tabela_banco>ICT_GNRE_OL_CLAS_PROD</nome_tabela_banco>
+				<sobrepor_registro>FALSE</sobrepor_registro>
+				<colunas>
+					<coluna nome='cod_prod_gnre' tipo='NUMBER' ind_chave='TRUE'/>
+					<coluna nome='descricao' tipo='VARCHAR2' ind_chave='FALSE'/>
+				</colunas>
+				<validacoes>
+				</validacoes>
+		</tabela>
+		<tabela>
+				<nome_tabela>TACES78</nome_tabela>
+				<nome_tabela_banco>ICT_GNRE_OL_UF</nome_tabela_banco>
+				<sobrepor_registro>FALSE</sobrepor_registro>
+				<colunas>
+					<coluna nome='cod_estado' tipo='VARCHAR2' ind_chave='FALSE' existe_so_no_txt='TRUE'/>
+					<coluna nome='cod_gnre' tipo='VARCHAR2' ind_chave='TRUE'/>
+					<coluna nome='ind_det_receita' tipo='CHAR' ind_chave='FALSE'/>
+					<coluna nome='cod_det_receita' tipo='VARCHAR2' ind_chave='FALSE'/>
+					<coluna nome='ind_det_produto' tipo='CHAR' ind_chave='FALSE'/>
+					<coluna nome='ind_doc' tipo='CHAR' ind_chave='FALSE'/>
+					<coluna nome='ind_periodo' tipo='CHAR' ind_chave='FALSE'/>
+					<coluna nome='ind_mes_ano' tipo='CHAR' ind_chave='FALSE'/>
+					<coluna nome='ind_destinatario' tipo='CHAR' ind_chave='FALSE'/>
+					<coluna nome='ind_campo_extra' tipo='CHAR' ind_chave='FALSE'/>
+					<coluna nome='num_campo_extra1' tipo='NUMBER' ind_chave='FALSE'/>
+					<coluna nome='num_campo_extra2' tipo='NUMBER' ind_chave='FALSE'/>
+					<coluna nome='num_campo_extra3' tipo='NUMBER' ind_chave='FALSE'/>
+					<coluna nome='ind_valores' tipo='CHAR' ind_chave='FALSE'/>			
+					<coluna nome='ident_estado' tipo='NUMBER' ind_chave='TRUE'/>
+				</colunas>
+				<validacoes>
+					<recuperar coluna="14" tabela="estado" campo_recuperar="ident_estado" campo_ref="cod_estado" coluna_ref="0" cod_erro="090027"/>	
+				</validacoes>
+		</tabela>
+		<tabela>
+				<nome_tabela>TACES79</nome_tabela>
+				<nome_tabela_banco>PRT_NAT_OP</nome_tabela_banco>
+				<sobrepor_registro>FALSE</sobrepor_registro>
+				<colunas>
+					<coluna nome='cod_nat_op' tipo='VARCHAR2' ind_chave='TRUE'/>
+					<coluna nome='num_ordem' tipo='NUMBER' ind_chave='TRUE'/>
+					<coluna nome='dsc_conta' tipo='VARCHAR2' ind_chave='FALSE'/>
+					<coluna nome='dsc_nat_op' tipo='VARCHAR2' ind_chave='FALSE'/>
+				</colunas>
+				<validacoes>
+				</validacoes>
+		</tabela>
+		<tabela>
+				<nome_tabela>TACES80</nome_tabela>
+				<nome_tabela_banco>PRT_CLASSE_VENCIMENTO</nome_tabela_banco>
+				<sobrepor_registro>FALSE</sobrepor_registro>
+				<colunas>
+					<coluna nome='cod_estado' tipo='VARCHAR2' ind_chave='FALSE' existe_so_no_txt='TRUE'/>
+					<coluna nome='cod_classe_venc' tipo='VARCHAR2' ind_chave='TRUE'/>
+					<coluna nome='dat_ini_vigencia' tipo='DATE' ind_chave='TRUE'/>
+					<coluna nome='tp_classe' tipo='VARCHAR2' ind_chave='FALSE'/>
+					<coluna nome='dsc_classe' tipo='VARCHAR2' ind_chave='FALSE'/>
+					<coluna nome='dsc_dispositivo' tipo='VARCHAR2' ind_chave='FALSE'/>
+					<coluna nome='dat_fim_vigencia' tipo='DATE' ind_chave='FALSE'/>
+					<coluna nome='ident_estado' tipo='NUMBER' ind_chave='TRUE'/>
+				</colunas>
+				<validacoes>
+					<recuperar coluna="7" tabela="estado" campo_recuperar="ident_estado" campo_ref="cod_estado" coluna_ref="0" cod_erro="090027"/>	
+				</validacoes>
+		</tabela>		
+		<tabela>
+				<nome_tabela>TACES81</nome_tabela>
+				<nome_tabela_banco>PRT_UND_MEDIDA_FCI</nome_tabela_banco>
+				<sobrepor_registro>FALSE</sobrepor_registro>
+				<colunas>
+					<coluna nome='cod_medida_fci' tipo='VARCHAR2' ind_chave='TRUE'/>
+					<coluna nome='data_validade' tipo='DATE' ind_chave='TRUE'/>
+					<coluna nome='descricao' tipo='VARCHAR2' ind_chave='FALSE'/>
+				</colunas>
+				<validacoes>
+				</validacoes>
+		</tabela>
+		<tabela>
+				<nome_tabela>TACES82</nome_tabela>
+				<nome_tabela_banco>EPC_REC_DED_EXC</nome_tabela_banco>
+				<sobrepor_registro>FALSE</sobrepor_registro>
+				<colunas>
+					<coluna nome='cod_rec_ded_exc' tipo='VARCHAR2' ind_chave='TRUE'/>
+					<coluna nome='cod_atributo' tipo='VARCHAR2' ind_chave='TRUE'  ind_trim='FALSE' />
+					<coluna nome='descricao' tipo='VARCHAR2' ind_chave='FALSE'/>
+					<coluna nome='tipo_codigo' tipo='CHAR' ind_chave='FALSE'/>
+					<coluna nome='fator' tipo='NUMBER' tamanho='7' precisao='4' ind_chave='FALSE'/>
+					<coluna nome='aplicabilidade' tipo='CHAR' ind_chave='FALSE'/>
+				</colunas>
+				<validacoes>
+				</validacoes>
+		</tabela>
+		<tabela>
+				<nome_tabela>TACES83</nome_tabela>
+				<nome_tabela_banco>EPC_REC_DED_EXC_COMPL</nome_tabela_banco>
+				<sobrepor_registro>FALSE</sobrepor_registro>
+				<colunas>
+					<coluna nome='cod_rec_ded_exc_compl' tipo='VARCHAR2' ind_chave='TRUE'/>
+					<coluna nome='data_validade' tipo='DATE' ind_chave='FALSE'/>
+					<coluna nome='descricao' tipo='VARCHAR2' ind_chave='FALSE'/>
+				</colunas>
+				<validacoes>
+				</validacoes>
+		</tabela>
+		<tabela>
+				<nome_tabela>TACES84</nome_tabela>
+				<nome_tabela_banco>PRT_COD_PROD_DMD</nome_tabela_banco>
+				<sobrepor_registro>FALSE</sobrepor_registro>
+				<colunas>
+					<coluna nome='cod_produto_dmd' tipo='VARCHAR2' ind_chave='TRUE'/>
+					<coluna nome='data_valid' tipo='DATE' ind_chave='TRUE'/>
+					<coluna nome='dsc_produto' tipo='VARCHAR2' ind_chave='FALSE'/>
+					<coluna nome='cod_medida' tipo='VARCHAR2' ind_chave='FALSE'/>
+				</colunas>
+				<validacoes>
+				</validacoes>
+		</tabela>
+		<tabela>
+				<nome_tabela>TACES85</nome_tabela>
+				<nome_tabela_banco>PRT_TIPO_SERV_ESOCIAL</nome_tabela_banco>
+				<sobrepor_registro>FALSE</sobrepor_registro>
+				<colunas>
+					<coluna nome='cod_tipo_serv_esocial' tipo='VARCHAR2' ind_chave='TRUE'/>
+					<coluna nome='data_ini_vigencia' tipo='DATE' ind_chave='TRUE'/>
+					<coluna nome='dsc_tipo_serv_esocial' tipo='VARCHAR2' ind_chave='FALSE'/>
+					<coluna nome='ident_tipo_serv_esocial' tipo='NUMBER' ind_ident='TRUE' ind_chave='FALSE' existe_so_no_banco='TRUE'/>
+				</colunas>
+				<validacoes>
+				</validacoes>
+		</tabela>		
+		<tabela>
+				<nome_tabela>TACES86</nome_tabela>
+				<nome_tabela_banco>PRT_CFOP_MOT_AJ</nome_tabela_banco>
+				<sobrepor_registro>FALSE</sobrepor_registro>
+				<colunas>
+					<coluna nome='cod_cfop' tipo='VARCHAR2' ind_chave='TRUE'/>
+					<coluna nome='cod_ajuste' tipo='VARCHAR2' ind_chave='TRUE'/>
+					<coluna nome='data_ini' tipo='DATE' ind_chave='TRUE'/>
+					<coluna nome='data_fim' tipo='DATE' ind_chave='FALSE'/>
+				</colunas>
+				<validacoes>
+				</validacoes>
+		</tabela>
+		<tabela>
+				<nome_tabela>TACES87</nome_tabela>
+				<nome_tabela_banco>PRT_MOTIVO_AJ</nome_tabela_banco>
+				<sobrepor_registro>FALSE</sobrepor_registro>
+				<colunas>
+					<coluna nome='cod_ajuste' tipo='VARCHAR2' ind_chave='TRUE'/>
+					<coluna nome='data_ini' tipo='DATE' ind_chave='TRUE'/>
+					<coluna nome='desc_ajuste' tipo='VARCHAR2' ind_chave='FALSE'/>
+					<coluna nome='rec_motivo' tipo='CHAR' ind_chave='FALSE'/>
+					<coluna nome='data_fim' tipo='DATE' ind_chave='FALSE'/>
+				</colunas>
+				<validacoes>
+				</validacoes>
+		</tabela>
+		<tabela>
+				<nome_tabela>TACES88</nome_tabela>
+				<nome_tabela_banco>DWT_COD_SIT_TRIB_ISS</nome_tabela_banco>
+				<sobrepor_registro>FALSE</sobrepor_registro>
+				<colunas>
+					<coluna nome='cod_sit_trib_iss' tipo='VARCHAR2' ind_chave='TRUE'/>
+					<coluna nome='valid_inicial' tipo='DATE' ind_chave='TRUE'/>
+					<coluna nome='desc_sit_trib_iss' tipo='VARCHAR2' ind_chave='FALSE'/>
+				</colunas>
+				<validacoes>
+				</validacoes>
+		</tabela>
+		<tabela>
+				<nome_tabela>TACES89</nome_tabela>
+				<nome_tabela_banco>PRT_COD_PART_MUN_EFD</nome_tabela_banco>
+				<sobrepor_registro>TRUE</sobrepor_registro>
+				<colunas>
+					<coluna nome='cod_estado' tipo='VARCHAR2' ind_chave='TRUE'/>
+					<coluna nome='cod_part_mun' tipo='VARCHAR2' ind_chave='TRUE'/>
+					<coluna nome='dsc_part_mun' tipo='VARCHAR2' ind_chave='FALSE'/>
+					<coluna nome='cod_tabela' tipo='VARCHAR2' ind_chave='FALSE'/>
+				</colunas>
+				<validacoes>
+				</validacoes>
+		</tabela>
+		<tabela>
+				<nome_tabela>TACES90</nome_tabela>
+				<nome_tabela_banco>CAD_NAT_SUBCONTAS</nome_tabela_banco>
+				<sobrepor_registro>FALSE</sobrepor_registro>
+				<colunas>
+					<coluna nome='cod_nat_subcontas' tipo='VARCHAR2' ind_chave='TRUE'/>
+					<coluna nome='valid_inicial' tipo='DATE' ind_chave='TRUE'/>
+					<coluna nome='desc_nat_subcontas' tipo='VARCHAR2' ind_chave='FALSE'/>
+					<coluna nome='valid_final' tipo='DATE' ind_chave='FALSE'/>
+				</colunas>
+				<validacoes>
+				</validacoes>
+		</tabela>
+		<tabela>
+				<nome_tabela>TACES91</nome_tabela>
+				<nome_tabela_banco>PRT_CAD_BENEF_ICMS</nome_tabela_banco>
+				<sobrepor_registro>FALSE</sobrepor_registro>
+				<colunas>
+					<coluna nome='cod_ato_legal' tipo='VARCHAR2' ind_chave='TRUE'/>
+					<coluna nome='numero_ano' tipo='VARCHAR2' ind_chave='TRUE'/>
+					<coluna nome='cod_especie' tipo='VARCHAR2' ind_chave='TRUE'/>
+					<coluna nome='data_ini' tipo='DATE' ind_chave='TRUE'/>
+					<coluna nome='data_fim' tipo='DATE' ind_chave='FALSE'/>
+					<coluna nome='descricao' tipo='VARCHAR2' ind_chave='FALSE'/>
+				</colunas>
+				<validacoes>
+				</validacoes>
+		</tabela>		
+		<tabela>
+				<nome_tabela>TACES94</nome_tabela>
+				<nome_tabela_banco>PRT_CLASS_CEST</nome_tabela_banco>
+				<sobrepor_registro>FALSE</sobrepor_registro>
+				<colunas>
+					<coluna nome='data_atualizacao' tipo='DATE' ind_chave='TRUE'/>
+					<coluna nome='cod_cest' tipo='VARCHAR2' ind_chave='TRUE'/>
+					<coluna nome='descricao' tipo='VARCHAR2' ind_chave='FALSE'/>
+				</colunas>
+				<validacoes>
+				</validacoes>
+		</tabela>
+		<tabela>
+				<nome_tabela>TACES95</nome_tabela>
+				<nome_tabela_banco>PRT_CARACTERISTICA</nome_tabela_banco>
+				<sobrepor_registro>FALSE</sobrepor_registro>
+				<colunas>
+					<coluna nome='cod_caract' tipo='VARCHAR2' ind_chave='TRUE'/>
+					<coluna nome='data_ini_valid' tipo='DATE' ind_chave='TRUE'/>
+					<coluna nome='data_fim_valid' tipo='DATE' ind_chave='FALSE' />
+					<coluna nome='descricao' tipo='VARCHAR2' ind_chave='FALSE'/>
+					<coluna nome='cod_unidade' tipo='VARCHAR2' ind_chave='FALSE'/>
+				</colunas>
+				<validacoes>
+				</validacoes>
+		</tabela>
+		<tabela>
+				<nome_tabela>TACES96</nome_tabela>
+				<nome_tabela_banco>PRT_METODO_AFERICAO</nome_tabela_banco>
+				<sobrepor_registro>FALSE</sobrepor_registro>
+				<colunas>
+					<coluna nome='cod_metodo' tipo='VARCHAR2' ind_chave='TRUE'/>
+					<coluna nome='data_ini_valid' tipo='DATE' ind_chave='TRUE'/>
+					<coluna nome='data_fim_valid' tipo='DATE' ind_chave='FALSE'/>
+					<coluna nome='descricao' tipo='VARCHAR2' ind_chave='FALSE'/>
+				</colunas>
+				<validacoes>
+				</validacoes>
+		</tabela>
+		<tabela>
+				<nome_tabela>TACES97</nome_tabela>
+				<nome_tabela_banco>PRT_VASILHAME</nome_tabela_banco>
+				<sobrepor_registro>FALSE</sobrepor_registro>
+				<colunas>
+					<coluna nome='cod_vasilhame' tipo='VARCHAR2' ind_chave='TRUE'/>
+					<coluna nome='data_ini_valid' tipo='DATE' ind_chave='TRUE'/>
+					<coluna nome='data_fim_valid' tipo='DATE' ind_chave='FALSE'/>
+					<coluna nome='descricao' tipo='VARCHAR2' ind_chave='FALSE'/>
+				</colunas>
+				<validacoes>
+				</validacoes>
+		</tabela>
+		<tabela>
+				<nome_tabela>TACES98</nome_tabela>
+				<nome_tabela_banco>PRT_INSTALACAO_OBRIG</nome_tabela_banco>
+				<sobrepor_registro>TRUE</sobrepor_registro>
+				<colunas>
+					<coluna nome='cod_instalacao' tipo='VARCHAR2' ind_chave='TRUE'/>
+					<coluna nome='valid_inicial' tipo='DATE' ind_chave='TRUE'/>
+					<coluna nome='dsc_tp_instalacao' tipo='VARCHAR2' ind_chave='FALSE'/>
+					<coluna nome='valid_final' tipo='DATE' ind_chave='FALSE'/>
+				</colunas>
+				<validacoes>
+				</validacoes>
+		</tabela>		
+		<tabela>
+				<nome_tabela>TACES101</nome_tabela>
+				<nome_tabela_banco>DWT_COD_NAT_REND</nome_tabela_banco>
+				<sobrepor_registro>FALSE</sobrepor_registro>
+				<colunas>
+				    <coluna nome='cod_grupo_nat_rend' tipo='VARCHAR2' ind_chave='TRUE'/>
+					<coluna nome='cod_nat_rend' tipo='VARCHAR2' ind_chave='TRUE'/>
+					<coluna nome='descricao' tipo='VARCHAR2' ind_chave='FALSE'/>
+					<coluna nome='ind_fci' tipo='VARCHAR2' ind_chave='FALSE'/>
+					<coluna nome='ind_dec_terc' tipo='VARCHAR2' ind_chave='FALSE'/>
+					<coluna nome='ind_rra' tipo='VARCHAR2' ind_chave='FALSE'/>
+					<coluna nome='tipo_deducao' tipo='VARCHAR2' ind_trim='FALSE' ind_chave='TRUE'/>
+					<coluna nome='desc_tipo_deducao' tipo='VARCHAR2' ind_chave='FALSE'/>
+					<coluna nome='tipo_isencao' tipo='VARCHAR2' ind_trim='FALSE' ind_chave='TRUE'/>
+					<coluna nome='desc_tipo_isencao' tipo='VARCHAR2' ind_chave='FALSE'/>
+					<coluna nome='tipo_pais_ext_pf' tipo='VARCHAR2' ind_chave='FALSE'/>
+					<coluna nome='tipo_pais_ext_pj' tipo='VARCHAR2' ind_chave='FALSE'/>
+					<coluna nome='tipo_nat_declar' tipo='VARCHAR2' ind_chave='FALSE'/>
+					<coluna nome='tipo_tributo' tipo='VARCHAR2' ind_trim='FALSE' ind_chave='TRUE'/>
+				</colunas>
+				<validacoes>
+				</validacoes>
+		</tabela>		
+		<tabela>
+				<nome_tabela>TACES102</nome_tabela>
+				<nome_tabela_banco>CAD_TRIB_DESIF</nome_tabela_banco>
+				<sobrepor_registro>TRUE</sobrepor_registro>
+				<colunas>
+					<coluna nome='cod_trib_desif' tipo='VARCHAR2' ind_chave='TRUE'/>
+					<coluna nome='dsc_trib_desif' tipo='VARCHAR2' ind_chave='FALSE'/>
+					<coluna nome='cod_serv_l116' tipo='VARCHAR2' ind_chave='FALSE'/>
+				</colunas>
+				<validacoes>
+				</validacoes>
+		</tabela>		
+		<tabela>
+				<nome_tabela>TACES103</nome_tabela>
+				<nome_tabela_banco>CAD_TRIB_DESIF_MUNIC</nome_tabela_banco>
+				<sobrepor_registro>TRUE</sobrepor_registro>
+				<colunas>
+					<coluna nome='cod_municipio_ibge' tipo='VARCHAR2' ind_chave='TRUE'/>
+					<coluna nome='cod_trib_munic' tipo='VARCHAR2' ind_chave='FALSE'/>
+					<coluna nome='cod_trib_desif' tipo='VARCHAR2' ind_chave='TRUE'/>
+					<coluna nome='aliq' tipo='NUMBER' tamanho ='5' precisao='2'  ind_chave='FALSE'/>
+					<coluna nome='valid_ini' tipo='DATE' ind_chave='TRUE'/>
+					<coluna nome='valid_fim' tipo='DATE' ind_chave='FALSE'/>
+				</colunas>
+				<validacoes>
+				</validacoes>
+		</tabela>		
+		<tabela>
+				<nome_tabela>TACES104</nome_tabela>
+				<nome_tabela_banco>CAD_TARIFA_DESIF</nome_tabela_banco>
+				<sobrepor_registro>FALSE</sobrepor_registro>
+				<colunas>
+					<coluna nome='cod_tarifa_desif' tipo='VARCHAR2' ind_chave='TRUE'/>
+					<coluna nome='grupo_tarifa_desif' tipo='VARCHAR2' ind_chave='FALSE'/>
+					<coluna nome='dsc_tarifa_desif' tipo='VARCHAR2' ind_chave='FALSE'/>
+					<coluna nome='dsc_periodicidade' tipo='VARCHAR2' ind_chave='FALSE'/>
+				</colunas>
+				<validacoes>
+				</validacoes>
+		</tabela>				
+		<tabela>
+				<nome_tabela>TACES105</nome_tabela>
+				<nome_tabela_banco>CAD_PSERV_DESIF</nome_tabela_banco>
+				<sobrepor_registro>FALSE</sobrepor_registro>
+				<colunas>
+					<coluna nome='cod_pserv_desif' tipo='VARCHAR2' ind_chave='TRUE'/>
+					<coluna nome='grupo_pserv_desif' tipo='VARCHAR2' ind_chave='FALSE'/>
+					<coluna nome='dsc_pserv_desif' tipo='VARCHAR2' ind_chave='FALSE'/>
+					<coluna nome='ind_obrig_compl' tipo='VARCHAR2' ind_chave='FALSE'/>
+				</colunas>
+				<validacoes>
+				</validacoes>
+		</tabela>
+		<tabela>
+				<nome_tabela>TACES106</nome_tabela>
+				<nome_tabela_banco>CAD_EVENTO_DESIF</nome_tabela_banco>
+				<sobrepor_registro>FALSE</sobrepor_registro>
+				<colunas>
+					<coluna nome='cod_evento_desif' tipo='VARCHAR2' ind_chave='TRUE'/>
+					<coluna nome='dsc_evento_desif' tipo='VARCHAR2' ind_chave='FALSE'/>
+					<coluna nome='ind_tipo_partida' tipo='VARCHAR2' ind_chave='FALSE'/>
+				</colunas>
+				<validacoes>
+				</validacoes>
+		</tabela>
+		<tabela>
+				<nome_tabela>TACES107</nome_tabela>
+				<nome_tabela_banco>EST_SC_DIME_BENEF</nome_tabela_banco>
+				<sobrepor_registro>FALSE</sobrepor_registro>
+				<colunas>
+					<coluna nome='cod_benef_ttd' tipo='VARCHAR2' ind_chave='TRUE'/>
+					<coluna nome='dsc_benef_ttd' tipo='VARCHAR2' ind_chave='FALSE'/>
+				</colunas>
+				<validacoes>
+				</validacoes>
+		</tabela>
+		<tabela>
+				<nome_tabela>TACES108</nome_tabela>
+				<nome_tabela_banco>EST_SC_DIME_TIPO3</nome_tabela_banco>
+				<sobrepor_registro>FALSE</sobrepor_registro>
+				<colunas>
+					<coluna nome='cod_tipo3_dcip' tipo='VARCHAR2' ind_chave='TRUE'/>
+					<coluna nome='dsc_tipo3_dcip' tipo='VARCHAR2' ind_chave='FALSE'/>
+					<coluna nome='dsc_compl' tipo='VARCHAR2' ind_chave='FALSE'/>
+					<coluna nome='dat_ini_valid' tipo='DATE' ind_chave='FALSE'/>
+					<coluna nome='dat_fim_valid' tipo='DATE' ind_chave='FALSE'/>
+				</colunas>
+				<validacoes>
+				</validacoes>
+		</tabela>
+		
+		<tabela>
+				<nome_tabela>TACES109</nome_tabela>
+				<nome_tabela_banco>CAD_NAT_REND_COD_RECEITA</nome_tabela_banco>
+				<sobrepor_registro>FALSE</sobrepor_registro>
+				<colunas>
+				    <coluna nome='evento' tipo='VARCHAR2' ind_chave='TRUE'/>
+					<coluna nome='cod_nat_rend' tipo='NUMBER' ind_chave='TRUE'/>
+					<coluna nome='descricao' tipo='VARCHAR2' ind_chave='FALSE'/>
+					<coluna nome='ind_trib_ext' tipo='VARCHAR2' ind_trim='FALSE' ind_chave='TRUE'/>
+					<coluna nome='tributo' tipo='VARCHAR2' ind_trim='FALSE' ind_chave='TRUE'/>
+					<coluna nome='ind_classif_trib_85' tipo='VARCHAR2' ind_trim='FALSE' ind_chave='TRUE'/>
+					<coluna nome='cod_receita' tipo='VARCHAR2' ind_trim='FALSE' ind_chave='TRUE'/>
+					<coluna nome='per_apur' tipo='VARCHAR2' ind_trim='FALSE' ind_chave='TRUE'/>
+				</colunas>
+				<validacoes>
+				</validacoes>
+		</tabela>
+		
+		<tabela>
+				<nome_tabela>TACES110</nome_tabela>
+				<nome_tabela_banco>DWT_GRUPO_CCLASS</nome_tabela_banco>
+				<sobrepor_registro>FALSE</sobrepor_registro>
+				<colunas>
+					<coluna nome='cod_modelo' tipo='VARCHAR2' ind_chave='TRUE'/>
+					<coluna nome='cod_grupo_cclass' tipo='VARCHAR2' ind_chave='TRUE'/>
+					<coluna nome='dsc_grupo_cclass' tipo='VARCHAR2' ind_chave='FALSE'/>
+				</colunas>
+				<validacoes>
+				</validacoes>
+		</tabela>
+		<tabela>
+				<nome_tabela>TACES111</nome_tabela>
+				<nome_tabela_banco>CAD_TRIBUTACAO_MUNIC</nome_tabela_banco>
+				<sobrepor_registro>FALSE</sobrepor_registro>
+				<colunas>
+					<coluna nome='cod_estado' tipo='VARCHAR2' ind_chave='FALSE' existe_so_no_txt='TRUE'/>
+					<coluna nome='cod_municipio' tipo='NUMBER' ind_chave='TRUE'/>
+					<coluna nome='cod_tributacao_munic' tipo='VARCHAR2' ind_chave='TRUE'/>
+					<coluna nome='dsc_tributacao_munic' tipo='VARCHAR2' ind_chave='FALSE'/>
+					<coluna nome='ident_estado' tipo='NUMBER' ind_chave='TRUE'/>
+				</colunas>
+				<validacoes>
+					<recuperar coluna="4" tabela="estado" campo_recuperar="ident_estado" campo_ref="cod_estado" coluna_ref="0" cod_erro="090027"/>	
+					<validar coluna="4,1" tabela="municipio" campo_tabela="ident_estado,cod_municipio" cod_erro="090571"/>
+				</validacoes>
+		</tabela>
+		<tabela>
+				<nome_tabela>TACES112</nome_tabela>
+				<nome_tabela_banco>CBT_PRD_ICMS_MONO</nome_tabela_banco>
+				<sobrepor_registro>FALSE</sobrepor_registro>
+				<colunas>
+					<coluna nome='cod_prod_oficial' tipo='VARCHAR2' ind_chave='TRUE'/>
+					<coluna nome='dat_valid_ini'    tipo='DATE'     ind_chave='TRUE'/>
+					<coluna nome='dsc_prod_oficial' tipo='VARCHAR2' ind_chave='FALSE'/>
+					<coluna nome='aliq_ad_rem_icms' tipo='NUMBER'   tamanho ='7' precisao='4' ind_chave='FALSE'/>
+					<coluna nome='dat_valid_fim'    tipo='DATE'     ind_chave='FALSE'/>
+					<coluna nome='ind_biocomb'      tipo='VARCHAR2' ind_chave='FALSE'/>
+				</colunas>
+				<validacoes>
+				</validacoes>
+		</tabela>
+		<tabela>
+				<nome_tabela>TACES113</nome_tabela>
+				<nome_tabela_banco>CAD_CCLASS_NFCOM</nome_tabela_banco>
+				<sobrepor_registro>FALSE</sobrepor_registro>
+				<colunas>
+					<coluna nome='cod_cclass_nfcom' tipo='VARCHAR2' ind_chave='TRUE'/>
+					<coluna nome='dsc_cclass_nfcom' tipo='VARCHAR2' ind_chave='FALSE'/>
+				</colunas>
+				<validacoes>
+				</validacoes>
+		</tabela>
+		<tabela>
+		<nome_tabela>TFIX143</nome_tabela>
+		<nome_tabela_banco>PRT_PAR_OPER_UF</nome_tabela_banco>
+		<colunas>
+			<coluna nome='cod_param' tipo='NUMBER' ind_chave='TRUE' />
+			<coluna nome='cod_estado' tipo='VARCHAR2' ind_chave='FALSE' existe_so_no_txt='TRUE'/>
+			<coluna nome='tpo_cfo' tipo='VARCHAR2' ind_chave='TRUE'/>
+			<coluna nome='tpo_ded' tipo='VARCHAR2' ind_chave='TRUE'/>
+			<coluna nome='ident_estado' tipo='NUMBER' ind_chave='TRUE'/>
+		</colunas>
+		<validacoes>
+			<recuperar coluna="4" tabela="estado" campo_recuperar="ident_estado" campo_ref="cod_estado" coluna_ref="1" cod_erro="090027"/>
+		</validacoes>
+	</tabela>
+</tabelas>
