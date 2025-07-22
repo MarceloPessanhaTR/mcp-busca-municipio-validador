@@ -13,7 +13,7 @@ Este é um servidor MCP (Model Context Protocol) que fornece ferramentas para bu
 uvx install mcp-busca-municipio-validador
 
 # Instalação do JFrog Artifactory
-uvx install mcp-busca-municipio-validador --index-url https://seu-jfrog.jfrog.io/artifactory/api/pypi/pypi-local
+uvx install mcp-busca-municipio-validador --index-url https://tr1.jfrog.io/artifactory/pypi-local/taxone/mcp/mcp-busca_municipio_validador/simple
 ```
 
 ### Via pip
@@ -23,7 +23,7 @@ uvx install mcp-busca-municipio-validador --index-url https://seu-jfrog.jfrog.io
 pip install mcp-busca-municipio-validador
 
 # Instalação do JFrog
-pip install mcp-busca-municipio-validador --index-url https://seu-jfrog.jfrog.io/artifactory/api/pypi/pypi-local
+pip install mcp-busca-municipio-validador --index-url https://tr1.jfrog.io/artifactory/pypi-local/taxone/mcp/mcp-busca_municipio_validador/simple
 ```
 
 ## 🚀 Uso
@@ -67,6 +67,55 @@ Ou se instalado via pip:
   }
 }
 ```
+
+### Configuração no Cursor
+
+Adicione ao seu arquivo de configuração do Cursor (`.cursor/mcp_config.json`):
+
+```json
+{
+  "mcpServers": {
+    "busca-municipio-validador": {
+      "command": "uvx",
+      "args": [
+        "--index-url",
+        "https://tr1.jfrog.io/artifactory/pypi-local/taxone/mcp/mcp-busca_municipio_validador/simple",
+        "run",
+        "mcp-busca-municipio-validador"
+      ]
+    }
+  }
+}
+```
+
+Ou se instalado localmente via pip:
+
+```json
+{
+  "mcpServers": {
+    "busca-municipio-validador": {
+      "command": "python",
+      "args": ["-m", "src.mcp_server"]
+    }
+  }
+}
+```
+
+Ou se instalado globalmente:
+
+```json
+{
+  "mcpServers": {
+    "busca-municipio-validador": {
+      "command": "mcp-busca-municipio-validador"
+    }
+  }
+}
+```
+
+**Nota**: O Cursor procura o arquivo de configuração MCP em:
+- Windows: `%USERPROFILE%\.cursor\mcp_config.json`
+- macOS/Linux: `~/.cursor/mcp_config.json`
 
 ## 🛠️ Ferramentas Disponíveis
 
@@ -140,7 +189,7 @@ scripts\build.bat
 
 ```bash
 # Configurar credenciais
-export JFROG_URL="https://seu-jfrog.jfrog.io/artifactory/api/pypi/pypi-local"
+export JFROG_URL="https://tr1.jfrog.io/artifactory/pypi-local/taxone/mcp/mcp-busca_municipio_validador"
 export JFROG_USER="seu-usuario"
 export JFROG_TOKEN="seu-token"
 
